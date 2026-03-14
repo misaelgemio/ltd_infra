@@ -1,0 +1,1593 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+
+    <!-- Proyecto Uyuni (referencia para datos B-4 a B-9) -->
+    <record id="infra_proyecto_uyuni" model="infra.proyecto">
+        <field name="name">Carretera Uyuni — Tramos 1, 2 y 3</field>
+        <field name="codigo">CUCE-UYUNI-2025</field>
+        <field name="plazo_meses">36</field>
+        <field name="state">activo</field>
+    </record>
+
+    <!-- B-4 — Cronograma de Ejecución de Obra -->
+    <record id="b4_crono_1" model="infra.cronograma.ejecucion">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="numero">1</field>
+        <field name="name">Desbroce y limpieza</field>
+        <field name="modulo_nombre">1. MOVIMIENTO DE TIERRAS</field>
+        <field name="duracion_meses">12</field>
+        <field name="mes_inicio">1</field>
+    </record>
+    <record id="b4_crono_2" model="infra.cronograma.ejecucion">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="numero">2</field>
+        <field name="name">Excavación en fango</field>
+        <field name="modulo_nombre">1. MOVIMIENTO DE TIERRAS</field>
+        <field name="duracion_meses">18</field>
+        <field name="mes_inicio">1</field>
+    </record>
+    <record id="b4_crono_3" model="infra.cronograma.ejecucion">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="numero">3</field>
+        <field name="name">Terraplén con material de préstamo</field>
+        <field name="modulo_nombre">1. MOVIMIENTO DE TIERRAS</field>
+        <field name="duracion_meses">30</field>
+        <field name="mes_inicio">1</field>
+    </record>
+    <record id="b4_crono_4" model="infra.cronograma.ejecucion">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="numero">4</field>
+        <field name="name">Sobreacarreo D>300m</field>
+        <field name="modulo_nombre">1. MOVIMIENTO DE TIERRAS</field>
+        <field name="duracion_meses">30</field>
+        <field name="mes_inicio">1</field>
+    </record>
+    <record id="b4_crono_5" model="infra.cronograma.ejecucion">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="numero">5</field>
+        <field name="name">Sobre-acarreo excedentes</field>
+        <field name="modulo_nombre">1. MOVIMIENTO DE TIERRAS</field>
+        <field name="duracion_meses">24</field>
+        <field name="mes_inicio">1</field>
+    </record>
+    <record id="b4_crono_6" model="infra.cronograma.ejecucion">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="numero">6</field>
+        <field name="name">Relleno en área de depósito</field>
+        <field name="modulo_nombre">1. MOVIMIENTO DE TIERRAS</field>
+        <field name="duracion_meses">24</field>
+        <field name="mes_inicio">1</field>
+    </record>
+    <record id="b4_crono_7" model="infra.cronograma.ejecucion">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="numero">7</field>
+        <field name="name">Pedraplen para estabilización</field>
+        <field name="modulo_nombre">1. MOVIMIENTO DE TIERRAS</field>
+        <field name="duracion_meses">18</field>
+        <field name="mes_inicio">1</field>
+    </record>
+    <record id="b4_crono_8" model="infra.cronograma.ejecucion">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="numero">8</field>
+        <field name="name">Geomalla uniaxial</field>
+        <field name="modulo_nombre">1. MOVIMIENTO DE TIERRAS</field>
+        <field name="duracion_meses">18</field>
+        <field name="mes_inicio">1</field>
+    </record>
+    <record id="b4_crono_9" model="infra.cronograma.ejecucion">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="numero">9</field>
+        <field name="name">Sub base suelo cemento</field>
+        <field name="modulo_nombre">2. PAVIMENTACIÓN</field>
+        <field name="duracion_meses">24</field>
+        <field name="mes_inicio">1</field>
+    </record>
+    <record id="b4_crono_10" model="infra.cronograma.ejecucion">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="numero">10</field>
+        <field name="name">Imprimación ejecución</field>
+        <field name="modulo_nombre">2. PAVIMENTACIÓN</field>
+        <field name="duracion_meses">22</field>
+        <field name="mes_inicio">1</field>
+    </record>
+    <record id="b4_crono_11" model="infra.cronograma.ejecucion">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="numero">11</field>
+        <field name="name">Tratamiento superficial doble</field>
+        <field name="modulo_nombre">2. PAVIMENTACIÓN</field>
+        <field name="duracion_meses">20</field>
+        <field name="mes_inicio">1</field>
+    </record>
+    <record id="b4_crono_12" model="infra.cronograma.ejecucion">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="numero">12</field>
+        <field name="name">Suministro asfalto imprimación</field>
+        <field name="modulo_nombre">2. PAVIMENTACIÓN</field>
+        <field name="duracion_meses">22</field>
+        <field name="mes_inicio">1</field>
+    </record>
+    <record id="b4_crono_13" model="infra.cronograma.ejecucion">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="numero">15</field>
+        <field name="name">Losa de hormigón</field>
+        <field name="modulo_nombre">2. PAVIMENTACIÓN</field>
+        <field name="duracion_meses">24</field>
+        <field name="mes_inicio">1</field>
+    </record>
+    <record id="b4_crono_14" model="infra.cronograma.ejecucion">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="numero">16</field>
+        <field name="name">Juntas transversales</field>
+        <field name="modulo_nombre">2. PAVIMENTACIÓN</field>
+        <field name="duracion_meses">22</field>
+        <field name="mes_inicio">1</field>
+    </record>
+    <record id="b4_crono_15" model="infra.cronograma.ejecucion">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="numero">19</field>
+        <field name="name">Suministro cemento Portland</field>
+        <field name="modulo_nombre">2. PAVIMENTACIÓN</field>
+        <field name="duracion_meses">30</field>
+        <field name="mes_inicio">1</field>
+    </record>
+    <record id="b4_crono_16" model="infra.cronograma.ejecucion">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="numero">21</field>
+        <field name="name">Cunetas</field>
+        <field name="modulo_nombre">3. OBRAS DE DRENAJE</field>
+        <field name="duracion_meses">24</field>
+        <field name="mes_inicio">1</field>
+    </record>
+    <record id="b4_crono_17" model="infra.cronograma.ejecucion">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="numero">30</field>
+        <field name="name">Excavación obras drenaje menor</field>
+        <field name="modulo_nombre">3. OBRAS DE DRENAJE</field>
+        <field name="duracion_meses">24</field>
+        <field name="mes_inicio">1</field>
+    </record>
+    <record id="b4_crono_18" model="infra.cronograma.ejecucion">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="numero">34</field>
+        <field name="name">Hormigón AA drenaje</field>
+        <field name="modulo_nombre">3. OBRAS DE DRENAJE</field>
+        <field name="duracion_meses">24</field>
+        <field name="mes_inicio">1</field>
+    </record>
+    <record id="b4_crono_19" model="infra.cronograma.ejecucion">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="numero">36</field>
+        <field name="name">Acero estructural drenaje</field>
+        <field name="modulo_nombre">3. OBRAS DE DRENAJE</field>
+        <field name="duracion_meses">24</field>
+        <field name="mes_inicio">1</field>
+    </record>
+    <record id="b4_crono_20" model="infra.cronograma.ejecucion">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="numero">42</field>
+        <field name="name">Gaviones drenaje</field>
+        <field name="modulo_nombre">3. OBRAS DE DRENAJE</field>
+        <field name="duracion_meses">18</field>
+        <field name="mes_inicio">1</field>
+    </record>
+    <record id="b4_crono_21" model="infra.cronograma.ejecucion">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="numero">44</field>
+        <field name="name">Excavación para estructuras</field>
+        <field name="modulo_nombre">4. OBRAS DE ARTE MAYOR</field>
+        <field name="duracion_meses">20</field>
+        <field name="mes_inicio">1</field>
+    </record>
+    <record id="b4_crono_22" model="infra.cronograma.ejecucion">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="numero">47</field>
+        <field name="name">Hormigón AC infraestructura</field>
+        <field name="modulo_nombre">4. OBRAS DE ARTE MAYOR</field>
+        <field name="duracion_meses">22</field>
+        <field name="mes_inicio">1</field>
+    </record>
+    <record id="b4_crono_23" model="infra.cronograma.ejecucion">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="numero">49</field>
+        <field name="name">Acero estructural</field>
+        <field name="modulo_nombre">4. OBRAS DE ARTE MAYOR</field>
+        <field name="duracion_meses">22</field>
+        <field name="mes_inicio">1</field>
+    </record>
+    <record id="b4_crono_24" model="infra.cronograma.ejecucion">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="numero">52</field>
+        <field name="name">Pilotes vaciados in situ</field>
+        <field name="modulo_nombre">4. OBRAS DE ARTE MAYOR</field>
+        <field name="duracion_meses">18</field>
+        <field name="mes_inicio">1</field>
+    </record>
+    <record id="b4_crono_25" model="infra.cronograma.ejecucion">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="numero">64</field>
+        <field name="name">Hormigón AA superestructura</field>
+        <field name="modulo_nombre">4. OBRAS DE ARTE MAYOR</field>
+        <field name="duracion_meses">18</field>
+        <field name="mes_inicio">1</field>
+    </record>
+    <record id="b4_crono_26" model="infra.cronograma.ejecucion">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="numero">67</field>
+        <field name="name">Acero pretensado</field>
+        <field name="modulo_nombre">4. OBRAS DE ARTE MAYOR</field>
+        <field name="duracion_meses">16</field>
+        <field name="mes_inicio">1</field>
+    </record>
+    <record id="b4_crono_27" model="infra.cronograma.ejecucion">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="numero">70</field>
+        <field name="name">Tesado de cables</field>
+        <field name="modulo_nombre">4. OBRAS DE ARTE MAYOR</field>
+        <field name="duracion_meses">12</field>
+        <field name="mes_inicio">1</field>
+    </record>
+    <record id="b4_crono_28" model="infra.cronograma.ejecucion">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="numero">78</field>
+        <field name="name">Defensas laterales metálicas</field>
+        <field name="modulo_nombre">5. SEÑALIZACIÓN</field>
+        <field name="duracion_meses">12</field>
+        <field name="mes_inicio">1</field>
+    </record>
+    <record id="b4_crono_29" model="infra.cronograma.ejecucion">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="numero">80</field>
+        <field name="name">Pintado líneas</field>
+        <field name="modulo_nombre">5. SEÑALIZACIÓN</field>
+        <field name="duracion_meses">8</field>
+        <field name="mes_inicio">1</field>
+    </record>
+    <record id="b4_crono_30" model="infra.cronograma.ejecucion">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="numero">83</field>
+        <field name="name">Señales de tráfico</field>
+        <field name="modulo_nombre">5. SEÑALIZACIÓN</field>
+        <field name="duracion_meses">10</field>
+        <field name="mes_inicio">1</field>
+    </record>
+    <record id="b4_crono_31" model="infra.cronograma.ejecucion">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="numero">103</field>
+        <field name="name">Tachas reflectivas</field>
+        <field name="modulo_nombre">5. SEÑALIZACIÓN</field>
+        <field name="duracion_meses">6</field>
+        <field name="mes_inicio">1</field>
+    </record>
+    <record id="b4_crono_32" model="infra.cronograma.ejecucion">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="numero">106</field>
+        <field name="name">Servicio alimentación</field>
+        <field name="modulo_nombre">6. SERVICIOS FISCALIZACIÓN</field>
+        <field name="duracion_meses">36</field>
+        <field name="mes_inicio">1</field>
+    </record>
+    <record id="b4_crono_33" model="infra.cronograma.ejecucion">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="numero">110</field>
+        <field name="name">Campamento</field>
+        <field name="modulo_nombre">6. SERVICIOS FISCALIZACIÓN</field>
+        <field name="duracion_meses">36</field>
+        <field name="mes_inicio">1</field>
+    </record>
+    <record id="b4_crono_34" model="infra.cronograma.ejecucion">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="numero">112</field>
+        <field name="name">Señalización animales</field>
+        <field name="modulo_nombre">7. MITIGACIÓN AMBIENTAL</field>
+        <field name="duracion_meses">6</field>
+        <field name="mes_inicio">1</field>
+    </record>
+    <record id="b4_crono_35" model="infra.cronograma.ejecucion">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="numero">118</field>
+        <field name="name">Programa relac. comunitario</field>
+        <field name="modulo_nombre">7. MITIGACIÓN AMBIENTAL</field>
+        <field name="duracion_meses">36</field>
+        <field name="mes_inicio">1</field>
+    </record>
+    <record id="b4_crono_36" model="infra.cronograma.ejecucion">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="numero">120</field>
+        <field name="name">Monitoreo arqueológico</field>
+        <field name="modulo_nombre">7. MITIGACIÓN AMBIENTAL</field>
+        <field name="duracion_meses">36</field>
+        <field name="mes_inicio">1</field>
+    </record>
+
+    <!-- B-5 — Movilización de Equipo -->
+    <record id="b5_movil_1" model="infra.movilizacion.equipo">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="numero">1</field>
+        <field name="name">Tractor c/topadora D7 230 HP</field>
+        <field name="cantidad">2</field>
+        <field name="mes_llegada">1</field>
+    </record>
+    <record id="b5_movil_2" model="infra.movilizacion.equipo">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="numero">2</field>
+        <field name="name">Tractor c/topadora D8 c/ripper 305 HP</field>
+        <field name="cantidad">3</field>
+        <field name="mes_llegada">1</field>
+    </record>
+    <record id="b5_movil_3" model="infra.movilizacion.equipo">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="numero">3</field>
+        <field name="name">Excavadora de orugas 312B 84 HP</field>
+        <field name="cantidad">4</field>
+        <field name="mes_llegada">1</field>
+    </record>
+    <record id="b5_movil_4" model="infra.movilizacion.equipo">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="numero">4</field>
+        <field name="name">Cargador frontal 924F 105 HP</field>
+        <field name="cantidad">3</field>
+        <field name="mes_llegada">1</field>
+    </record>
+    <record id="b5_movil_5" model="infra.movilizacion.equipo">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="numero">5</field>
+        <field name="name">Motoniveladora 125 HP</field>
+        <field name="cantidad">3</field>
+        <field name="mes_llegada">2</field>
+    </record>
+    <record id="b5_movil_6" model="infra.movilizacion.equipo">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="numero">6</field>
+        <field name="name">Compactador liso o pata de cabra</field>
+        <field name="cantidad">3</field>
+        <field name="mes_llegada">3</field>
+    </record>
+    <record id="b5_movil_7" model="infra.movilizacion.equipo">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="numero">7</field>
+        <field name="name">Volquete SUNNY 24 M3</field>
+        <field name="cantidad">40</field>
+        <field name="mes_llegada">1</field>
+    </record>
+    <record id="b5_movil_8" model="infra.movilizacion.equipo">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="numero">8</field>
+        <field name="name">Camión cisterna 10,000 Lt</field>
+        <field name="cantidad">3</field>
+        <field name="mes_llegada">2</field>
+    </record>
+    <record id="b5_movil_9" model="infra.movilizacion.equipo">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="numero">9</field>
+        <field name="name">Rodillo tándem vibratorio</field>
+        <field name="cantidad">2</field>
+        <field name="mes_llegada">8</field>
+    </record>
+    <record id="b5_movil_10" model="infra.movilizacion.equipo">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="numero">10</field>
+        <field name="name">Distribuidor de asfaltos</field>
+        <field name="cantidad">2</field>
+        <field name="mes_llegada">10</field>
+    </record>
+    <record id="b5_movil_11" model="infra.movilizacion.equipo">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="numero">11</field>
+        <field name="name">Distribuidor de agregados</field>
+        <field name="cantidad">1</field>
+        <field name="mes_llegada">10</field>
+    </record>
+    <record id="b5_movil_12" model="infra.movilizacion.equipo">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="numero">12</field>
+        <field name="name">Escoba mecánica autopropulsada</field>
+        <field name="cantidad">1</field>
+        <field name="mes_llegada">10</field>
+    </record>
+    <record id="b5_movil_13" model="infra.movilizacion.equipo">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="numero">13</field>
+        <field name="name">Mezcladora de hormigón 300 Lt</field>
+        <field name="cantidad">4</field>
+        <field name="mes_llegada">6</field>
+    </record>
+    <record id="b5_movil_14" model="infra.movilizacion.equipo">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="numero">14</field>
+        <field name="name">Vibrador de inmersión</field>
+        <field name="cantidad">6</field>
+        <field name="mes_llegada">6</field>
+    </record>
+    <record id="b5_movil_15" model="infra.movilizacion.equipo">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="numero">15</field>
+        <field name="name">Cortador de hormigón 12 HP</field>
+        <field name="cantidad">2</field>
+        <field name="mes_llegada">12</field>
+    </record>
+    <record id="b5_movil_16" model="infra.movilizacion.equipo">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="numero">16</field>
+        <field name="name">Retroexcavadora 90 HP</field>
+        <field name="cantidad">2</field>
+        <field name="mes_llegada">3</field>
+    </record>
+    <record id="b5_movil_17" model="infra.movilizacion.equipo">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="numero">17</field>
+        <field name="name">Piloteadora D=1.50m</field>
+        <field name="cantidad">1</field>
+        <field name="mes_llegada">4</field>
+    </record>
+    <record id="b5_movil_18" model="infra.movilizacion.equipo">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="numero">18</field>
+        <field name="name">Grúa autopropulsada 20 Tn</field>
+        <field name="cantidad">1</field>
+        <field name="mes_llegada">4</field>
+    </record>
+    <record id="b5_movil_19" model="infra.movilizacion.equipo">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="numero">19</field>
+        <field name="name">Equipo de tesado (multitorón)</field>
+        <field name="cantidad">1</field>
+        <field name="mes_llegada">16</field>
+    </record>
+    <record id="b5_movil_20" model="infra.movilizacion.equipo">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="numero">20</field>
+        <field name="name">Tractor agrícola c/arado 90 HP</field>
+        <field name="cantidad">2</field>
+        <field name="mes_llegada">3</field>
+    </record>
+    <record id="b5_movil_21" model="infra.movilizacion.equipo">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="numero">21</field>
+        <field name="name">Bomba de agua 5 HP</field>
+        <field name="cantidad">3</field>
+        <field name="mes_llegada">2</field>
+    </record>
+    <record id="b5_movil_22" model="infra.movilizacion.equipo">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="numero">22</field>
+        <field name="name">Compresor transportable 98 HP</field>
+        <field name="cantidad">1</field>
+        <field name="mes_llegada">4</field>
+    </record>
+    <record id="b5_movil_23" model="infra.movilizacion.equipo">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="numero">23</field>
+        <field name="name">Martillo neumático</field>
+        <field name="cantidad">2</field>
+        <field name="mes_llegada">4</field>
+    </record>
+    <record id="b5_movil_24" model="infra.movilizacion.equipo">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="numero">24</field>
+        <field name="name">Motosierra 5 HP</field>
+        <field name="cantidad">3</field>
+        <field name="mes_llegada">1</field>
+    </record>
+    <record id="b5_movil_25" model="infra.movilizacion.equipo">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="numero">25</field>
+        <field name="name">Cortadora y dobladora de fierro</field>
+        <field name="cantidad">3</field>
+        <field name="mes_llegada">6</field>
+    </record>
+    <record id="b5_movil_26" model="infra.movilizacion.equipo">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="numero">26</field>
+        <field name="name">Grupo electrógeno 100 KVA</field>
+        <field name="cantidad">2</field>
+        <field name="mes_llegada">1</field>
+    </record>
+    <record id="b5_movil_27" model="infra.movilizacion.equipo">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="numero">27</field>
+        <field name="name">Camioneta 4×4 (administración)</field>
+        <field name="cantidad">6</field>
+        <field name="mes_llegada">1</field>
+    </record>
+    <record id="b5_movil_28" model="infra.movilizacion.equipo">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="numero">28</field>
+        <field name="name">Equipo de sondeo rotativo</field>
+        <field name="cantidad">1</field>
+        <field name="mes_llegada">4</field>
+    </record>
+    <record id="b5_movil_29" model="infra.movilizacion.equipo">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="numero">29</field>
+        <field name="name">Equipo de inyección</field>
+        <field name="cantidad">1</field>
+        <field name="mes_llegada">20</field>
+    </record>
+
+    <!-- B-6 — Gastos Generales -->
+    <record id="b6_gg_1" model="infra.gasto.general">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="seccion">admin_central</field>
+        <field name="numero">1</field>
+        <field name="name">Gerente General de Proyecto</field>
+        <field name="unidad">MES</field>
+        <field name="cantidad">36</field>
+        <field name="precio_unitario">85000</field>
+        <field name="costo_mensual">85000</field>
+    </record>
+    <record id="b6_gg_2" model="infra.gasto.general">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="seccion">admin_central</field>
+        <field name="numero">2</field>
+        <field name="name">Director Técnico</field>
+        <field name="unidad">MES</field>
+        <field name="cantidad">36</field>
+        <field name="precio_unitario">65000</field>
+        <field name="costo_mensual">65000</field>
+    </record>
+    <record id="b6_gg_3" model="infra.gasto.general">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="seccion">admin_central</field>
+        <field name="numero">3</field>
+        <field name="name">Gerente Administrativo-Financiero</field>
+        <field name="unidad">MES</field>
+        <field name="cantidad">36</field>
+        <field name="precio_unitario">55000</field>
+        <field name="costo_mensual">55000</field>
+    </record>
+    <record id="b6_gg_4" model="infra.gasto.general">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="seccion">admin_central</field>
+        <field name="numero">4</field>
+        <field name="name">Jefe de Licitaciones y Contratos</field>
+        <field name="unidad">MES</field>
+        <field name="cantidad">36</field>
+        <field name="precio_unitario">40000</field>
+        <field name="costo_mensual">40000</field>
+    </record>
+    <record id="b6_gg_5" model="infra.gasto.general">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="seccion">admin_central</field>
+        <field name="numero">5</field>
+        <field name="name">Contador General + equipo (3 pers.)</field>
+        <field name="unidad">MES</field>
+        <field name="cantidad">108</field>
+        <field name="precio_unitario">18000</field>
+        <field name="costo_mensual">18000</field>
+    </record>
+    <record id="b6_gg_6" model="infra.gasto.general">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="seccion">admin_central</field>
+        <field name="numero">6</field>
+        <field name="name">Recursos Humanos</field>
+        <field name="unidad">MES</field>
+        <field name="cantidad">36</field>
+        <field name="precio_unitario">15000</field>
+        <field name="costo_mensual">15000</field>
+    </record>
+    <record id="b6_gg_7" model="infra.gasto.general">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="seccion">admin_central</field>
+        <field name="numero">7</field>
+        <field name="name">Secretaría Administrativa (2)</field>
+        <field name="unidad">MES</field>
+        <field name="cantidad">72</field>
+        <field name="precio_unitario">8000</field>
+        <field name="costo_mensual">8000</field>
+    </record>
+    <record id="b6_gg_8" model="infra.gasto.general">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="seccion">admin_central</field>
+        <field name="numero">8</field>
+        <field name="name">Alquiler Oficina Central</field>
+        <field name="unidad">MES</field>
+        <field name="cantidad">36</field>
+        <field name="precio_unitario">25000</field>
+        <field name="costo_mensual">25000</field>
+    </record>
+    <record id="b6_gg_9" model="infra.gasto.general">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="seccion">admin_central</field>
+        <field name="numero">9</field>
+        <field name="name">Servicios Básicos Oficina</field>
+        <field name="unidad">MES</field>
+        <field name="cantidad">36</field>
+        <field name="precio_unitario">12000</field>
+        <field name="costo_mensual">12000</field>
+    </record>
+    <record id="b6_gg_10" model="infra.gasto.general">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="seccion">admin_central</field>
+        <field name="numero">10</field>
+        <field name="name">Material de Escritorio y Suministros</field>
+        <field name="unidad">MES</field>
+        <field name="cantidad">36</field>
+        <field name="precio_unitario">4000</field>
+        <field name="costo_mensual">4000</field>
+    </record>
+    <record id="b6_gg_11" model="infra.gasto.general">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="seccion">admin_central</field>
+        <field name="numero">11</field>
+        <field name="name">Seguros (RC, Equipo, Todo Riesgo, CAR)</field>
+        <field name="unidad">MES</field>
+        <field name="cantidad">36</field>
+        <field name="precio_unitario">80000</field>
+        <field name="costo_mensual">80000</field>
+    </record>
+    <record id="b6_gg_12" model="infra.gasto.general">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="seccion">admin_central</field>
+        <field name="numero">12</field>
+        <field name="name">Garantías Bancarias (Cumplimiento+Anticipo)</field>
+        <field name="unidad">MES</field>
+        <field name="cantidad">36</field>
+        <field name="precio_unitario">60000</field>
+        <field name="costo_mensual">60000</field>
+    </record>
+    <record id="b6_gg_13" model="infra.gasto.general">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="seccion">admin_central</field>
+        <field name="numero">13</field>
+        <field name="name">Asesoría Legal permanente</field>
+        <field name="unidad">MES</field>
+        <field name="cantidad">36</field>
+        <field name="precio_unitario">20000</field>
+        <field name="costo_mensual">20000</field>
+    </record>
+    <record id="b6_gg_14" model="infra.gasto.general">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="seccion">admin_central</field>
+        <field name="numero">14</field>
+        <field name="name">Asesoría Ambiental especializada</field>
+        <field name="unidad">MES</field>
+        <field name="cantidad">36</field>
+        <field name="precio_unitario">18000</field>
+        <field name="costo_mensual">18000</field>
+    </record>
+    <record id="b6_gg_15" model="infra.gasto.general">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="seccion">admin_central</field>
+        <field name="numero">15</field>
+        <field name="name">Software, Licencias, Sistemas</field>
+        <field name="unidad">MES</field>
+        <field name="cantidad">36</field>
+        <field name="precio_unitario">8000</field>
+        <field name="costo_mensual">8000</field>
+    </record>
+    <record id="b6_gg_16" model="infra.gasto.general">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="seccion">admin_central</field>
+        <field name="numero">16</field>
+        <field name="name">Auditoría externa obligatoria</field>
+        <field name="unidad">MES</field>
+        <field name="cantidad">36</field>
+        <field name="precio_unitario">12000</field>
+        <field name="costo_mensual">12000</field>
+    </record>
+    <record id="b6_gg_17" model="infra.gasto.general">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="seccion">admin_central</field>
+        <field name="numero">17</field>
+        <field name="name">Viajes y Representación</field>
+        <field name="unidad">MES</field>
+        <field name="cantidad">36</field>
+        <field name="precio_unitario">15000</field>
+        <field name="costo_mensual">15000</field>
+    </record>
+    <record id="b6_gg_18" model="infra.gasto.general">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="seccion">admin_central</field>
+        <field name="numero">18</field>
+        <field name="name">Comunicaciones (sat., telecom.)</field>
+        <field name="unidad">MES</field>
+        <field name="cantidad">36</field>
+        <field name="precio_unitario">6000</field>
+        <field name="costo_mensual">6000</field>
+    </record>
+    <record id="b6_gg_19" model="infra.gasto.general">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="seccion">admin_campo</field>
+        <field name="numero">19</field>
+        <field name="name">Superintendente General de Obra</field>
+        <field name="unidad">MES</field>
+        <field name="cantidad">36</field>
+        <field name="precio_unitario">75000</field>
+        <field name="costo_mensual">0</field>
+    </record>
+    <record id="b6_gg_20" model="infra.gasto.general">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="seccion">admin_campo</field>
+        <field name="numero">20</field>
+        <field name="name">Ingeniero Residente Tramo 1</field>
+        <field name="unidad">MES</field>
+        <field name="cantidad">36</field>
+        <field name="precio_unitario">50000</field>
+        <field name="costo_mensual">0</field>
+    </record>
+    <record id="b6_gg_21" model="infra.gasto.general">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="seccion">admin_campo</field>
+        <field name="numero">21</field>
+        <field name="name">Ingeniero Residente Tramo 2</field>
+        <field name="unidad">MES</field>
+        <field name="cantidad">36</field>
+        <field name="precio_unitario">50000</field>
+        <field name="costo_mensual">0</field>
+    </record>
+    <record id="b6_gg_22" model="infra.gasto.general">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="seccion">admin_campo</field>
+        <field name="numero">22</field>
+        <field name="name">Ingeniero Residente Tramo 3</field>
+        <field name="unidad">MES</field>
+        <field name="cantidad">36</field>
+        <field name="precio_unitario">50000</field>
+        <field name="costo_mensual">0</field>
+    </record>
+    <record id="b6_gg_23" model="infra.gasto.general">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="seccion">admin_campo</field>
+        <field name="numero">23</field>
+        <field name="name">Ing. Calidad y Laboratorio</field>
+        <field name="unidad">MES</field>
+        <field name="cantidad">36</field>
+        <field name="precio_unitario">35000</field>
+        <field name="costo_mensual">0</field>
+    </record>
+    <record id="b6_gg_24" model="infra.gasto.general">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="seccion">admin_campo</field>
+        <field name="numero">24</field>
+        <field name="name">Ing. Ambiental de Campo</field>
+        <field name="unidad">MES</field>
+        <field name="cantidad">36</field>
+        <field name="precio_unitario">30000</field>
+        <field name="costo_mensual">0</field>
+    </record>
+    <record id="b6_gg_25" model="infra.gasto.general">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="seccion">admin_campo</field>
+        <field name="numero">25</field>
+        <field name="name">Ing. Seguridad Industrial (SSO)</field>
+        <field name="unidad">MES</field>
+        <field name="cantidad">36</field>
+        <field name="precio_unitario">28000</field>
+        <field name="costo_mensual">0</field>
+    </record>
+    <record id="b6_gg_26" model="infra.gasto.general">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="seccion">admin_campo</field>
+        <field name="numero">26</field>
+        <field name="name">Ing. de Costos y Planificación</field>
+        <field name="unidad">MES</field>
+        <field name="cantidad">36</field>
+        <field name="precio_unitario">30000</field>
+        <field name="costo_mensual">0</field>
+    </record>
+    <record id="b6_gg_27" model="infra.gasto.general">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="seccion">admin_campo</field>
+        <field name="numero">27</field>
+        <field name="name">Topógrafo Jefe + 3 auxiliares</field>
+        <field name="unidad">MES</field>
+        <field name="cantidad">144</field>
+        <field name="precio_unitario">12000</field>
+        <field name="costo_mensual">0</field>
+    </record>
+    <record id="b6_gg_28" model="infra.gasto.general">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="seccion">admin_campo</field>
+        <field name="numero">28</field>
+        <field name="name">Almacenistas / Logísticos (3 frentes)</field>
+        <field name="unidad">MES</field>
+        <field name="cantidad">108</field>
+        <field name="precio_unitario">9000</field>
+        <field name="costo_mensual">0</field>
+    </record>
+    <record id="b6_gg_29" model="infra.gasto.general">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="seccion">admin_campo</field>
+        <field name="numero">29</field>
+        <field name="name">Administrativos de Campo (3)</field>
+        <field name="unidad">MES</field>
+        <field name="cantidad">108</field>
+        <field name="precio_unitario">8000</field>
+        <field name="costo_mensual">0</field>
+    </record>
+    <record id="b6_gg_30" model="infra.gasto.general">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="seccion">admin_campo</field>
+        <field name="numero">30</field>
+        <field name="name">Laboratoristas suelos y concreto (6)</field>
+        <field name="unidad">MES</field>
+        <field name="cantidad">216</field>
+        <field name="precio_unitario">8500</field>
+        <field name="costo_mensual">0</field>
+    </record>
+    <record id="b6_gg_31" model="infra.gasto.general">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="seccion">admin_campo</field>
+        <field name="numero">31</field>
+        <field name="name">Campamentos (3 frentes, montaje+operación)</field>
+        <field name="unidad">MES</field>
+        <field name="cantidad">36</field>
+        <field name="precio_unitario">45000</field>
+        <field name="costo_mensual">0</field>
+    </record>
+    <record id="b6_gg_32" model="infra.gasto.general">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="seccion">admin_campo</field>
+        <field name="numero">32</field>
+        <field name="name">Comunicaciones campo (radio+internet sat.)</field>
+        <field name="unidad">MES</field>
+        <field name="cantidad">36</field>
+        <field name="precio_unitario">15000</field>
+        <field name="costo_mensual">0</field>
+    </record>
+    <record id="b6_gg_33" model="infra.gasto.general">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="seccion">admin_campo</field>
+        <field name="numero">33</field>
+        <field name="name">Vehículos Administración (8 camionetas 4×4)</field>
+        <field name="unidad">MES</field>
+        <field name="cantidad">288</field>
+        <field name="precio_unitario">10000</field>
+        <field name="costo_mensual">0</field>
+    </record>
+    <record id="b6_gg_34" model="infra.gasto.general">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="seccion">admin_campo</field>
+        <field name="numero">34</field>
+        <field name="name">Combustible Vehículos Admin.</field>
+        <field name="unidad">MES</field>
+        <field name="cantidad">36</field>
+        <field name="precio_unitario">35000</field>
+        <field name="costo_mensual">0</field>
+    </record>
+    <record id="b6_gg_35" model="infra.gasto.general">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="seccion">admin_campo</field>
+        <field name="numero">35</field>
+        <field name="name">Equipos Laboratorio + Topografía (deprec.)</field>
+        <field name="unidad">MES</field>
+        <field name="cantidad">36</field>
+        <field name="precio_unitario">20000</field>
+        <field name="costo_mensual">0</field>
+    </record>
+    <record id="b6_gg_36" model="infra.gasto.general">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="seccion">admin_campo</field>
+        <field name="numero">36</field>
+        <field name="name">Señalización y Seguridad en frentes</field>
+        <field name="unidad">MES</field>
+        <field name="cantidad">36</field>
+        <field name="precio_unitario">12000</field>
+        <field name="costo_mensual">0</field>
+    </record>
+    <record id="b6_gg_37" model="infra.gasto.general">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="seccion">admin_campo</field>
+        <field name="numero">37</field>
+        <field name="name">Atención médica + botiquines (3 frentes)</field>
+        <field name="unidad">MES</field>
+        <field name="cantidad">36</field>
+        <field name="precio_unitario">8000</field>
+        <field name="costo_mensual">0</field>
+    </record>
+    <record id="b6_gg_38" model="infra.gasto.general">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="seccion">admin_campo</field>
+        <field name="numero">38</field>
+        <field name="name">Alimentación personal campo (cuando aplica)</field>
+        <field name="unidad">MES</field>
+        <field name="cantidad">36</field>
+        <field name="precio_unitario">18000</field>
+        <field name="costo_mensual">0</field>
+    </record>
+    <record id="b6_gg_39" model="infra.gasto.general">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="seccion">admin_campo</field>
+        <field name="numero">39</field>
+        <field name="name">Energía y Grupo Electrógeno (3 frentes)</field>
+        <field name="unidad">MES</field>
+        <field name="cantidad">36</field>
+        <field name="precio_unitario">15000</field>
+        <field name="costo_mensual">0</field>
+    </record>
+    <record id="b6_gg_40" model="infra.gasto.general">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="seccion">admin_campo</field>
+        <field name="numero">40</field>
+        <field name="name">Mantenimiento vías de acceso</field>
+        <field name="unidad">MES</field>
+        <field name="cantidad">36</field>
+        <field name="precio_unitario">10000</field>
+        <field name="costo_mensual">0</field>
+    </record>
+    <record id="b6_gg_41" model="infra.gasto.general">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="seccion">admin_campo</field>
+        <field name="numero">41</field>
+        <field name="name">Imprevistos de Campo (5% del subtotal)</field>
+        <field name="unidad">GLB</field>
+        <field name="cantidad">1</field>
+        <field name="precio_unitario">0.05</field>
+        <field name="costo_mensual">0</field>
+    </record>
+
+    <!-- B-7 — Cargas Sociales -->
+    <record id="b7_cs_1" model="infra.carga.social">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="seccion">aportes</field>
+        <field name="numero">1</field>
+        <field name="name">Cotización Patronal AFP (Seguro a Largo Plazo)</field>
+        <field name="porcentaje">0.0171</field>
+        <field name="incidencia">0.0171</field>
+        <field name="base_legal">Ley 065 Pensiones, Art. 78</field>
+    </record>
+    <record id="b7_cs_2" model="infra.carga.social">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="seccion">aportes</field>
+        <field name="numero">2</field>
+        <field name="name">Aporte Patronal AFP (Riesgo Profesional)</field>
+        <field name="porcentaje">0.0171</field>
+        <field name="incidencia">0.0171</field>
+        <field name="base_legal">Ley 065, Art. 79 — Riesgo Común</field>
+    </record>
+    <record id="b7_cs_3" model="infra.carga.social">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="seccion">aportes</field>
+        <field name="numero">3</field>
+        <field name="name">Aporte Nacional Solidario Patronal</field>
+        <field name="porcentaje">0.03</field>
+        <field name="incidencia">0.03</field>
+        <field name="base_legal">Ley 065, Art. 82 — 3% s/total ganado</field>
+    </record>
+    <record id="b7_cs_4" model="infra.carga.social">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="seccion">aportes</field>
+        <field name="numero">4</field>
+        <field name="name">Caja Nacional de Salud (CNS) — Aporte Patronal</field>
+        <field name="porcentaje">0.1</field>
+        <field name="incidencia">0.1</field>
+        <field name="base_legal">Código de Seguridad Social, Art. 218</field>
+    </record>
+    <record id="b7_cs_5" model="infra.carga.social">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="seccion">aportes</field>
+        <field name="numero">5</field>
+        <field name="name">Aporte Pro-Vivienda</field>
+        <field name="porcentaje">0.02</field>
+        <field name="incidencia">0.02</field>
+        <field name="base_legal">D.S. 9181 — 2% patronal</field>
+    </record>
+    <record id="b7_cs_6" model="infra.carga.social">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="seccion">aportes</field>
+        <field name="numero">6</field>
+        <field name="name">Aporte INFOCAL (excluido en este proyecto)</field>
+        <field name="porcentaje">0</field>
+        <field name="incidencia">0</field>
+        <field name="base_legal">D.L. 19402 — 1% patronal</field>
+    </record>
+    <record id="b7_cs_7" model="infra.carga.social">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="seccion">beneficios</field>
+        <field name="numero">7</field>
+        <field name="name">Aguinaldo (1 sueldo/año = 1/12)</field>
+        <field name="porcentaje">0.0833</field>
+        <field name="incidencia">0.0833</field>
+        <field name="base_legal">Ley General del Trabajo, Art. 57</field>
+    </record>
+    <record id="b7_cs_8" model="infra.carga.social">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="seccion">beneficios</field>
+        <field name="numero">8</field>
+        <field name="name">Indemnización por Antigüedad (1 sueldo/año)</field>
+        <field name="porcentaje">0.0833</field>
+        <field name="incidencia">0.0833</field>
+        <field name="base_legal">LGT Art. 13</field>
+    </record>
+    <record id="b7_cs_9" model="infra.carga.social">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="seccion">beneficios</field>
+        <field name="numero">9</field>
+        <field name="name">Vacaciones (15 días/año)</field>
+        <field name="porcentaje">0.0417</field>
+        <field name="incidencia">0.0417</field>
+        <field name="base_legal">LGT Art. 44</field>
+    </record>
+    <record id="b7_cs_10" model="infra.carga.social">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="seccion">beneficios</field>
+        <field name="numero">10</field>
+        <field name="name">Dominicales (construcción carreteras)</field>
+        <field name="porcentaje">0.0486</field>
+        <field name="incidencia">0.0486</field>
+        <field name="base_legal">D.S. 3691 — Ajustado construcción</field>
+    </record>
+    <record id="b7_cs_11" model="infra.carga.social">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="seccion">beneficios</field>
+        <field name="numero">11</field>
+        <field name="name">Bono de Antigüedad</field>
+        <field name="porcentaje">0.027</field>
+        <field name="incidencia">0.027</field>
+        <field name="base_legal">D.S. 21060 — Escala promedio</field>
+    </record>
+
+    <!-- B-8 — Cronograma Financiero -->
+    <record id="b8_fin_1" model="infra.cronograma.financiero">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="mes">1</field>
+        <field name="inversion_pct">0.0058072</field>
+        <field name="inversion_bs">11146418.42</field>
+        <field name="acumulado_pct">0.0058072</field>
+        <field name="acumulado_bs">11146418.42</field>
+    </record>
+    <record id="b8_fin_2" model="infra.cronograma.financiero">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="mes">2</field>
+        <field name="inversion_pct">0.00929152</field>
+        <field name="inversion_bs">17834269.47</field>
+        <field name="acumulado_pct">0.01509872</field>
+        <field name="acumulado_bs">28980687.88</field>
+    </record>
+    <record id="b8_fin_3" model="infra.cronograma.financiero">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="mes">3</field>
+        <field name="inversion_pct">0.01393728</field>
+        <field name="inversion_bs">26751404.2</field>
+        <field name="acumulado_pct">0.029036</field>
+        <field name="acumulado_bs">55732092.09</field>
+    </record>
+    <record id="b8_fin_4" model="infra.cronograma.financiero">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="mes">4</field>
+        <field name="inversion_pct">0.02090592</field>
+        <field name="inversion_bs">40127106.3</field>
+        <field name="acumulado_pct">0.04994193</field>
+        <field name="acumulado_bs">95859198.39</field>
+    </record>
+    <record id="b8_fin_5" model="infra.cronograma.financiero">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="mes">5</field>
+        <field name="inversion_pct">0.02555168</field>
+        <field name="inversion_bs">49044241.04</field>
+        <field name="acumulado_pct">0.07549361</field>
+        <field name="acumulado_bs">144903439.42</field>
+    </record>
+    <record id="b8_fin_6" model="infra.cronograma.financiero">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="mes">6</field>
+        <field name="inversion_pct">0.029036</field>
+        <field name="inversion_bs">55732092.09</field>
+        <field name="acumulado_pct">0.10452962</field>
+        <field name="acumulado_bs">200635531.51</field>
+    </record>
+    <record id="b8_fin_7" model="infra.cronograma.financiero">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="mes">7</field>
+        <field name="inversion_pct">0.03252033</field>
+        <field name="inversion_bs">62419943.14</field>
+        <field name="acumulado_pct">0.13704994</field>
+        <field name="acumulado_bs">263055474.64</field>
+    </record>
+    <record id="b8_fin_8" model="infra.cronograma.financiero">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="mes">8</field>
+        <field name="inversion_pct">0.03716609</field>
+        <field name="inversion_bs">71337077.87</field>
+        <field name="acumulado_pct">0.17421603</field>
+        <field name="acumulado_bs">334392552.51</field>
+    </record>
+    <record id="b8_fin_9" model="infra.cronograma.financiero">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="mes">9</field>
+        <field name="inversion_pct">0.04065041</field>
+        <field name="inversion_bs">78024928.92</field>
+        <field name="acumulado_pct">0.21486643</field>
+        <field name="acumulado_bs">412417481.43</field>
+    </record>
+    <record id="b8_fin_10" model="infra.cronograma.financiero">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="mes">10</field>
+        <field name="inversion_pct">0.04413473</field>
+        <field name="inversion_bs">84712779.97</field>
+        <field name="acumulado_pct">0.25900116</field>
+        <field name="acumulado_bs">497130261.4</field>
+    </record>
+    <record id="b8_fin_11" model="infra.cronograma.financiero">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="mes">11</field>
+        <field name="inversion_pct">0.04645761</field>
+        <field name="inversion_bs">89171347.34</field>
+        <field name="acumulado_pct">0.30545877</field>
+        <field name="acumulado_bs">586301608.74</field>
+    </record>
+    <record id="b8_fin_12" model="infra.cronograma.financiero">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="mes">12</field>
+        <field name="inversion_pct">0.04645761</field>
+        <field name="inversion_bs">89171347.34</field>
+        <field name="acumulado_pct">0.35191638</field>
+        <field name="acumulado_bs">675472956.08</field>
+    </record>
+    <record id="b8_fin_13" model="infra.cronograma.financiero">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="mes">13</field>
+        <field name="inversion_pct">0.04645761</field>
+        <field name="inversion_bs">89171347.34</field>
+        <field name="acumulado_pct">0.39837398</field>
+        <field name="acumulado_bs">764644303.42</field>
+    </record>
+    <record id="b8_fin_14" model="infra.cronograma.financiero">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="mes">14</field>
+        <field name="inversion_pct">0.04413473</field>
+        <field name="inversion_bs">84712779.97</field>
+        <field name="acumulado_pct">0.44250871</field>
+        <field name="acumulado_bs">849357083.39</field>
+    </record>
+    <record id="b8_fin_15" model="infra.cronograma.financiero">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="mes">15</field>
+        <field name="inversion_pct">0.04065041</field>
+        <field name="inversion_bs">78024928.92</field>
+        <field name="acumulado_pct">0.48315912</field>
+        <field name="acumulado_bs">927382012.31</field>
+    </record>
+    <record id="b8_fin_16" model="infra.cronograma.financiero">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="mes">16</field>
+        <field name="inversion_pct">0.04065041</field>
+        <field name="inversion_bs">78024928.92</field>
+        <field name="acumulado_pct">0.52380952</field>
+        <field name="acumulado_bs">1005406941.23</field>
+    </record>
+    <record id="b8_fin_17" model="infra.cronograma.financiero">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="mes">17</field>
+        <field name="inversion_pct">0.04065041</field>
+        <field name="inversion_bs">78024928.92</field>
+        <field name="acumulado_pct">0.56445993</field>
+        <field name="acumulado_bs">1083431870.15</field>
+    </record>
+    <record id="b8_fin_18" model="infra.cronograma.financiero">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="mes">18</field>
+        <field name="inversion_pct">0.03716609</field>
+        <field name="inversion_bs">71337077.87</field>
+        <field name="acumulado_pct">0.60162602</field>
+        <field name="acumulado_bs">1154768948.01</field>
+    </record>
+    <record id="b8_fin_19" model="infra.cronograma.financiero">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="mes">19</field>
+        <field name="inversion_pct">0.03484321</field>
+        <field name="inversion_bs">66878510.5</field>
+        <field name="acumulado_pct">0.63646922</field>
+        <field name="acumulado_bs">1221647458.52</field>
+    </record>
+    <record id="b8_fin_20" model="infra.cronograma.financiero">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="mes">20</field>
+        <field name="inversion_pct">0.03484321</field>
+        <field name="inversion_bs">66878510.5</field>
+        <field name="acumulado_pct">0.67131243</field>
+        <field name="acumulado_bs">1288525969.02</field>
+    </record>
+    <record id="b8_fin_21" model="infra.cronograma.financiero">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="mes">21</field>
+        <field name="inversion_pct">0.03484321</field>
+        <field name="inversion_bs">66878510.5</field>
+        <field name="acumulado_pct">0.70615563</field>
+        <field name="acumulado_bs">1355404479.52</field>
+    </record>
+    <record id="b8_fin_22" model="infra.cronograma.financiero">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="mes">22</field>
+        <field name="inversion_pct">0.03484321</field>
+        <field name="inversion_bs">66878510.5</field>
+        <field name="acumulado_pct">0.74099884</field>
+        <field name="acumulado_bs">1422282990.03</field>
+    </record>
+    <record id="b8_fin_23" model="infra.cronograma.financiero">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="mes">23</field>
+        <field name="inversion_pct">0.03484321</field>
+        <field name="inversion_bs">66878510.5</field>
+        <field name="acumulado_pct">0.77584204</field>
+        <field name="acumulado_bs">1489161500.53</field>
+    </record>
+    <record id="b8_fin_24" model="infra.cronograma.financiero">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="mes">24</field>
+        <field name="inversion_pct">0.03252033</field>
+        <field name="inversion_bs">62419943.14</field>
+        <field name="acumulado_pct">0.80836237</field>
+        <field name="acumulado_bs">1551581443.66</field>
+    </record>
+    <record id="b8_fin_25" model="infra.cronograma.financiero">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="mes">25</field>
+        <field name="inversion_pct">0.029036</field>
+        <field name="inversion_bs">55732092.09</field>
+        <field name="acumulado_pct">0.83739837</field>
+        <field name="acumulado_bs">1607313535.75</field>
+    </record>
+    <record id="b8_fin_26" model="infra.cronograma.financiero">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="mes">26</field>
+        <field name="inversion_pct">0.029036</field>
+        <field name="inversion_bs">55732092.09</field>
+        <field name="acumulado_pct">0.86643438</field>
+        <field name="acumulado_bs">1663045627.84</field>
+    </record>
+    <record id="b8_fin_27" model="infra.cronograma.financiero">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="mes">27</field>
+        <field name="inversion_pct">0.02555168</field>
+        <field name="inversion_bs">49044241.04</field>
+        <field name="acumulado_pct">0.89198606</field>
+        <field name="acumulado_bs">1712089868.87</field>
+    </record>
+    <record id="b8_fin_28" model="infra.cronograma.financiero">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="mes">28</field>
+        <field name="inversion_pct">0.0232288</field>
+        <field name="inversion_bs">44585673.67</field>
+        <field name="acumulado_pct">0.91521487</field>
+        <field name="acumulado_bs">1756675542.54</field>
+    </record>
+    <record id="b8_fin_29" model="infra.cronograma.financiero">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="mes">29</field>
+        <field name="inversion_pct">0.02090592</field>
+        <field name="inversion_bs">40127106.3</field>
+        <field name="acumulado_pct">0.93612079</field>
+        <field name="acumulado_bs">1796802648.84</field>
+    </record>
+    <record id="b8_fin_30" model="infra.cronograma.financiero">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="mes">30</field>
+        <field name="inversion_pct">0.0174216</field>
+        <field name="inversion_bs">33439255.25</field>
+        <field name="acumulado_pct">0.95354239</field>
+        <field name="acumulado_bs">1830241904.09</field>
+    </record>
+    <record id="b8_fin_31" model="infra.cronograma.financiero">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="mes">31</field>
+        <field name="inversion_pct">0.01393728</field>
+        <field name="inversion_bs">26751404.2</field>
+        <field name="acumulado_pct">0.96747967</field>
+        <field name="acumulado_bs">1856993308.29</field>
+    </record>
+    <record id="b8_fin_32" model="infra.cronograma.financiero">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="mes">32</field>
+        <field name="inversion_pct">0.0116144</field>
+        <field name="inversion_bs">22292836.83</field>
+        <field name="acumulado_pct">0.97909408</field>
+        <field name="acumulado_bs">1879286145.13</field>
+    </record>
+    <record id="b8_fin_33" model="infra.cronograma.financiero">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="mes">33</field>
+        <field name="inversion_pct">0.00929152</field>
+        <field name="inversion_bs">17834269.47</field>
+        <field name="acumulado_pct">0.9883856</field>
+        <field name="acumulado_bs">1897120414.6</field>
+    </record>
+    <record id="b8_fin_34" model="infra.cronograma.financiero">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="mes">34</field>
+        <field name="inversion_pct">0.0058072</field>
+        <field name="inversion_bs">11146418.42</field>
+        <field name="acumulado_pct">0.9941928</field>
+        <field name="acumulado_bs">1908266833.01</field>
+    </record>
+    <record id="b8_fin_35" model="infra.cronograma.financiero">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="mes">35</field>
+        <field name="inversion_pct">0.00348432</field>
+        <field name="inversion_bs">6687851.05</field>
+        <field name="acumulado_pct">0.99767712</field>
+        <field name="acumulado_bs">1914954684.06</field>
+    </record>
+    <record id="b8_fin_36" model="infra.cronograma.financiero">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="mes">36</field>
+        <field name="inversion_pct">0.00232288</field>
+        <field name="inversion_bs">4458567.37</field>
+        <field name="acumulado_pct">1.0</field>
+        <field name="acumulado_bs">1919413251.43</field>
+    </record>
+
+    <!-- B-9 — Desembolsos -->
+    <record id="b9_desemb_1" model="infra.desembolso">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="sequence">10</field>
+        <field name="name">PRESUPUESTO TOTAL CONTRATADO</field>
+        <field name="total_bs">1919413251.43</field>
+    </record>
+    <record id="b9_desemb_2" model="infra.desembolso">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="sequence">20</field>
+        <field name="name">1er ANTICIPO — Inicio de Obra (20% del contrato)</field>
+        <field name="total_bs">383882650.29</field>
+        <field name="m1">383882650.29</field>
+    </record>
+    <record id="b9_desemb_3" model="infra.desembolso">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="sequence">30</field>
+        <field name="name">2do ANTICIPO — Compra de Insumos e Importación (20%)</field>
+        <field name="total_bs">383882650.29</field>
+        <field name="m2">383882650.29</field>
+    </record>
+    <record id="b9_desemb_4" model="infra.desembolso">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="sequence">40</field>
+        <field name="name">PLANILLA MENSUAL (certificación avance de obra)</field>
+        <field name="total_bs">1919413251.43</field>
+        <field name="m1">11146418.42</field>
+        <field name="m2">17834269.47</field>
+        <field name="m3">26751404.2</field>
+        <field name="m4">40127106.3</field>
+        <field name="m5">49044241.04</field>
+        <field name="m6">55732092.09</field>
+        <field name="m7">62419943.14</field>
+        <field name="m8">71337077.87</field>
+        <field name="m9">78024928.92</field>
+        <field name="m10">84712779.97</field>
+        <field name="m11">89171347.34</field>
+        <field name="m12">89171347.34</field>
+        <field name="m13">89171347.34</field>
+        <field name="m14">84712779.97</field>
+        <field name="m15">78024928.92</field>
+        <field name="m16">78024928.92</field>
+        <field name="m17">78024928.92</field>
+        <field name="m18">71337077.87</field>
+        <field name="m19">66878510.5</field>
+        <field name="m20">66878510.5</field>
+        <field name="m21">66878510.5</field>
+        <field name="m22">66878510.5</field>
+        <field name="m23">66878510.5</field>
+        <field name="m24">62419943.14</field>
+        <field name="m25">55732092.09</field>
+        <field name="m26">55732092.09</field>
+        <field name="m27">49044241.04</field>
+        <field name="m28">44585673.67</field>
+        <field name="m29">40127106.3</field>
+        <field name="m30">33439255.25</field>
+        <field name="m31">26751404.2</field>
+        <field name="m32">22292836.83</field>
+        <field name="m33">17834269.47</field>
+        <field name="m34">11146418.42</field>
+        <field name="m35">6687851.05</field>
+        <field name="m36">4458567.37</field>
+    </record>
+    <record id="b9_desemb_5" model="infra.desembolso">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="sequence">50</field>
+        <field name="name">Amortización 1er Anticipo (20% de cada planilla)</field>
+        <field name="total_bs">383882650.29</field>
+        <field name="m1">-2229283.68</field>
+        <field name="m2">-3566853.89</field>
+        <field name="m3">-5350280.84</field>
+        <field name="m4">-8025421.26</field>
+        <field name="m5">-9808848.21</field>
+        <field name="m6">-11146418.42</field>
+        <field name="m7">-12483988.63</field>
+        <field name="m8">-14267415.57</field>
+        <field name="m9">-15604985.78</field>
+        <field name="m10">-16942555.99</field>
+        <field name="m11">-17834269.47</field>
+        <field name="m12">-17834269.47</field>
+        <field name="m13">-17834269.47</field>
+        <field name="m14">-16942555.99</field>
+        <field name="m15">-15604985.78</field>
+        <field name="m16">-15604985.78</field>
+        <field name="m17">-15604985.78</field>
+        <field name="m18">-14267415.57</field>
+        <field name="m19">-13375702.1</field>
+        <field name="m20">-13375702.1</field>
+        <field name="m21">-13375702.1</field>
+        <field name="m22">-13375702.1</field>
+        <field name="m23">-13375702.1</field>
+        <field name="m24">-12483988.63</field>
+        <field name="m25">-11146418.42</field>
+        <field name="m26">-11146418.42</field>
+        <field name="m27">-9808848.21</field>
+        <field name="m28">-8917134.73</field>
+        <field name="m29">-8025421.26</field>
+        <field name="m30">-6687851.05</field>
+        <field name="m31">-5350280.84</field>
+        <field name="m32">-4458567.37</field>
+        <field name="m33">-3566853.89</field>
+        <field name="m34">-2229283.68</field>
+        <field name="m35">-1337570.21</field>
+        <field name="m36">-891713.47</field>
+    </record>
+    <record id="b9_desemb_6" model="infra.desembolso">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="sequence">60</field>
+        <field name="name">Amortización 2do Anticipo Insumos (20% de cada planilla)</field>
+        <field name="total_bs">383882650.29</field>
+        <field name="m1">-2229283.68</field>
+        <field name="m2">-3566853.89</field>
+        <field name="m3">-5350280.84</field>
+        <field name="m4">-8025421.26</field>
+        <field name="m5">-9808848.21</field>
+        <field name="m6">-11146418.42</field>
+        <field name="m7">-12483988.63</field>
+        <field name="m8">-14267415.57</field>
+        <field name="m9">-15604985.78</field>
+        <field name="m10">-16942555.99</field>
+        <field name="m11">-17834269.47</field>
+        <field name="m12">-17834269.47</field>
+        <field name="m13">-17834269.47</field>
+        <field name="m14">-16942555.99</field>
+        <field name="m15">-15604985.78</field>
+        <field name="m16">-15604985.78</field>
+        <field name="m17">-15604985.78</field>
+        <field name="m18">-14267415.57</field>
+        <field name="m19">-13375702.1</field>
+        <field name="m20">-13375702.1</field>
+        <field name="m21">-13375702.1</field>
+        <field name="m22">-13375702.1</field>
+        <field name="m23">-13375702.1</field>
+        <field name="m24">-12483988.63</field>
+        <field name="m25">-11146418.42</field>
+        <field name="m26">-11146418.42</field>
+        <field name="m27">-9808848.21</field>
+        <field name="m28">-8917134.73</field>
+        <field name="m29">-8025421.26</field>
+        <field name="m30">-6687851.05</field>
+        <field name="m31">-5350280.84</field>
+        <field name="m32">-4458567.37</field>
+        <field name="m33">-3566853.89</field>
+        <field name="m34">-2229283.68</field>
+        <field name="m35">-1337570.21</field>
+        <field name="m36">-891713.47</field>
+    </record>
+    <record id="b9_desemb_7" model="infra.desembolso">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="sequence">70</field>
+        <field name="name">Costo Póliza de Cumplimiento (ref. — pago del contratista a aseguradora)</field>
+        <field name="total_bs">86373596.31</field>
+        <field name="m1">28791198.77</field>
+        <field name="m13">28791198.77</field>
+        <field name="m25">28791198.77</field>
+    </record>
+    <record id="b9_desemb_8" model="infra.desembolso">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="sequence">80</field>
+        <field name="name">PAGO NETO MENSUAL AL CONTRATISTA</field>
+        <field name="total_bs">1919413251.43</field>
+        <field name="m1">390570501.34</field>
+        <field name="m2">394583211.97</field>
+        <field name="m3">16050842.52</field>
+        <field name="m4">24076263.78</field>
+        <field name="m5">29426544.62</field>
+        <field name="m6">33439255.25</field>
+        <field name="m7">37451965.88</field>
+        <field name="m8">42802246.72</field>
+        <field name="m9">46814957.35</field>
+        <field name="m10">50827667.98</field>
+        <field name="m11">53502808.4</field>
+        <field name="m12">53502808.4</field>
+        <field name="m13">53502808.4</field>
+        <field name="m14">50827667.98</field>
+        <field name="m15">46814957.35</field>
+        <field name="m16">46814957.35</field>
+        <field name="m17">46814957.35</field>
+        <field name="m18">42802246.72</field>
+        <field name="m19">40127106.3</field>
+        <field name="m20">40127106.3</field>
+        <field name="m21">40127106.3</field>
+        <field name="m22">40127106.3</field>
+        <field name="m23">40127106.3</field>
+        <field name="m24">37451965.88</field>
+        <field name="m25">33439255.25</field>
+        <field name="m26">33439255.25</field>
+        <field name="m27">29426544.62</field>
+        <field name="m28">26751404.2</field>
+        <field name="m29">24076263.78</field>
+        <field name="m30">20063553.15</field>
+        <field name="m31">16050842.52</field>
+        <field name="m32">13375702.1</field>
+        <field name="m33">10700561.68</field>
+        <field name="m34">6687851.05</field>
+        <field name="m35">4012710.63</field>
+        <field name="m36">2675140.42</field>
+    </record>
+    <record id="b9_desemb_9" model="infra.desembolso">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="sequence">90</field>
+        <field name="name">PAGO ACUMULADO (Bs)</field>
+        <field name="total_bs">1919413251.43</field>
+        <field name="m1">390570501.34</field>
+        <field name="m2">785153713.3</field>
+        <field name="m3">801204555.82</field>
+        <field name="m4">825280819.6</field>
+        <field name="m5">854707364.23</field>
+        <field name="m6">888146619.48</field>
+        <field name="m7">925598585.36</field>
+        <field name="m8">968400832.08</field>
+        <field name="m9">1015215789.43</field>
+        <field name="m10">1066043457.41</field>
+        <field name="m11">1119546265.82</field>
+        <field name="m12">1173049074.22</field>
+        <field name="m13">1226551882.62</field>
+        <field name="m14">1277379550.6</field>
+        <field name="m15">1324194507.96</field>
+        <field name="m16">1371009465.31</field>
+        <field name="m17">1417824422.66</field>
+        <field name="m18">1460626669.38</field>
+        <field name="m19">1500753775.68</field>
+        <field name="m20">1540880881.98</field>
+        <field name="m21">1581007988.29</field>
+        <field name="m22">1621135094.59</field>
+        <field name="m23">1661262200.89</field>
+        <field name="m24">1698714166.77</field>
+        <field name="m25">1732153422.02</field>
+        <field name="m26">1765592677.27</field>
+        <field name="m27">1795019221.89</field>
+        <field name="m28">1821770626.1</field>
+        <field name="m29">1845846889.88</field>
+        <field name="m30">1865910443.03</field>
+        <field name="m31">1881961285.55</field>
+        <field name="m32">1895336987.65</field>
+        <field name="m33">1906037549.33</field>
+        <field name="m34">1912725400.38</field>
+        <field name="m35">1916738111.01</field>
+        <field name="m36">1919413251.43</field>
+    </record>
+    <record id="b9_desemb_10" model="infra.desembolso">
+        <field name="proyecto_id" ref="infra_proyecto_uyuni"/>
+        <field name="sequence">100</field>
+        <field name="name">% AVANCE FINANCIERO ACUMULADO</field>
+        <field name="total_bs">1.0</field>
+        <field name="m1">0.2</field>
+        <field name="m2">0.41</field>
+        <field name="m3">0.42</field>
+        <field name="m4">0.43</field>
+        <field name="m5">0.45</field>
+        <field name="m6">0.46</field>
+        <field name="m7">0.48</field>
+        <field name="m8">0.5</field>
+        <field name="m9">0.53</field>
+        <field name="m10">0.56</field>
+        <field name="m11">0.58</field>
+        <field name="m12">0.61</field>
+        <field name="m13">0.64</field>
+        <field name="m14">0.67</field>
+        <field name="m15">0.69</field>
+        <field name="m16">0.71</field>
+        <field name="m17">0.74</field>
+        <field name="m18">0.76</field>
+        <field name="m19">0.78</field>
+        <field name="m20">0.8</field>
+        <field name="m21">0.82</field>
+        <field name="m22">0.84</field>
+        <field name="m23">0.87</field>
+        <field name="m24">0.89</field>
+        <field name="m25">0.9</field>
+        <field name="m26">0.92</field>
+        <field name="m27">0.94</field>
+        <field name="m28">0.95</field>
+        <field name="m29">0.96</field>
+        <field name="m30">0.97</field>
+        <field name="m31">0.98</field>
+        <field name="m32">0.99</field>
+        <field name="m33">0.99</field>
+        <field name="m34">1.0</field>
+        <field name="m35">1.0</field>
+        <field name="m36">1.0</field>
+    </record>
+
+</odoo>

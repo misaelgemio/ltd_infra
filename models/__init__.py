@@ -6,3 +6,6 @@ from . import infra_modulo_obra
 from . import infra_item_obra
 from . import infra_apu
 from . import infra_apu_linea
+from . import infra_cronograma
+from . import infra_gasto_general
+from . import infra_cronograma_financiero

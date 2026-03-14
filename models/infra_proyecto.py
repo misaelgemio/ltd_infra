@@ -33,6 +33,18 @@ class InfraProyecto(models.Model):
     note = fields.Html('Notas')
 
     tramo_ids = fields.One2many('infra.tramo', 'proyecto_id', 'Tramos')
+    cronograma_ejecucion_ids = fields.One2many(
+        'infra.cronograma.ejecucion', 'proyecto_id', 'Cronograma Ejecución (B-4)')
+    movilizacion_equipo_ids = fields.One2many(
+        'infra.movilizacion.equipo', 'proyecto_id', 'Movilización Equipo (B-5)')
+    gasto_general_ids = fields.One2many(
+        'infra.gasto.general', 'proyecto_id', 'Gastos Generales (B-6)')
+    carga_social_ids = fields.One2many(
+        'infra.carga.social', 'proyecto_id', 'Cargas Sociales (B-7)')
+    cronograma_financiero_ids = fields.One2many(
+        'infra.cronograma.financiero', 'proyecto_id', 'Cronograma Financiero (B-8)')
+    desembolso_ids = fields.One2many(
+        'infra.desembolso', 'proyecto_id', 'Desembolsos (B-9)')
     tramo_count = fields.Integer(compute='_compute_counts', store=True)
     item_count = fields.Integer(compute='_compute_counts', store=True)
 

@@ -20,6 +20,8 @@
         'views/infra_tramo_views.xml',
         'views/infra_item_obra_views.xml',
         'views/infra_apu_views.xml',
+        'views/infra_cronograma_views.xml',
+        'data/infra_b4_b9_data.xml',
         'views/menus.xml',
     ],
     'installable': True,

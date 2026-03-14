@@ -75,6 +75,48 @@
               action="action_product_infra_equipo"
               sequence="40"/>
 
+    <!-- Cronogramas (B-4, B-5, B-8, B-9) -->
+    <menuitem id="menu_infra_cronogramas"
+              name="Cronogramas"
+              parent="menu_infra_root"
+              sequence="40"/>
+    <menuitem id="menu_infra_cronograma_ejecucion"
+              name="Ejecución de Obra (B-4)"
+              parent="menu_infra_cronogramas"
+              action="action_infra_cronograma_ejecucion"
+              sequence="10"/>
+    <menuitem id="menu_infra_movilizacion_equipo"
+              name="Movilización Equipo (B-5)"
+              parent="menu_infra_cronogramas"
+              action="action_infra_movilizacion_equipo"
+              sequence="20"/>
+    <menuitem id="menu_infra_cronograma_financiero"
+              name="Cronograma Financiero (B-8)"
+              parent="menu_infra_cronogramas"
+              action="action_infra_cronograma_financiero"
+              sequence="30"/>
+    <menuitem id="menu_infra_desembolso"
+              name="Desembolsos (B-9)"
+              parent="menu_infra_cronogramas"
+              action="action_infra_desembolso"
+              sequence="40"/>
+
+    <!-- Análisis (B-6, B-7) -->
+    <menuitem id="menu_infra_analisis"
+              name="Análisis"
+              parent="menu_infra_root"
+              sequence="50"/>
+    <menuitem id="menu_infra_gasto_general"
+              name="Gastos Generales (B-6)"
+              parent="menu_infra_analisis"
+              action="action_infra_gasto_general"
+              sequence="10"/>
+    <menuitem id="menu_infra_carga_social"
+              name="Cargas Sociales (B-7)"
+              parent="menu_infra_analisis"
+              action="action_infra_carga_social"
+              sequence="20"/>
+
     <!-- Configuración -->
     <menuitem id="menu_infra_config"
               name="Configuración"

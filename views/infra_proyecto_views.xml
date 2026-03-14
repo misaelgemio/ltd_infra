@@ -93,6 +93,83 @@
                                 </list>
                             </field>
                         </page>
+                        <page string="B-4 Cronograma" name="cronograma">
+                            <field name="cronograma_ejecucion_ids">
+                                <list editable="bottom">
+                                    <field name="numero"/>
+                                    <field name="modulo_nombre" optional="show"/>
+                                    <field name="name"/>
+                                    <field name="duracion_meses"/>
+                                    <field name="mes_inicio"/>
+                                    <field name="mes_fin"/>
+                                </list>
+                            </field>
+                        </page>
+                        <page string="B-5 Equipo" name="movilizacion">
+                            <field name="movilizacion_equipo_ids">
+                                <list editable="bottom">
+                                    <field name="numero"/>
+                                    <field name="name"/>
+                                    <field name="product_id" optional="show"/>
+                                    <field name="cantidad"/>
+                                    <field name="mes_llegada"/>
+                                    <field name="meses_en_obra"/>
+                                    <field name="mes_desmovilizacion"/>
+                                </list>
+                            </field>
+                        </page>
+                        <page string="B-6 Gastos Grales." name="gastos_generales">
+                            <field name="gasto_general_ids">
+                                <list editable="bottom">
+                                    <field name="seccion"/>
+                                    <field name="numero"/>
+                                    <field name="name"/>
+                                    <field name="unidad"/>
+                                    <field name="cantidad"/>
+                                    <field name="precio_unitario"/>
+                                    <field name="costo_mensual"/>
+                                    <field name="costo_total" sum="Total"/>
+                                </list>
+                            </field>
+                        </page>
+                        <page string="B-7 Cargas Soc." name="cargas_sociales">
+                            <field name="carga_social_ids">
+                                <list editable="bottom">
+                                    <field name="seccion"/>
+                                    <field name="numero"/>
+                                    <field name="name"/>
+                                    <field name="porcentaje" widget="percentage"/>
+                                    <field name="incidencia" widget="percentage"/>
+                                    <field name="base_legal"/>
+                                </list>
+                            </field>
+                        </page>
+                        <page string="B-8 Financiero" name="cronograma_financiero">
+                            <field name="cronograma_financiero_ids">
+                                <list editable="bottom">
+                                    <field name="mes"/>
+                                    <field name="inversion_pct" widget="percentage"/>
+                                    <field name="inversion_bs"/>
+                                    <field name="acumulado_pct" widget="percentage"/>
+                                    <field name="acumulado_bs"/>
+                                </list>
+                            </field>
+                        </page>
+                        <page string="B-9 Desembolsos" name="desembolsos">
+                            <field name="desembolso_ids">
+                                <list editable="bottom">
+                                    <field name="sequence" widget="handle"/>
+                                    <field name="name"/>
+                                    <field name="total_bs"/>
+                                    <field name="m1" optional="show"/>
+                                    <field name="m2" optional="show"/>
+                                    <field name="m3" optional="show"/>
+                                    <field name="m4" optional="show"/>
+                                    <field name="m5" optional="show"/>
+                                    <field name="m6" optional="show"/>
+                                </list>
+                            </field>
+                        </page>
                         <page string="Notas" name="notas">
                             <field name="note" placeholder="Observaciones del proyecto..."/>
                         </page>

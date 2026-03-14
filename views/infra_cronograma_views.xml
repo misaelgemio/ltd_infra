@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- ============================================================ -->
+    <!-- B-4 — CRONOGRAMA DE EJECUCIÓN -->
+    <!-- ============================================================ -->
+
+    <record id="view_infra_cronograma_ejecucion_tree" model="ir.ui.view">
+        <field name="name">infra.cronograma.ejecucion.tree</field>
+        <field name="model">infra.cronograma.ejecucion</field>
+        <field name="arch" type="xml">
+            <list string="Cronograma de Ejecución (B-4)" editable="bottom">
+                <field name="proyecto_id" column_invisible="1"/>
+                <field name="numero"/>
+                <field name="modulo_nombre" optional="show"/>
+                <field name="name"/>
+                <field name="duracion_meses"/>
+                <field name="mes_inicio"/>
+                <field name="mes_fin"/>
+                <field name="m1" widget="boolean" optional="show"/>
+                <field name="m2" widget="boolean" optional="show"/>
+                <field name="m3" widget="boolean" optional="show"/>
+                <field name="m4" widget="boolean" optional="show"/>
+                <field name="m5" widget="boolean" optional="show"/>
+                <field name="m6" widget="boolean" optional="show"/>
+                <field name="m7" widget="boolean" optional="hide"/>
+                <field name="m8" widget="boolean" optional="hide"/>
+                <field name="m9" widget="boolean" optional="hide"/>
+                <field name="m10" widget="boolean" optional="hide"/>
+                <field name="m11" widget="boolean" optional="hide"/>
+                <field name="m12" widget="boolean" optional="hide"/>
+                <field name="m13" widget="boolean" optional="hide"/>
+                <field name="m14" widget="boolean" optional="hide"/>
+                <field name="m15" widget="boolean" optional="hide"/>
+                <field name="m16" widget="boolean" optional="hide"/>
+                <field name="m17" widget="boolean" optional="hide"/>
+                <field name="m18" widget="boolean" optional="hide"/>
+                <field name="m19" widget="boolean" optional="hide"/>
+                <field name="m20" widget="boolean" optional="hide"/>
+                <field name="m21" widget="boolean" optional="hide"/>
+                <field name="m22" widget="boolean" optional="hide"/>
+                <field name="m23" widget="boolean" optional="hide"/>
+                <field name="m24" widget="boolean" optional="hide"/>
+                <field name="m25" widget="boolean" optional="hide"/>
+                <field name="m26" widget="boolean" optional="hide"/>
+                <field name="m27" widget="boolean" optional="hide"/>
+                <field name="m28" widget="boolean" optional="hide"/>
+                <field name="m29" widget="boolean" optional="hide"/>
+                <field name="m30" widget="boolean" optional="hide"/>
+                <field name="m31" widget="boolean" optional="hide"/>
+                <field name="m32" widget="boolean" optional="hide"/>
+                <field name="m33" widget="boolean" optional="hide"/>
+                <field name="m34" widget="boolean" optional="hide"/>
+                <field name="m35" widget="boolean" optional="hide"/>
+                <field name="m36" widget="boolean" optional="hide"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_infra_cronograma_ejecucion_search" model="ir.ui.view">
+        <field name="name">infra.cronograma.ejecucion.search</field>
+        <field name="model">infra.cronograma.ejecucion</field>
+        <field name="arch" type="xml">
+            <search string="Cronograma Ejecución">
+                <field name="name"/>
+                <field name="modulo_nombre"/>
+                <field name="proyecto_id"/>
+                <group expand="0" string="Agrupar por">
+                    <filter string="Módulo" name="group_modulo"
+                            context="{'group_by': 'modulo_nombre'}"/>
+                    <filter string="Proyecto" name="group_proyecto"
+                            context="{'group_by': 'proyecto_id'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_infra_cronograma_ejecucion" model="ir.actions.act_window">
+        <field name="name">Cronograma de Ejecución (B-4)</field>
+        <field name="res_model">infra.cronograma.ejecucion</field>
+        <field name="view_mode">list</field>
+    </record>
+
+    <!-- ============================================================ -->
+    <!-- B-5 — MOVILIZACIÓN DE EQUIPO -->
+    <!-- ============================================================ -->
+
+    <record id="view_infra_movilizacion_equipo_tree" model="ir.ui.view">
+        <field name="name">infra.movilizacion.equipo.tree</field>
+        <field name="model">infra.movilizacion.equipo</field>
+        <field name="arch" type="xml">
+            <list string="Movilización de Equipo (B-5)" editable="bottom">
+                <field name="proyecto_id" column_invisible="1"/>
+                <field name="numero"/>
+                <field name="name"/>
+                <field name="product_id" optional="show"/>
+                <field name="cantidad"/>
+                <field name="mes_llegada"/>
+                <field name="meses_en_obra"/>
+                <field name="mes_desmovilizacion"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="action_infra_movilizacion_equipo" model="ir.actions.act_window">
+        <field name="name">Movilización de Equipo (B-5)</field>
+        <field name="res_model">infra.movilizacion.equipo</field>
+        <field name="view_mode">list</field>
+    </record>
+
+    <!-- ============================================================ -->
+    <!-- B-6 — GASTOS GENERALES -->
+    <!-- ============================================================ -->
+
+    <record id="view_infra_gasto_general_tree" model="ir.ui.view">
+        <field name="name">infra.gasto.general.tree</field>
+        <field name="model">infra.gasto.general</field>
+        <field name="arch" type="xml">
+            <list string="Gastos Generales (B-6)" editable="bottom">
+                <field name="proyecto_id" column_invisible="1"/>
+                <field name="seccion"/>
+                <field name="numero"/>
+                <field name="name"/>
+                <field name="unidad"/>
+                <field name="cantidad"/>
+                <field name="precio_unitario"/>
+                <field name="costo_mensual"/>
+                <field name="costo_total" sum="Total Gastos Generales"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_infra_gasto_general_search" model="ir.ui.view">
+        <field name="name">infra.gasto.general.search</field>
+        <field name="model">infra.gasto.general</field>
+        <field name="arch" type="xml">
+            <search string="Gastos Generales">
+                <field name="name"/>
+                <field name="proyecto_id"/>
+                <group expand="0" string="Agrupar por">
+                    <filter string="Sección" name="group_seccion"
+                            context="{'group_by': 'seccion'}"/>
+                    <filter string="Proyecto" name="group_proyecto"
+                            context="{'group_by': 'proyecto_id'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_infra_gasto_general" model="ir.actions.act_window">
+        <field name="name">Gastos Generales (B-6)</field>
+        <field name="res_model">infra.gasto.general</field>
+        <field name="view_mode">list</field>
+    </record>
+
+    <!-- ============================================================ -->
+    <!-- B-7 — CARGAS SOCIALES -->
+    <!-- ============================================================ -->
+
+    <record id="view_infra_carga_social_tree" model="ir.ui.view">
+        <field name="name">infra.carga.social.tree</field>
+        <field name="model">infra.carga.social</field>
+        <field name="arch" type="xml">
+            <list string="Cargas Sociales (B-7)" editable="bottom">
+                <field name="proyecto_id" column_invisible="1"/>
+                <field name="seccion"/>
+                <field name="numero"/>
+                <field name="name"/>
+                <field name="porcentaje" widget="percentage"/>
+                <field name="incidencia" widget="percentage"/>
+                <field name="base_legal"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_infra_carga_social_search" model="ir.ui.view">
+        <field name="name">infra.carga.social.search</field>
+        <field name="model">infra.carga.social</field>
+        <field name="arch" type="xml">
+            <search string="Cargas Sociales">
+                <field name="name"/>
+                <group expand="0" string="Agrupar por">
+                    <filter string="Sección" name="group_seccion"
+                            context="{'group_by': 'seccion'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_infra_carga_social" model="ir.actions.act_window">
+        <field name="name">Cargas Sociales (B-7)</field>
+        <field name="res_model">infra.carga.social</field>
+        <field name="view_mode">list</field>
+    </record>
+
+    <!-- ============================================================ -->
+    <!-- B-8 — CRONOGRAMA FINANCIERO -->
+    <!-- ============================================================ -->
+
+    <record id="view_infra_cronograma_financiero_tree" model="ir.ui.view">
+        <field name="name">infra.cronograma.financiero.tree</field>
+        <field name="model">infra.cronograma.financiero</field>
+        <field name="arch" type="xml">
+            <list string="Cronograma Financiero (B-8)">
+                <field name="proyecto_id" column_invisible="1"/>
+                <field name="mes"/>
+                <field name="inversion_pct" widget="percentage"/>
+                <field name="inversion_bs" sum="Total Inversión"/>
+                <field name="acumulado_pct" widget="percentage"/>
+                <field name="acumulado_bs"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="action_infra_cronograma_financiero" model="ir.actions.act_window">
+        <field name="name">Cronograma Financiero — Curva S (B-8)</field>
+        <field name="res_model">infra.cronograma.financiero</field>
+        <field name="view_mode">list</field>
+    </record>
+
+    <!-- ============================================================ -->
+    <!-- B-9 — DESEMBOLSOS -->
+    <!-- ============================================================ -->
+
+    <record id="view_infra_desembolso_tree" model="ir.ui.view">
+        <field name="name">infra.desembolso.tree</field>
+        <field name="model">infra.desembolso</field>
+        <field name="arch" type="xml">
+            <list string="Cronograma de Desembolsos (B-9)">
+                <field name="proyecto_id" column_invisible="1"/>
+                <field name="sequence" widget="handle"/>
+                <field name="name"/>
+                <field name="total_bs" sum="Total"/>
+                <field name="m1" optional="show"/>
+                <field name="m2" optional="show"/>
+                <field name="m3" optional="show"/>
+                <field name="m4" optional="show"/>
+                <field name="m5" optional="show"/>
+                <field name="m6" optional="show"/>
+                <field name="m7" optional="hide"/>
+                <field name="m8" optional="hide"/>
+                <field name="m9" optional="hide"/>
+                <field name="m10" optional="hide"/>
+                <field name="m11" optional="hide"/>
+                <field name="m12" optional="hide"/>
+                <field name="m13" optional="hide"/>
+                <field name="m14" optional="hide"/>
+                <field name="m15" optional="hide"/>
+                <field name="m16" optional="hide"/>
+                <field name="m17" optional="hide"/>
+                <field name="m18" optional="hide"/>
+                <field name="m19" optional="hide"/>
+                <field name="m20" optional="hide"/>
+                <field name="m21" optional="hide"/>
+                <field name="m22" optional="hide"/>
+                <field name="m23" optional="hide"/>
+                <field name="m24" optional="hide"/>
+                <field name="m25" optional="hide"/>
+                <field name="m26" optional="hide"/>
+                <field name="m27" optional="hide"/>
+                <field name="m28" optional="hide"/>
+                <field name="m29" optional="hide"/>
+                <field name="m30" optional="hide"/>
+                <field name="m31" optional="hide"/>
+                <field name="m32" optional="hide"/>
+                <field name="m33" optional="hide"/>
+                <field name="m34" optional="hide"/>
+                <field name="m35" optional="hide"/>
+                <field name="m36" optional="hide"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="action_infra_desembolso" model="ir.actions.act_window">
+        <field name="name">Cronograma de Desembolsos (B-9)</field>
+        <field name="res_model">infra.desembolso</field>
+        <field name="view_mode">list</field>
+    </record>
+
+</odoo>
