@@ -14,3 +14,9 @@ access_infra_modulo_obra_admin,infra.modulo.obra.admin,model_infra_modulo_obra,g
 access_infra_item_obra_user,infra.item.obra.user,model_infra_item_obra,group_infra_user,1,0,0,0
 access_infra_item_obra_manager,infra.item.obra.manager,model_infra_item_obra,group_infra_manager,1,1,1,0
 access_infra_item_obra_admin,infra.item.obra.admin,model_infra_item_obra,group_infra_admin,1,1,1,1
+access_infra_apu_user,infra.apu.user,model_infra_apu,group_infra_user,1,0,0,0
+access_infra_apu_manager,infra.apu.manager,model_infra_apu,group_infra_manager,1,1,1,0
+access_infra_apu_admin,infra.apu.admin,model_infra_apu,group_infra_admin,1,1,1,1
+access_infra_apu_linea_user,infra.apu.linea.user,model_infra_apu_linea,group_infra_user,1,0,0,0
+access_infra_apu_linea_manager,infra.apu.linea.manager,model_infra_apu_linea,group_infra_manager,1,1,1,0
+access_infra_apu_linea_admin,infra.apu.linea.admin,model_infra_apu_linea,group_infra_admin,1,1,1,1

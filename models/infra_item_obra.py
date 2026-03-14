@@ -24,15 +24,28 @@ class InfraItemObra(models.Model):
         'infra.proyecto', related='tramo_id.proyecto_id',
         string='Proyecto', store=True)
 
+    apu_id = fields.Many2one(
+        'infra.apu', 'APU',
+        tracking=True,
+        help='Análisis de Precio Unitario vinculado.')
+
     cantidad = fields.Float(
         'Cantidad', digits=(12, 2), tracking=True,
         help='Volumen de obra del ítem.')
     precio_unitario = fields.Float(
-        'Precio Unitario (Bs)', digits=(12, 2), tracking=True,
-        help='Precio del APU (futuro) o ingreso manual.')
+        'Precio Unitario (Bs)', digits=(12, 2),
+        compute='_compute_precio_unitario', store=True, readonly=False,
+        tracking=True,
+        help='Precio desde APU adoptado, o ingreso manual.')
     total = fields.Float(
         'Precio Total (Bs)', digits=(14, 2),
         compute='_compute_total', store=True)
+
+    @api.depends('apu_id.precio_unitario_adoptado')
+    def _compute_precio_unitario(self):
+        for rec in self:
+            if rec.apu_id:
+                rec.precio_unitario = rec.apu_id.precio_unitario_adoptado
 
     @api.depends('cantidad', 'precio_unitario')
     def _compute_total(self):

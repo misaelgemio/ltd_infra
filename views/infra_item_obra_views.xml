@@ -21,6 +21,7 @@
                     </group>
                     <group string="Presupuesto">
                         <group>
+                            <field name="apu_id"/>
                             <field name="cantidad"/>
                             <field name="precio_unitario"/>
                         </group>
@@ -44,6 +45,7 @@
                 <field name="unidad"/>
                 <field name="tramo_id" optional="show"/>
                 <field name="modulo_id" optional="show"/>
+                <field name="apu_id" optional="show"/>
                 <field name="cantidad" sum="Cant. Total"/>
                 <field name="precio_unitario"/>
                 <field name="total" sum="Presupuesto Total"/>

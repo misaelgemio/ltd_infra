@@ -28,6 +28,11 @@
               name="Presupuestos"
               parent="menu_infra_root"
               sequence="20"/>
+    <menuitem id="menu_infra_apu"
+              name="APU — Precios Unitarios (B-2)"
+              parent="menu_infra_presupuestos"
+              action="action_infra_apu_all"
+              sequence="5"/>
     <menuitem id="menu_infra_tramos"
               name="Tramos"
               parent="menu_infra_presupuestos"

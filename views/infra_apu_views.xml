@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Form APU -->
+    <record id="view_infra_apu_form" model="ir.ui.view">
+        <field name="name">infra.apu.form</field>
+        <field name="model">infra.apu</field>
+        <field name="arch" type="xml">
+            <form string="Análisis de Precio Unitario">
+                <sheet>
+                    <div class="oe_title">
+                        <label for="name"/>
+                        <h1>
+                            <field name="numero" class="oe_inline" style="width:60px;"/>
+                            <span> · </span>
+                            <field name="name" class="oe_inline" placeholder="Actividad..."/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="unidad"/>
+                            <field name="cantidad_referencia"/>
+                            <field name="configuracion_id"/>
+                        </group>
+                        <group>
+                            <field name="proyecto_id"/>
+                            <field name="precio_unitario_adoptado"
+                                   class="text-primary fw-bold fs-4"
+                                   widget="monetary"/>
+                        </group>
+                    </group>
+
+                    <notebook>
+                        <!-- 1. MATERIALES -->
+                        <page string="1. Materiales" name="materiales">
+                            <field name="material_ids" context="{'default_seccion': 'material'}">
+                                <list editable="bottom">
+                                    <field name="seccion" column_invisible="1"/>
+                                    <field name="sequence" widget="handle"/>
+                                    <field name="product_id" string="Recurso B-3"/>
+                                    <field name="name"/>
+                                    <field name="unidad"/>
+                                    <field name="cantidad"/>
+                                    <field name="precio_unitario"/>
+                                    <field name="productividad" column_invisible="1"/>
+                                    <field name="costo_total" sum="Subtotal"/>
+                                </list>
+                            </field>
+                            <group class="oe_subtotal_footer">
+                                <field name="subtotal_materiales" widget="monetary"
+                                       class="oe_subtotal_footer_separator"/>
+                            </group>
+                        </page>
+
+                        <!-- 2. MANO DE OBRA -->
+                        <page string="2. Mano de Obra" name="mano_obra">
+                            <field name="mano_obra_ids" context="{'default_seccion': 'mano_obra'}">
+                                <list editable="bottom">
+                                    <field name="seccion" column_invisible="1"/>
+                                    <field name="sequence" widget="handle"/>
+                                    <field name="product_id" string="Recurso B-3"/>
+                                    <field name="name"/>
+                                    <field name="unidad"/>
+                                    <field name="cantidad"/>
+                                    <field name="precio_unitario"/>
+                                    <field name="costo_total" sum="MO Directa"/>
+                                </list>
+                            </field>
+                            <group class="oe_subtotal_footer">
+                                <field name="subtotal_mo_directa" string="MO Directa"/>
+                                <field name="subtotal_mo_indirecta" string="MO Indirecta (IVA)"/>
+                                <field name="subtotal_cargas_sociales" string="Cargas Sociales"/>
+                                <field name="subtotal_iva_mo" string="IVA MO"/>
+                                <field name="subtotal_mano_obra" widget="monetary"
+                                       class="oe_subtotal_footer_separator"/>
+                            </group>
+                        </page>
+
+                        <!-- 3. EQUIPO -->
+                        <page string="3. Equipo y Maquinaria" name="equipo">
+                            <field name="equipo_ids" context="{'default_seccion': 'equipo'}">
+                                <list editable="bottom">
+                                    <field name="seccion" column_invisible="1"/>
+                                    <field name="sequence" widget="handle"/>
+                                    <field name="product_id" string="Recurso B-3"/>
+                                    <field name="name"/>
+                                    <field name="unidad"/>
+                                    <field name="cantidad"/>
+                                    <field name="precio_unitario"/>
+                                    <field name="productividad"/>
+                                    <field name="costo_total" sum="Equipo Directo"/>
+                                </list>
+                            </field>
+                            <group class="oe_subtotal_footer">
+                                <field name="subtotal_equipo_directo" string="Equipo Directo"/>
+                                <field name="subtotal_herramientas" string="Herramientas"/>
+                                <field name="subtotal_equipo" widget="monetary"
+                                       class="oe_subtotal_footer_separator"/>
+                            </group>
+                        </page>
+
+                        <!-- 4-5-6. RESUMEN INDIRECTOS -->
+                        <page string="4-5-6. Indirectos y Total" name="indirectos">
+                            <group>
+                                <group string="4. Gastos Generales y Administrativos">
+                                    <field name="subtotal_gastos_generales"/>
+                                    <field name="subtotal_gastos_financieros"/>
+                                    <field name="subtotal_gastos"
+                                           class="fw-bold"/>
+                                </group>
+                                <group string="5. Utilidad">
+                                    <field name="subtotal_utilidad"
+                                           class="fw-bold"/>
+                                </group>
+                            </group>
+                            <group>
+                                <group string="6. Impuesto IT">
+                                    <field name="subtotal_impuestos"
+                                           class="fw-bold"/>
+                                </group>
+                                <group string="PRECIO UNITARIO">
+                                    <field name="precio_unitario_total"
+                                           string="Total (1+2+3+4+5+6)"/>
+                                    <field name="precio_unitario_adoptado"
+                                           string="★ Adoptado (Bs)"
+                                           class="text-primary fw-bold fs-4"
+                                           widget="monetary"/>
+                                </group>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <!-- Tree APU -->
+    <record id="view_infra_apu_tree" model="ir.ui.view">
+        <field name="name">infra.apu.tree</field>
+        <field name="model">infra.apu</field>
+        <field name="arch" type="xml">
+            <list string="Análisis de Precios Unitarios (B-2)">
+                <field name="numero"/>
+                <field name="name"/>
+                <field name="unidad"/>
+                <field name="cantidad_referencia" optional="show"/>
+                <field name="subtotal_materiales" string="Materiales" optional="show"/>
+                <field name="subtotal_mano_obra" string="Mano Obra" optional="show"/>
+                <field name="subtotal_equipo" string="Equipo" optional="show"/>
+                <field name="subtotal_gastos" string="GG" optional="hide"/>
+                <field name="subtotal_utilidad" string="Utilidad" optional="hide"/>
+                <field name="subtotal_impuestos" string="IT" optional="hide"/>
+                <field name="precio_unitario_adoptado" string="★ P.U. Adoptado (Bs)"
+                       class="fw-bold"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- Search APU -->
+    <record id="view_infra_apu_search" model="ir.ui.view">
+        <field name="name">infra.apu.search</field>
+        <field name="model">infra.apu</field>
+        <field name="arch" type="xml">
+            <search string="APU">
+                <field name="name"/>
+                <field name="numero"/>
+                <field name="proyecto_id"/>
+                <group expand="0" string="Agrupar por">
+                    <filter string="Proyecto" name="group_proyecto"
+                            context="{'group_by': 'proyecto_id'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <!-- Action APU -->
+    <record id="action_infra_apu_all" model="ir.actions.act_window">
+        <field name="name">APU — Precios Unitarios (B-2)</field>
+        <field name="res_model">infra.apu</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+</odoo>
