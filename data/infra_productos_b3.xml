@@ -1,0 +1,2151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <record id="product_mat_001_cemento_portland_ip_30" model="product.template">
+            <field name="name">Cemento Portland IP-30</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_kgm"/>
+            <field name="uom_po_id" ref="uom.product_uom_kgm"/>
+            <field name="list_price">1.72</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-001</field>
+            <field name="price_base_oruro">1.50</field>
+            <field name="adjustment_factor">1.300</field>
+            <field name="infra_justification">Producción nacional, transporte +diesel</field>
+        </record>
+
+        <record id="product_mat_002_cemento_asf_ltico_ca_85_100" model="product.template">
+            <field name="name">Cemento asfáltico CA 85-100</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_ton"/>
+            <field name="uom_po_id" ref="uom.product_uom_ton"/>
+            <field name="list_price">12339.85</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-002</field>
+            <field name="price_base_oruro">9030.00</field>
+            <field name="adjustment_factor">1.550</field>
+            <field name="infra_justification">Derivado petrolero, importación parcial</field>
+        </record>
+
+        <record id="product_mat_003_asfalto_diluido_mc_30_para_imp" model="product.template">
+            <field name="name">Asfalto diluido MC-30 para imprimación</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_litre"/>
+            <field name="uom_po_id" ref="uom.product_uom_litre"/>
+            <field name="list_price">8.13</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-003</field>
+            <field name="price_base_oruro">5.95</field>
+            <field name="adjustment_factor">1.550</field>
+            <field name="infra_justification">Derivado petrolero, alto impacto diesel</field>
+        </record>
+
+        <record id="product_mat_004_asfalto_diluido_para_tratamien" model="product.template">
+            <field name="name">Asfalto diluido para tratamiento superficial</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_litre"/>
+            <field name="uom_po_id" ref="uom.product_uom_litre"/>
+            <field name="list_price">8130.91</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-004</field>
+            <field name="price_base_oruro">5950.00</field>
+            <field name="adjustment_factor">1.550</field>
+            <field name="infra_justification">Derivado petrolero, alto impacto diesel</field>
+        </record>
+
+        <record id="product_mat_005_emulsi_n_asf_ltica_de_rotura_r" model="product.template">
+            <field name="name">Emulsión asfáltica de rotura rápida</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_litre"/>
+            <field name="uom_po_id" ref="uom.product_uom_litre"/>
+            <field name="list_price">9.29</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-005</field>
+            <field name="price_base_oruro">6.80</field>
+            <field name="adjustment_factor">1.550</field>
+            <field name="infra_justification">Derivado petrolero</field>
+        </record>
+
+        <record id="product_mat_006_agua_potable" model="product.template">
+            <field name="name">Agua potable</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_litre"/>
+            <field name="uom_po_id" ref="uom.product_uom_litre"/>
+            <field name="list_price">0.00</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-006</field>
+            <field name="price_base_oruro">0.00</field>
+            <field name="adjustment_factor">1.200</field>
+            <field name="infra_justification">Servicio regulado, bajo impacto</field>
+        </record>
+
+        <record id="product_mat_007_madera_para_listones" model="product.template">
+            <field name="name">Madera para listones</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_unit"/>
+            <field name="uom_po_id" ref="uom.product_uom_unit"/>
+            <field name="list_price">53.56</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-007</field>
+            <field name="price_base_oruro">45.00</field>
+            <field name="adjustment_factor">1.350</field>
+            <field name="infra_justification">Producción nacional, transporte +diesel</field>
+        </record>
+
+        <record id="product_mat_008_madera_compensada_e_18_cm" model="product.template">
+            <field name="name">Madera compensada E=18 cm</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_unit"/>
+            <field name="uom_po_id" ref="uom.product_uom_unit"/>
+            <field name="list_price">67.84</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-008</field>
+            <field name="price_base_oruro">57.00</field>
+            <field name="adjustment_factor">1.350</field>
+            <field name="infra_justification">Producción nacional</field>
+        </record>
+
+        <record id="product_mat_009_madera_de_encofrado" model="product.template">
+            <field name="name">Madera de encofrado</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_unit"/>
+            <field name="uom_po_id" ref="uom.product_uom_unit"/>
+            <field name="list_price">51.18</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-009</field>
+            <field name="price_base_oruro">43.00</field>
+            <field name="adjustment_factor">1.350</field>
+            <field name="infra_justification">Producción nacional</field>
+        </record>
+
+        <record id="product_mat_010_plancha_de_acero_2" model="product.template">
+            <field name="name">Plancha de acero 2&quot;</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_unit"/>
+            <field name="uom_po_id" ref="uom.product_uom_unit"/>
+            <field name="list_price">1460.17</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-010</field>
+            <field name="price_base_oruro">1274.00</field>
+            <field name="adjustment_factor">1.300</field>
+            <field name="infra_justification">Importado, dólar estabilizado</field>
+        </record>
+
+        <record id="product_mat_011_clavo" model="product.template">
+            <field name="name">Clavo</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_kgm"/>
+            <field name="uom_po_id" ref="uom.product_uom_kgm"/>
+            <field name="list_price">17.19</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-011</field>
+            <field name="price_base_oruro">15.00</field>
+            <field name="adjustment_factor">1.300</field>
+            <field name="infra_justification">Importado, bajo peso relativo</field>
+        </record>
+
+        <record id="product_mat_012_acero_corrugado_fy_4200_kg_cm" model="product.template">
+            <field name="name">Acero corrugado fy=4200 kg/cm²</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_kgm"/>
+            <field name="uom_po_id" ref="uom.product_uom_kgm"/>
+            <field name="list_price">13.75</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-012</field>
+            <field name="price_base_oruro">12.00</field>
+            <field name="adjustment_factor">1.300</field>
+            <field name="infra_justification">Importado, dólar estabilizado</field>
+        </record>
+
+        <record id="product_mat_013_acero_de_pretensado" model="product.template">
+            <field name="name">Acero de pretensado</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_kgm"/>
+            <field name="uom_po_id" ref="uom.product_uom_kgm"/>
+            <field name="list_price">24.07</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-013</field>
+            <field name="price_base_oruro">21.00</field>
+            <field name="adjustment_factor">1.300</field>
+            <field name="infra_justification">Importado, dólar estabilizado</field>
+        </record>
+
+        <record id="product_mat_014_alambre_de_amarre" model="product.template">
+            <field name="name">Alambre de amarre</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_kgm"/>
+            <field name="uom_po_id" ref="uom.product_uom_kgm"/>
+            <field name="list_price">18.34</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-014</field>
+            <field name="price_base_oruro">16.00</field>
+            <field name="adjustment_factor">1.300</field>
+            <field name="infra_justification">Importado</field>
+        </record>
+
+        <record id="product_mat_015_malla_gavi_n_triple_torsi_n_2" model="product.template">
+            <field name="name">Malla gavión triple torsión (2.0×1.0×1.0)</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_cubic_meter"/>
+            <field name="uom_po_id" ref="uom.product_uom_cubic_meter"/>
+            <field name="list_price">664.76</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-015</field>
+            <field name="price_base_oruro">580.00</field>
+            <field name="adjustment_factor">1.300</field>
+            <field name="infra_justification">Importado, dólar estabilizado</field>
+        </record>
+
+        <record id="product_mat_016_malla_gavi_n_colch_n_6_0_2_0" model="product.template">
+            <field name="name">Malla gavión colchón (6.0×2.0×0.30)</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_cubic_meter"/>
+            <field name="uom_po_id" ref="uom.product_uom_cubic_meter"/>
+            <field name="list_price">481.37</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-016</field>
+            <field name="price_base_oruro">420.00</field>
+            <field name="adjustment_factor">1.300</field>
+            <field name="infra_justification">Importado</field>
+        </record>
+
+        <record id="product_mat_017_arena_fina" model="product.template">
+            <field name="name">Arena fina</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_cubic_meter"/>
+            <field name="uom_po_id" ref="uom.product_uom_cubic_meter"/>
+            <field name="list_price">351.55</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-017</field>
+            <field name="price_base_oruro">275.00</field>
+            <field name="adjustment_factor">1.450</field>
+            <field name="infra_justification">Nacional, fuerte impacto transporte</field>
+        </record>
+
+        <record id="product_mat_018_arena_gruesa_corriente" model="product.template">
+            <field name="name">Arena gruesa / corriente</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_cubic_meter"/>
+            <field name="uom_po_id" ref="uom.product_uom_cubic_meter"/>
+            <field name="list_price">364.34</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-018</field>
+            <field name="price_base_oruro">285.00</field>
+            <field name="adjustment_factor">1.450</field>
+            <field name="infra_justification">Nacional, fuerte impacto transporte</field>
+        </record>
+
+        <record id="product_mat_019_grava_agregado_grueso" model="product.template">
+            <field name="name">Grava (agregado grueso)</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_cubic_meter"/>
+            <field name="uom_po_id" ref="uom.product_uom_cubic_meter"/>
+            <field name="list_price">383.51</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-019</field>
+            <field name="price_base_oruro">300.00</field>
+            <field name="adjustment_factor">1.450</field>
+            <field name="infra_justification">Nacional, fuerte impacto transporte</field>
+        </record>
+
+        <record id="product_mat_020_piedra_bruta" model="product.template">
+            <field name="name">Piedra bruta</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_cubic_meter"/>
+            <field name="uom_po_id" ref="uom.product_uom_cubic_meter"/>
+            <field name="list_price">236.50</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-020</field>
+            <field name="price_base_oruro">185.00</field>
+            <field name="adjustment_factor">1.450</field>
+            <field name="infra_justification">Nacional, transporte pesado</field>
+        </record>
+
+        <record id="product_mat_021_piedra_manzana_50_p_d" model="product.template">
+            <field name="name">Piedra manzana (50% P.D.)</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_cubic_meter"/>
+            <field name="uom_po_id" ref="uom.product_uom_cubic_meter"/>
+            <field name="list_price">274.85</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-021</field>
+            <field name="price_base_oruro">215.00</field>
+            <field name="adjustment_factor">1.450</field>
+            <field name="infra_justification">Nacional, transporte pesado</field>
+        </record>
+
+        <record id="product_mat_022_material_seleccionado_para_sub" model="product.template">
+            <field name="name">Material seleccionado para sub-base</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_cubic_meter"/>
+            <field name="uom_po_id" ref="uom.product_uom_cubic_meter"/>
+            <field name="list_price">171.92</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-022</field>
+            <field name="price_base_oruro">130.00</field>
+            <field name="adjustment_factor">1.500</field>
+            <field name="infra_justification">Explotación + transporte diesel</field>
+        </record>
+
+        <record id="product_mat_023_material_seleccionado_para_bas" model="product.template">
+            <field name="name">Material seleccionado para base</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_cubic_meter"/>
+            <field name="uom_po_id" ref="uom.product_uom_cubic_meter"/>
+            <field name="list_price">204.98</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-023</field>
+            <field name="price_base_oruro">155.00</field>
+            <field name="adjustment_factor">1.500</field>
+            <field name="infra_justification">Explotación + transporte</field>
+        </record>
+
+        <record id="product_mat_024_material_de_pr_stamo_para_terr" model="product.template">
+            <field name="name">Material de préstamo para terraplén</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_cubic_meter"/>
+            <field name="uom_po_id" ref="uom.product_uom_cubic_meter"/>
+            <field name="list_price">145.47</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-024</field>
+            <field name="price_base_oruro">110.00</field>
+            <field name="adjustment_factor">1.500</field>
+            <field name="infra_justification">Explotación + transporte, altiplano</field>
+        </record>
+
+        <record id="product_mat_025_agregado_triturado_3_4" model="product.template">
+            <field name="name">Agregado triturado 3/4&quot;</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_cubic_meter"/>
+            <field name="uom_po_id" ref="uom.product_uom_cubic_meter"/>
+            <field name="list_price">447.43</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-025</field>
+            <field name="price_base_oruro">350.00</field>
+            <field name="adjustment_factor">1.450</field>
+            <field name="infra_justification">Chancado + transporte</field>
+        </record>
+
+        <record id="product_mat_026_agregado_triturado_3_8_chip" model="product.template">
+            <field name="name">Agregado triturado 3/8&quot; (chip seal)</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_cubic_meter"/>
+            <field name="uom_po_id" ref="uom.product_uom_cubic_meter"/>
+            <field name="list_price">485.78</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-026</field>
+            <field name="price_base_oruro">380.00</field>
+            <field name="adjustment_factor">1.450</field>
+            <field name="infra_justification">Chancado + transporte</field>
+        </record>
+
+        <record id="product_mat_027_material_para_relleno_seleccio" model="product.template">
+            <field name="name">Material para relleno seleccionado</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_cubic_meter"/>
+            <field name="uom_po_id" ref="uom.product_uom_cubic_meter"/>
+            <field name="list_price">152.08</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-027</field>
+            <field name="price_base_oruro">115.00</field>
+            <field name="adjustment_factor">1.500</field>
+            <field name="infra_justification">Transporte intensivo</field>
+        </record>
+
+        <record id="product_mat_028_material_seleccionado_para_fil" model="product.template">
+            <field name="name">Material seleccionado para filtro</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_cubic_meter"/>
+            <field name="uom_po_id" ref="uom.product_uom_cubic_meter"/>
+            <field name="list_price">185.14</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-028</field>
+            <field name="price_base_oruro">140.00</field>
+            <field name="adjustment_factor">1.500</field>
+            <field name="infra_justification">Material granular, transporte</field>
+        </record>
+
+        <record id="product_mat_029_material_granular_para_relleno" model="product.template">
+            <field name="name">Material granular para relleno estructural</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_cubic_meter"/>
+            <field name="uom_po_id" ref="uom.product_uom_cubic_meter"/>
+            <field name="list_price">178.53</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-029</field>
+            <field name="price_base_oruro">135.00</field>
+            <field name="adjustment_factor">1.500</field>
+            <field name="infra_justification">Transporte intensivo</field>
+        </record>
+
+        <record id="product_mat_030_tuber_a_de_hoao_d_1_00_m" model="product.template">
+            <field name="name">Tubería de HoAo D=1.00 m</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_meter"/>
+            <field name="uom_po_id" ref="uom.product_uom_meter"/>
+            <field name="list_price">8093.44</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-030</field>
+            <field name="price_base_oruro">6800.00</field>
+            <field name="adjustment_factor">1.350</field>
+            <field name="infra_justification">Nacional/importado, transporte pesado</field>
+        </record>
+
+        <record id="product_mat_031_tuber_a_de_hoao_d_1_20_m" model="product.template">
+            <field name="name">Tubería de HoAo D=1.20 m</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_meter"/>
+            <field name="uom_po_id" ref="uom.product_uom_meter"/>
+            <field name="list_price">9997.77</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-031</field>
+            <field name="price_base_oruro">8400.00</field>
+            <field name="adjustment_factor">1.350</field>
+            <field name="infra_justification">Nacional/importado</field>
+        </record>
+
+        <record id="product_mat_032_tuber_a_pvc_c_6_4" model="product.template">
+            <field name="name">Tubería PVC C-6 4&quot;</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_meter"/>
+            <field name="uom_po_id" ref="uom.product_uom_meter"/>
+            <field name="list_price">270.00</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-032</field>
+            <field name="price_base_oruro">245.00</field>
+            <field name="adjustment_factor">1.250</field>
+            <field name="infra_justification">Producción nacional (Plastiforte)</field>
+        </record>
+
+        <record id="product_mat_033_tuber_a_pvc_c_6_6" model="product.template">
+            <field name="name">Tubería PVC C-6 6&quot;</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_meter"/>
+            <field name="uom_po_id" ref="uom.product_uom_meter"/>
+            <field name="list_price">401.15</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-033</field>
+            <field name="price_base_oruro">364.00</field>
+            <field name="adjustment_factor">1.250</field>
+            <field name="infra_justification">Producción nacional</field>
+        </record>
+
+        <record id="product_mat_034_dinamita_60" model="product.template">
+            <field name="name">Dinamita (60%)</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_unit"/>
+            <field name="uom_po_id" ref="uom.product_uom_unit"/>
+            <field name="list_price">65.57</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-034</field>
+            <field name="price_base_oruro">59.50</field>
+            <field name="adjustment_factor">1.250</field>
+            <field name="infra_justification">COFADENA/ENAEX, producción nacional</field>
+        </record>
+
+        <record id="product_mat_035_gu_a_de_seguridad_mecha" model="product.template">
+            <field name="name">Guía de seguridad (mecha)</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_meter"/>
+            <field name="uom_po_id" ref="uom.product_uom_meter"/>
+            <field name="list_price">13.22</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-035</field>
+            <field name="price_base_oruro">12.00</field>
+            <field name="adjustment_factor">1.250</field>
+            <field name="infra_justification">Nacional</field>
+        </record>
+
+        <record id="product_mat_036_nitrato_de_amonio" model="product.template">
+            <field name="name">Nitrato de amonio</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_kgm"/>
+            <field name="uom_po_id" ref="uom.product_uom_kgm"/>
+            <field name="list_price">34.38</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-036</field>
+            <field name="price_base_oruro">30.00</field>
+            <field name="adjustment_factor">1.300</field>
+            <field name="infra_justification">Parcialmente importado</field>
+        </record>
+
+        <record id="product_mat_037_detonador_fulminante_n_8" model="product.template">
+            <field name="name">Detonador / Fulminante N°8</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_unit"/>
+            <field name="uom_po_id" ref="uom.product_uom_unit"/>
+            <field name="list_price">27.00</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-037</field>
+            <field name="price_base_oruro">24.50</field>
+            <field name="adjustment_factor">1.250</field>
+            <field name="infra_justification">Nacional</field>
+        </record>
+
+        <record id="product_mat_038_juego_de_barrenos" model="product.template">
+            <field name="name">Juego de barrenos</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_unit"/>
+            <field name="uom_po_id" ref="uom.product_uom_unit"/>
+            <field name="list_price">681.95</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-038</field>
+            <field name="price_base_oruro">595.00</field>
+            <field name="adjustment_factor">1.300</field>
+            <field name="infra_justification">Importado</field>
+        </record>
+
+        <record id="product_mat_039_geotextil_no_tejido" model="product.template">
+            <field name="name">Geotextil no tejido</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_unit"/>
+            <field name="uom_po_id" ref="uom.product_uom_unit"/>
+            <field name="list_price">95.92</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-039</field>
+            <field name="price_base_oruro">85.00</field>
+            <field name="adjustment_factor">1.280</field>
+            <field name="infra_justification">Importado, dólar estabilizado</field>
+        </record>
+
+        <record id="product_mat_040_geomalla_biaxial_bx" model="product.template">
+            <field name="name">Geomalla biaxial BX</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_unit"/>
+            <field name="uom_po_id" ref="uom.product_uom_unit"/>
+            <field name="list_price">248.27</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-040</field>
+            <field name="price_base_oruro">220.00</field>
+            <field name="adjustment_factor">1.280</field>
+            <field name="infra_justification">Importado</field>
+        </record>
+
+        <record id="product_mat_041_geomalla_uniaxial_ux_tipo_1" model="product.template">
+            <field name="name">Geomalla uniaxial UX Tipo 1</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_unit"/>
+            <field name="uom_po_id" ref="uom.product_uom_unit"/>
+            <field name="list_price">315.98</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-041</field>
+            <field name="price_base_oruro">280.00</field>
+            <field name="adjustment_factor">1.280</field>
+            <field name="infra_justification">Importado</field>
+        </record>
+
+        <record id="product_mat_042_geomalla_uniaxial_ux_tipo_2" model="product.template">
+            <field name="name">Geomalla uniaxial UX Tipo 2</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_unit"/>
+            <field name="uom_po_id" ref="uom.product_uom_unit"/>
+            <field name="list_price">349.83</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-042</field>
+            <field name="price_base_oruro">310.00</field>
+            <field name="adjustment_factor">1.280</field>
+            <field name="infra_justification">Importado</field>
+        </record>
+
+        <record id="product_mat_043_geomalla_uniaxial_ux_tipo_3" model="product.template">
+            <field name="name">Geomalla uniaxial UX Tipo 3</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_unit"/>
+            <field name="uom_po_id" ref="uom.product_uom_unit"/>
+            <field name="list_price">394.97</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-043</field>
+            <field name="price_base_oruro">350.00</field>
+            <field name="adjustment_factor">1.280</field>
+            <field name="infra_justification">Importado</field>
+        </record>
+
+        <record id="product_mat_044_geomalla_triaxial_tx" model="product.template">
+            <field name="name">Geomalla triaxial TX</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_unit"/>
+            <field name="uom_po_id" ref="uom.product_uom_unit"/>
+            <field name="list_price">293.41</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-044</field>
+            <field name="price_base_oruro">260.00</field>
+            <field name="adjustment_factor">1.280</field>
+            <field name="infra_justification">Importado</field>
+        </record>
+
+        <record id="product_mat_045_pintura_termopl_stica_para_se" model="product.template">
+            <field name="name">Pintura termoplástica para señalización</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_kgm"/>
+            <field name="uom_po_id" ref="uom.product_uom_kgm"/>
+            <field name="list_price">541.55</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-045</field>
+            <field name="price_base_oruro">455.00</field>
+            <field name="adjustment_factor">1.350</field>
+            <field name="infra_justification">Importada, componente químico</field>
+        </record>
+
+        <record id="product_mat_046_microesferas_de_vidrio_reflect" model="product.template">
+            <field name="name">Microesferas de vidrio reflectantes</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_kgm"/>
+            <field name="uom_po_id" ref="uom.product_uom_kgm"/>
+            <field name="list_price">280.80</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-046</field>
+            <field name="price_base_oruro">245.00</field>
+            <field name="adjustment_factor">1.300</field>
+            <field name="infra_justification">Importadas</field>
+        </record>
+
+        <record id="product_mat_047_placa_se_al_preventiva_cuadran" model="product.template">
+            <field name="name">Placa señal preventiva cuadrangular (1.20×1.20m)</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_unit"/>
+            <field name="uom_po_id" ref="uom.product_uom_unit"/>
+            <field name="list_price">1925.50</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-047</field>
+            <field name="price_base_oruro">1680.00</field>
+            <field name="adjustment_factor">1.300</field>
+            <field name="infra_justification">Nacional, tamaño mayor</field>
+        </record>
+
+        <record id="product_mat_048_placa_se_al_reglamentaria_octo" model="product.template">
+            <field name="name">Placa señal reglamentaria octogonal 0.90m</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_unit"/>
+            <field name="uom_po_id" ref="uom.product_uom_unit"/>
+            <field name="list_price">1604.58</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-048</field>
+            <field name="price_base_oruro">1400.00</field>
+            <field name="adjustment_factor">1.300</field>
+            <field name="infra_justification">Nacional</field>
+        </record>
+
+        <record id="product_mat_049_placa_se_al_reglamentaria_tria" model="product.template">
+            <field name="name">Placa señal reglamentaria triangular 1.00m</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_unit"/>
+            <field name="uom_po_id" ref="uom.product_uom_unit"/>
+            <field name="list_price">1547.27</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-049</field>
+            <field name="price_base_oruro">1350.00</field>
+            <field name="adjustment_factor">1.300</field>
+            <field name="infra_justification">Nacional</field>
+        </record>
+
+        <record id="product_mat_050_placa_se_al_reglamentaria_1_2" model="product.template">
+            <field name="name">Placa señal reglamentaria (1.20×1.80m)</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_unit"/>
+            <field name="uom_po_id" ref="uom.product_uom_unit"/>
+            <field name="list_price">3209.16</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-050</field>
+            <field name="price_base_oruro">2800.00</field>
+            <field name="adjustment_factor">1.300</field>
+            <field name="infra_justification">Nacional</field>
+        </record>
+
+        <record id="product_mat_051_se_al_informativa_1_70_0_60" model="product.template">
+            <field name="name">Señal informativa (1.70×0.60)</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_unit"/>
+            <field name="uom_po_id" ref="uom.product_uom_unit"/>
+            <field name="list_price">2063.03</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-051</field>
+            <field name="price_base_oruro">1800.00</field>
+            <field name="adjustment_factor">1.300</field>
+            <field name="infra_justification">Nacional</field>
+        </record>
+
+        <record id="product_mat_052_se_al_informativa_2_10_0_60" model="product.template">
+            <field name="name">Señal informativa (2.10×0.60)</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_unit"/>
+            <field name="uom_po_id" ref="uom.product_uom_unit"/>
+            <field name="list_price">2406.87</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-052</field>
+            <field name="price_base_oruro">2100.00</field>
+            <field name="adjustment_factor">1.300</field>
+            <field name="infra_justification">Nacional</field>
+        </record>
+
+        <record id="product_mat_053_se_al_informativa_2_20_0_60" model="product.template">
+            <field name="name">Señal informativa (2.20×0.60)</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_unit"/>
+            <field name="uom_po_id" ref="uom.product_uom_unit"/>
+            <field name="list_price">2521.48</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-053</field>
+            <field name="price_base_oruro">2200.00</field>
+            <field name="adjustment_factor">1.300</field>
+            <field name="infra_justification">Nacional</field>
+        </record>
+
+        <record id="product_mat_054_se_al_informativa_2_70_0_60" model="product.template">
+            <field name="name">Señal informativa (2.70×0.60)</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_unit"/>
+            <field name="uom_po_id" ref="uom.product_uom_unit"/>
+            <field name="list_price">2865.32</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-054</field>
+            <field name="price_base_oruro">2500.00</field>
+            <field name="adjustment_factor">1.300</field>
+            <field name="infra_justification">Nacional</field>
+        </record>
+
+        <record id="product_mat_055_se_al_informativa_3_00_0_60" model="product.template">
+            <field name="name">Señal informativa (3.00×0.60)</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_unit"/>
+            <field name="uom_po_id" ref="uom.product_uom_unit"/>
+            <field name="list_price">3094.55</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-055</field>
+            <field name="price_base_oruro">2700.00</field>
+            <field name="adjustment_factor">1.300</field>
+            <field name="infra_justification">Nacional</field>
+        </record>
+
+        <record id="product_mat_056_se_al_informativa_3_10_0_60" model="product.template">
+            <field name="name">Señal informativa (3.10×0.60)</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_unit"/>
+            <field name="uom_po_id" ref="uom.product_uom_unit"/>
+            <field name="list_price">3197.70</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-056</field>
+            <field name="price_base_oruro">2790.00</field>
+            <field name="adjustment_factor">1.300</field>
+            <field name="infra_justification">Nacional</field>
+        </record>
+
+        <record id="product_mat_057_se_al_informativa_3_20_0_60" model="product.template">
+            <field name="name">Señal informativa (3.20×0.60)</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_unit"/>
+            <field name="uom_po_id" ref="uom.product_uom_unit"/>
+            <field name="list_price">3300.85</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-057</field>
+            <field name="price_base_oruro">2880.00</field>
+            <field name="adjustment_factor">1.300</field>
+            <field name="infra_justification">Nacional</field>
+        </record>
+
+        <record id="product_mat_058_se_al_informativa_3_40_0_60" model="product.template">
+            <field name="name">Señal informativa (3.40×0.60)</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_unit"/>
+            <field name="uom_po_id" ref="uom.product_uom_unit"/>
+            <field name="list_price">3489.96</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-058</field>
+            <field name="price_base_oruro">3045.00</field>
+            <field name="adjustment_factor">1.300</field>
+            <field name="infra_justification">Nacional</field>
+        </record>
+
+        <record id="product_mat_059_se_al_informativa_3_20_0_80" model="product.template">
+            <field name="name">Señal informativa (3.20×0.80)</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_unit"/>
+            <field name="uom_po_id" ref="uom.product_uom_unit"/>
+            <field name="list_price">3896.84</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-059</field>
+            <field name="price_base_oruro">3400.00</field>
+            <field name="adjustment_factor">1.300</field>
+            <field name="infra_justification">Nacional</field>
+        </record>
+
+        <record id="product_mat_060_se_al_informativa_2_70_1_00" model="product.template">
+            <field name="name">Señal informativa (2.70×1.00)</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_unit"/>
+            <field name="uom_po_id" ref="uom.product_uom_unit"/>
+            <field name="list_price">4126.07</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-060</field>
+            <field name="price_base_oruro">3600.00</field>
+            <field name="adjustment_factor">1.300</field>
+            <field name="infra_justification">Nacional</field>
+        </record>
+
+        <record id="product_mat_061_se_al_informativa_3_10_1_00" model="product.template">
+            <field name="name">Señal informativa (3.10×1.00)</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_unit"/>
+            <field name="uom_po_id" ref="uom.product_uom_unit"/>
+            <field name="list_price">4584.52</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-061</field>
+            <field name="price_base_oruro">4000.00</field>
+            <field name="adjustment_factor">1.300</field>
+            <field name="infra_justification">Nacional</field>
+        </record>
+
+        <record id="product_mat_062_se_al_informativa_3_20_1_00" model="product.template">
+            <field name="name">Señal informativa (3.20×1.00)</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_unit"/>
+            <field name="uom_po_id" ref="uom.product_uom_unit"/>
+            <field name="list_price">4813.74</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-062</field>
+            <field name="price_base_oruro">4200.00</field>
+            <field name="adjustment_factor">1.300</field>
+            <field name="infra_justification">Nacional</field>
+        </record>
+
+        <record id="product_mat_063_se_al_informativa_3_40_1_00" model="product.template">
+            <field name="name">Señal informativa (3.40×1.00)</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_unit"/>
+            <field name="uom_po_id" ref="uom.product_uom_unit"/>
+            <field name="list_price">5157.58</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-063</field>
+            <field name="price_base_oruro">4500.00</field>
+            <field name="adjustment_factor">1.300</field>
+            <field name="infra_justification">Nacional</field>
+        </record>
+
+        <record id="product_mat_064_se_al_informativa_3_10_1_20" model="product.template">
+            <field name="name">Señal informativa (3.10×1.20)</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_unit"/>
+            <field name="uom_po_id" ref="uom.product_uom_unit"/>
+            <field name="list_price">5501.42</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-064</field>
+            <field name="price_base_oruro">4800.00</field>
+            <field name="adjustment_factor">1.300</field>
+            <field name="infra_justification">Nacional</field>
+        </record>
+
+        <record id="product_mat_065_se_al_informativa_de_servicio" model="product.template">
+            <field name="name">Señal informativa de servicio (1.00×1.00m)</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_unit"/>
+            <field name="uom_po_id" ref="uom.product_uom_unit"/>
+            <field name="list_price">2783.95</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-065</field>
+            <field name="price_base_oruro">2429.00</field>
+            <field name="adjustment_factor">1.300</field>
+            <field name="infra_justification">Nacional</field>
+        </record>
+
+        <record id="product_mat_066_se_al_de_identificaci_n_vial" model="product.template">
+            <field name="name">Señal de identificación vial</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_unit"/>
+            <field name="uom_po_id" ref="uom.product_uom_unit"/>
+            <field name="list_price">2063.03</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-066</field>
+            <field name="price_base_oruro">1800.00</field>
+            <field name="adjustment_factor">1.300</field>
+            <field name="infra_justification">Nacional</field>
+        </record>
+
+        <record id="product_mat_067_tacha_reflectiva_bidireccional" model="product.template">
+            <field name="name">Tacha reflectiva bidireccional</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_unit"/>
+            <field name="uom_po_id" ref="uom.product_uom_unit"/>
+            <field name="list_price">138.86</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-067</field>
+            <field name="price_base_oruro">126.00</field>
+            <field name="adjustment_factor">1.250</field>
+            <field name="infra_justification">Importada, bajo peso</field>
+        </record>
+
+        <record id="product_mat_068_se_al_identificaci_n_kilometra" model="product.template">
+            <field name="name">Señal identificación kilometraje (0.19×0.65m)</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_unit"/>
+            <field name="uom_po_id" ref="uom.product_uom_unit"/>
+            <field name="list_price">744.98</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-068</field>
+            <field name="price_base_oruro">650.00</field>
+            <field name="adjustment_factor">1.300</field>
+            <field name="infra_justification">Nacional</field>
+        </record>
+
+        <record id="product_mat_069_defensa_met_lica_flex_beam" model="product.template">
+            <field name="name">Defensa metálica flex beam</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_meter"/>
+            <field name="uom_po_id" ref="uom.product_uom_meter"/>
+            <field name="list_price">3095.61</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-069</field>
+            <field name="price_base_oruro">2660.00</field>
+            <field name="adjustment_factor">1.320</field>
+            <field name="infra_justification">Importada, acero + galvanizado</field>
+        </record>
+
+        <record id="product_mat_070_delineador_calzada_vertical_de" model="product.template">
+            <field name="name">Delineador calzada vertical derecho DC-7A</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_unit"/>
+            <field name="uom_po_id" ref="uom.product_uom_unit"/>
+            <field name="list_price">208.77</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-070</field>
+            <field name="price_base_oruro">185.00</field>
+            <field name="adjustment_factor">1.280</field>
+            <field name="infra_justification">Importado</field>
+        </record>
+
+        <record id="product_mat_071_water_stop_pvc_15cm" model="product.template">
+            <field name="name">Water stop PVC 15cm</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_meter"/>
+            <field name="uom_po_id" ref="uom.product_uom_meter"/>
+            <field name="list_price">96.43</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-071</field>
+            <field name="price_base_oruro">87.50</field>
+            <field name="adjustment_factor">1.250</field>
+            <field name="infra_justification">Nacional PVC</field>
+        </record>
+
+        <record id="product_mat_072_junta_de_dilataci_n_tipo_jeene" model="product.template">
+            <field name="name">Junta de dilatación tipo JEENE</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_meter"/>
+            <field name="uom_po_id" ref="uom.product_uom_meter"/>
+            <field name="list_price">762.18</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-072</field>
+            <field name="price_base_oruro">665.00</field>
+            <field name="adjustment_factor">1.300</field>
+            <field name="infra_justification">Importada</field>
+        </record>
+
+        <record id="product_mat_073_neopreno_compuesto" model="product.template">
+            <field name="name">Neopreno compuesto</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_unit"/>
+            <field name="uom_po_id" ref="uom.product_uom_unit"/>
+            <field name="list_price">36.10</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-073</field>
+            <field name="price_base_oruro">31.50</field>
+            <field name="adjustment_factor">1.300</field>
+            <field name="infra_justification">Importado. Convertido de M3 a DM3: 31,500 Bs/M3 ÷ 1000 = 31.50 Bs/DM3</field>
+        </record>
+
+        <record id="product_mat_074_neopreno_simple" model="product.template">
+            <field name="name">Neopreno simple</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_unit"/>
+            <field name="uom_po_id" ref="uom.product_uom_unit"/>
+            <field name="list_price">25.21</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-074</field>
+            <field name="price_base_oruro">22.00</field>
+            <field name="adjustment_factor">1.300</field>
+            <field name="infra_justification">Importado. Estimado ~70% del compuesto. Precio por DM3</field>
+        </record>
+
+        <record id="product_mat_075_anclajes_de_12t_1_2" model="product.template">
+            <field name="name">Anclajes de 12T 1/2&quot;</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_unit"/>
+            <field name="uom_po_id" ref="uom.product_uom_unit"/>
+            <field name="list_price">2246.41</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-075</field>
+            <field name="price_base_oruro">1960.00</field>
+            <field name="adjustment_factor">1.300</field>
+            <field name="infra_justification">Importado</field>
+        </record>
+
+        <record id="product_mat_076_vainas_d_7cm_para_postensado" model="product.template">
+            <field name="name">Vainas D=7cm para postensado</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_meter"/>
+            <field name="uom_po_id" ref="uom.product_uom_meter"/>
+            <field name="list_price">144.41</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-076</field>
+            <field name="price_base_oruro">126.00</field>
+            <field name="adjustment_factor">1.300</field>
+            <field name="infra_justification">Importadas</field>
+        </record>
+
+        <record id="product_mat_077_antisol_membrana_de_curado" model="product.template">
+            <field name="name">Antisol membrana de curado</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_unit"/>
+            <field name="uom_po_id" ref="uom.product_uom_unit"/>
+            <field name="list_price">647.76</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-077</field>
+            <field name="price_base_oruro">574.00</field>
+            <field name="adjustment_factor">1.280</field>
+            <field name="infra_justification">Nacional/importado</field>
+        </record>
+
+        <record id="product_mat_078_limpiador_pvc" model="product.template">
+            <field name="name">Limpiador PVC</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_unit"/>
+            <field name="uom_po_id" ref="uom.product_uom_unit"/>
+            <field name="list_price">0.08</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-078</field>
+            <field name="price_base_oruro">0.07</field>
+            <field name="adjustment_factor">1.250</field>
+            <field name="infra_justification">Nacional</field>
+        </record>
+
+        <record id="product_mat_079_barandado_met_lico_tipo_p_3" model="product.template">
+            <field name="name">Barandado metálico tipo P-3</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_meter"/>
+            <field name="uom_po_id" ref="uom.product_uom_meter"/>
+            <field name="list_price">3724.04</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-079</field>
+            <field name="price_base_oruro">3200.00</field>
+            <field name="adjustment_factor">1.320</field>
+            <field name="infra_justification">Acero galvanizado</field>
+        </record>
+
+        <record id="product_mat_080_gavi_n_caja_triple_torsi_n_2" model="product.template">
+            <field name="name">Gavión caja triple torsión (2.0×1.0×1.0)</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_cubic_meter"/>
+            <field name="uom_po_id" ref="uom.product_uom_cubic_meter"/>
+            <field name="list_price">664.76</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-080</field>
+            <field name="price_base_oruro">580.00</field>
+            <field name="adjustment_factor">1.300</field>
+            <field name="infra_justification">Importado</field>
+        </record>
+
+        <record id="product_mat_081_gavi_n_colch_n_6_0_2_0_0_30" model="product.template">
+            <field name="name">Gavión colchón (6.0×2.0×0.30)</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_cubic_meter"/>
+            <field name="uom_po_id" ref="uom.product_uom_cubic_meter"/>
+            <field name="list_price">481.37</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-081</field>
+            <field name="price_base_oruro">420.00</field>
+            <field name="adjustment_factor">1.300</field>
+            <field name="infra_justification">Importado</field>
+        </record>
+
+        <record id="product_mat_082_zampeado_piedra_con_mortero_ce" model="product.template">
+            <field name="name">Zampeado piedra con mortero cemento</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_cubic_meter"/>
+            <field name="uom_po_id" ref="uom.product_uom_cubic_meter"/>
+            <field name="list_price">432.00</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-082</field>
+            <field name="price_base_oruro">350.00</field>
+            <field name="adjustment_factor">1.400</field>
+            <field name="infra_justification">Nacional, transporte + cemento</field>
+        </record>
+
+        <record id="product_mat_083_franjas_sonorizadoras_prefabri" model="product.template">
+            <field name="name">Franjas sonorizadoras prefabricadas</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_unit"/>
+            <field name="uom_po_id" ref="uom.product_uom_unit"/>
+            <field name="list_price">550.14</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-083</field>
+            <field name="price_base_oruro">480.00</field>
+            <field name="adjustment_factor">1.300</field>
+            <field name="infra_justification">Importadas</field>
+        </record>
+
+        <record id="product_mat_084_se_alizaci_n_vertical_animales" model="product.template">
+            <field name="name">Señalización vertical animales en vía (1.00×1.00)</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_unit"/>
+            <field name="uom_po_id" ref="uom.product_uom_unit"/>
+            <field name="list_price">2783.95</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-084</field>
+            <field name="price_base_oruro">2429.00</field>
+            <field name="adjustment_factor">1.300</field>
+            <field name="infra_justification">Nacional</field>
+        </record>
+
+        <record id="product_mat_085_tachas_para_paso_de_fauna" model="product.template">
+            <field name="name">Tachas para paso de fauna</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="categ_infra_materiales"/>
+            <field name="uom_id" ref="uom.product_uom_unit"/>
+            <field name="uom_po_id" ref="uom.product_uom_unit"/>
+            <field name="list_price">163.63</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">material</field>
+            <field name="infra_resource_code">MAT-085</field>
+            <field name="price_base_oruro">145.00</field>
+            <field name="adjustment_factor">1.280</field>
+            <field name="infra_justification">Importadas</field>
+        </record>
+
+        <record id="product_mo_001_alba_il" model="product.template">
+            <field name="name">Albañil</field>
+            <field name="type">service</field>
+            <field name="categ_id" ref="categ_infra_mano_obra"/>
+            <field name="uom_id" ref="uom.product_uom_hour"/>
+            <field name="uom_po_id" ref="uom.product_uom_hour"/>
+            <field name="list_price">24.33</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">labor</field>
+            <field name="infra_resource_code">MO-001</field>
+            <field name="price_base_oruro">23.00</field>
+            <field name="adjustment_factor">1.200</field>
+            <field name="infra_justification">SMN + inflación</field>
+        </record>
+
+        <record id="product_mo_002_armador_fierrista" model="product.template">
+            <field name="name">Armador / Fierrista</field>
+            <field name="type">service</field>
+            <field name="categ_id" ref="categ_infra_mano_obra"/>
+            <field name="uom_id" ref="uom.product_uom_hour"/>
+            <field name="uom_po_id" ref="uom.product_uom_hour"/>
+            <field name="list_price">27.51</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">labor</field>
+            <field name="infra_resource_code">MO-002</field>
+            <field name="price_base_oruro">26.00</field>
+            <field name="adjustment_factor">1.200</field>
+            <field name="infra_justification">SMN + inflación</field>
+        </record>
+
+        <record id="product_mo_003_ayudante_de_alba_il" model="product.template">
+            <field name="name">Ayudante de albañil</field>
+            <field name="type">service</field>
+            <field name="categ_id" ref="categ_infra_mano_obra"/>
+            <field name="uom_id" ref="uom.product_uom_hour"/>
+            <field name="uom_po_id" ref="uom.product_uom_hour"/>
+            <field name="list_price">18.82</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">labor</field>
+            <field name="infra_resource_code">MO-003</field>
+            <field name="price_base_oruro">17.50</field>
+            <field name="adjustment_factor">1.220</field>
+            <field name="infra_justification">Categoría base, mayor presión SMN</field>
+        </record>
+
+        <record id="product_mo_004_ayudante_maquinaria_y_equipo" model="product.template">
+            <field name="name">Ayudante maquinaria y equipo</field>
+            <field name="type">service</field>
+            <field name="categ_id" ref="categ_infra_mano_obra"/>
+            <field name="uom_id" ref="uom.product_uom_hour"/>
+            <field name="uom_po_id" ref="uom.product_uom_hour"/>
+            <field name="list_price">18.82</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">labor</field>
+            <field name="infra_resource_code">MO-004</field>
+            <field name="price_base_oruro">17.50</field>
+            <field name="adjustment_factor">1.220</field>
+            <field name="infra_justification">Categoría base</field>
+        </record>
+
+        <record id="product_mo_005_capataz" model="product.template">
+            <field name="name">Capataz</field>
+            <field name="type">service</field>
+            <field name="categ_id" ref="categ_infra_mano_obra"/>
+            <field name="uom_id" ref="uom.product_uom_hour"/>
+            <field name="uom_po_id" ref="uom.product_uom_hour"/>
+            <field name="list_price">29.13</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">labor</field>
+            <field name="infra_resource_code">MO-005</field>
+            <field name="price_base_oruro">28.00</field>
+            <field name="adjustment_factor">1.180</field>
+            <field name="infra_justification">Categoría alta, menor presión</field>
+        </record>
+
+        <record id="product_mo_006_carpintero_encofrador" model="product.template">
+            <field name="name">Carpintero (encofrador)</field>
+            <field name="type">service</field>
+            <field name="categ_id" ref="categ_infra_mano_obra"/>
+            <field name="uom_id" ref="uom.product_uom_hour"/>
+            <field name="uom_po_id" ref="uom.product_uom_hour"/>
+            <field name="list_price">27.51</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">labor</field>
+            <field name="infra_resource_code">MO-006</field>
+            <field name="price_base_oruro">26.00</field>
+            <field name="adjustment_factor">1.200</field>
+            <field name="infra_justification">SMN + inflación</field>
+        </record>
+
+        <record id="product_mo_007_chofer" model="product.template">
+            <field name="name">Chofer</field>
+            <field name="type">service</field>
+            <field name="categ_id" ref="categ_infra_mano_obra"/>
+            <field name="uom_id" ref="uom.product_uom_hour"/>
+            <field name="uom_po_id" ref="uom.product_uom_hour"/>
+            <field name="list_price">26.89</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">labor</field>
+            <field name="infra_resource_code">MO-007</field>
+            <field name="price_base_oruro">25.00</field>
+            <field name="adjustment_factor">1.220</field>
+            <field name="infra_justification">Presión por costo diesel indirecto</field>
+        </record>
+
+        <record id="product_mo_008_especialista_t_cnico" model="product.template">
+            <field name="name">Especialista / Técnico</field>
+            <field name="type">service</field>
+            <field name="categ_id" ref="categ_infra_mano_obra"/>
+            <field name="uom_id" ref="uom.product_uom_hour"/>
+            <field name="uom_po_id" ref="uom.product_uom_hour"/>
+            <field name="list_price">33.29</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">labor</field>
+            <field name="infra_resource_code">MO-008</field>
+            <field name="price_base_oruro">32.00</field>
+            <field name="adjustment_factor">1.180</field>
+            <field name="infra_justification">Categoría alta</field>
+        </record>
+
+        <record id="product_mo_009_maestro_de_obra" model="product.template">
+            <field name="name">Maestro de obra</field>
+            <field name="type">service</field>
+            <field name="categ_id" ref="categ_infra_mano_obra"/>
+            <field name="uom_id" ref="uom.product_uom_hour"/>
+            <field name="uom_po_id" ref="uom.product_uom_hour"/>
+            <field name="list_price">31.21</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">labor</field>
+            <field name="infra_resource_code">MO-009</field>
+            <field name="price_base_oruro">30.00</field>
+            <field name="adjustment_factor">1.180</field>
+            <field name="infra_justification">Categoría alta</field>
+        </record>
+
+        <record id="product_mo_010_operador_de_generador" model="product.template">
+            <field name="name">Operador de generador</field>
+            <field name="type">service</field>
+            <field name="categ_id" ref="categ_infra_mano_obra"/>
+            <field name="uom_id" ref="uom.product_uom_hour"/>
+            <field name="uom_po_id" ref="uom.product_uom_hour"/>
+            <field name="list_price">29.62</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">labor</field>
+            <field name="infra_resource_code">MO-010</field>
+            <field name="price_base_oruro">28.00</field>
+            <field name="adjustment_factor">1.200</field>
+            <field name="infra_justification">SMN + inflación</field>
+        </record>
+
+        <record id="product_mo_011_operador_de_equipo_pesado" model="product.template">
+            <field name="name">Operador de equipo pesado</field>
+            <field name="type">service</field>
+            <field name="categ_id" ref="categ_infra_mano_obra"/>
+            <field name="uom_id" ref="uom.product_uom_hour"/>
+            <field name="uom_po_id" ref="uom.product_uom_hour"/>
+            <field name="list_price">33.29</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">labor</field>
+            <field name="infra_resource_code">MO-011</field>
+            <field name="price_base_oruro">32.00</field>
+            <field name="adjustment_factor">1.180</field>
+            <field name="infra_justification">Categoría alta</field>
+        </record>
+
+        <record id="product_mo_012_operador_de_equipo_liviano" model="product.template">
+            <field name="name">Operador de equipo liviano</field>
+            <field name="type">service</field>
+            <field name="categ_id" ref="categ_infra_mano_obra"/>
+            <field name="uom_id" ref="uom.product_uom_hour"/>
+            <field name="uom_po_id" ref="uom.product_uom_hour"/>
+            <field name="list_price">29.62</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">labor</field>
+            <field name="infra_resource_code">MO-012</field>
+            <field name="price_base_oruro">28.00</field>
+            <field name="adjustment_factor">1.200</field>
+            <field name="infra_justification">SMN + inflación</field>
+        </record>
+
+        <record id="product_mo_013_operador_de_planta" model="product.template">
+            <field name="name">Operador de planta</field>
+            <field name="type">service</field>
+            <field name="categ_id" ref="categ_infra_mano_obra"/>
+            <field name="uom_id" ref="uom.product_uom_hour"/>
+            <field name="uom_po_id" ref="uom.product_uom_hour"/>
+            <field name="list_price">39.53</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">labor</field>
+            <field name="infra_resource_code">MO-013</field>
+            <field name="price_base_oruro">38.00</field>
+            <field name="adjustment_factor">1.180</field>
+            <field name="infra_justification">Categoría alta</field>
+        </record>
+
+        <record id="product_mo_014_operador_distribuidor_asfalto" model="product.template">
+            <field name="name">Operador distribuidor asfalto</field>
+            <field name="type">service</field>
+            <field name="categ_id" ref="categ_infra_mano_obra"/>
+            <field name="uom_id" ref="uom.product_uom_hour"/>
+            <field name="uom_po_id" ref="uom.product_uom_hour"/>
+            <field name="list_price">36.41</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">labor</field>
+            <field name="infra_resource_code">MO-014</field>
+            <field name="price_base_oruro">35.00</field>
+            <field name="adjustment_factor">1.180</field>
+            <field name="infra_justification">Categoría alta</field>
+        </record>
+
+        <record id="product_mo_015_pe_n_obrero" model="product.template">
+            <field name="name">Peón / Obrero</field>
+            <field name="type">service</field>
+            <field name="categ_id" ref="categ_infra_mano_obra"/>
+            <field name="uom_id" ref="uom.product_uom_hour"/>
+            <field name="uom_po_id" ref="uom.product_uom_hour"/>
+            <field name="list_price">15.98</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">labor</field>
+            <field name="infra_resource_code">MO-015</field>
+            <field name="price_base_oruro">14.50</field>
+            <field name="adjustment_factor">1.250</field>
+            <field name="infra_justification">Categoría base, mayor impacto SMN</field>
+        </record>
+
+        <record id="product_mo_016_plomero_instalador_tuber_a" model="product.template">
+            <field name="name">Plomero / Instalador tubería</field>
+            <field name="type">service</field>
+            <field name="categ_id" ref="categ_infra_mano_obra"/>
+            <field name="uom_id" ref="uom.product_uom_hour"/>
+            <field name="uom_po_id" ref="uom.product_uom_hour"/>
+            <field name="list_price">23.28</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">labor</field>
+            <field name="infra_resource_code">MO-016</field>
+            <field name="price_base_oruro">22.00</field>
+            <field name="adjustment_factor">1.200</field>
+            <field name="infra_justification">SMN + inflación</field>
+        </record>
+
+        <record id="product_mo_017_top_grafo" model="product.template">
+            <field name="name">Topógrafo</field>
+            <field name="type">service</field>
+            <field name="categ_id" ref="categ_infra_mano_obra"/>
+            <field name="uom_id" ref="uom.product_uom_hour"/>
+            <field name="uom_po_id" ref="uom.product_uom_hour"/>
+            <field name="list_price">55.76</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">labor</field>
+            <field name="infra_resource_code">MO-017</field>
+            <field name="price_base_oruro">55.00</field>
+            <field name="adjustment_factor">1.150</field>
+            <field name="infra_justification">Especializado, menor presión</field>
+        </record>
+
+        <record id="product_mo_018_cadenero_portamira" model="product.template">
+            <field name="name">Cadenero / Portamira</field>
+            <field name="type">service</field>
+            <field name="categ_id" ref="categ_infra_mano_obra"/>
+            <field name="uom_id" ref="uom.product_uom_hour"/>
+            <field name="uom_po_id" ref="uom.product_uom_hour"/>
+            <field name="list_price">19.36</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">labor</field>
+            <field name="infra_resource_code">MO-018</field>
+            <field name="price_base_oruro">18.00</field>
+            <field name="adjustment_factor">1.220</field>
+            <field name="infra_justification">Categoría base</field>
+        </record>
+
+        <record id="product_mo_019_se_alista_banderillero" model="product.template">
+            <field name="name">Señalista / Banderillero</field>
+            <field name="type">service</field>
+            <field name="categ_id" ref="categ_infra_mano_obra"/>
+            <field name="uom_id" ref="uom.product_uom_hour"/>
+            <field name="uom_po_id" ref="uom.product_uom_hour"/>
+            <field name="list_price">15.98</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">labor</field>
+            <field name="infra_resource_code">MO-019</field>
+            <field name="price_base_oruro">14.50</field>
+            <field name="adjustment_factor">1.250</field>
+            <field name="infra_justification">Categoría base, mayor impacto SMN</field>
+        </record>
+
+        <record id="product_mo_020_soldador" model="product.template">
+            <field name="name">Soldador</field>
+            <field name="type">service</field>
+            <field name="categ_id" ref="categ_infra_mano_obra"/>
+            <field name="uom_id" ref="uom.product_uom_hour"/>
+            <field name="uom_po_id" ref="uom.product_uom_hour"/>
+            <field name="list_price">33.29</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">labor</field>
+            <field name="infra_resource_code">MO-020</field>
+            <field name="price_base_oruro">32.00</field>
+            <field name="adjustment_factor">1.180</field>
+            <field name="infra_justification">Categoría alta</field>
+        </record>
+
+        <record id="product_eq_001_bomba_de_agua_de_5_hp" model="product.template">
+            <field name="name">Bomba de agua de 5 HP</field>
+            <field name="type">service</field>
+            <field name="categ_id" ref="categ_infra_equipo"/>
+            <field name="uom_id" ref="uom.product_uom_hour"/>
+            <field name="uom_po_id" ref="uom.product_uom_hour"/>
+            <field name="list_price">49.37</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">equipment</field>
+            <field name="infra_resource_code">EQ-001</field>
+            <field name="price_base_oruro">40.00</field>
+            <field name="adjustment_factor">1.400</field>
+            <field name="infra_justification">Liviana, gasolina</field>
+        </record>
+
+        <record id="product_eq_002_cami_n_cisterna_10_000_lt" model="product.template">
+            <field name="name">Camión cisterna 10,000 Lt</field>
+            <field name="type">service</field>
+            <field name="categ_id" ref="categ_infra_equipo"/>
+            <field name="uom_id" ref="uom.product_uom_hour"/>
+            <field name="uom_po_id" ref="uom.product_uom_hour"/>
+            <field name="list_price">344.72</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">equipment</field>
+            <field name="infra_resource_code">EQ-002</field>
+            <field name="price_base_oruro">230.00</field>
+            <field name="adjustment_factor">1.700</field>
+            <field name="infra_justification">Pesado diesel, alto consumo</field>
+        </record>
+
+        <record id="product_eq_003_cami_n_estacas_4_tn" model="product.template">
+            <field name="name">Camión estacas 4 Tn</field>
+            <field name="type">service</field>
+            <field name="categ_id" ref="categ_infra_equipo"/>
+            <field name="uom_id" ref="uom.product_uom_hour"/>
+            <field name="uom_po_id" ref="uom.product_uom_hour"/>
+            <field name="list_price">450.96</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">equipment</field>
+            <field name="infra_resource_code">EQ-003</field>
+            <field name="price_base_oruro">310.00</field>
+            <field name="adjustment_factor">1.650</field>
+            <field name="infra_justification">Pesado diesel</field>
+        </record>
+
+        <record id="product_eq_004_camioneta_4_4" model="product.template">
+            <field name="name">Camioneta 4×4</field>
+            <field name="type">service</field>
+            <field name="categ_id" ref="categ_infra_equipo"/>
+            <field name="uom_id" ref="uom.product_uom_hour"/>
+            <field name="uom_po_id" ref="uom.product_uom_hour"/>
+            <field name="list_price">245.98</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">equipment</field>
+            <field name="infra_resource_code">EQ-004</field>
+            <field name="price_base_oruro">180.00</field>
+            <field name="adjustment_factor">1.550</field>
+            <field name="infra_justification">Diesel/gasolina, consumo moderado</field>
+        </record>
+
+        <record id="product_eq_005_cargador_frontal_924f_105_hp" model="product.template">
+            <field name="name">Cargador frontal 924F 105 HP</field>
+            <field name="type">service</field>
+            <field name="categ_id" ref="categ_infra_equipo"/>
+            <field name="uom_id" ref="uom.product_uom_hour"/>
+            <field name="uom_po_id" ref="uom.product_uom_hour"/>
+            <field name="list_price">609.43</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">equipment</field>
+            <field name="infra_resource_code">EQ-005</field>
+            <field name="price_base_oruro">395.00</field>
+            <field name="adjustment_factor">1.750</field>
+            <field name="infra_justification">Pesado diesel, alto consumo</field>
+        </record>
+
+        <record id="product_eq_006_excavadora_de_orugas_312b_84_h" model="product.template">
+            <field name="name">Excavadora de orugas 312B 84 HP</field>
+            <field name="type">service</field>
+            <field name="categ_id" ref="categ_infra_equipo"/>
+            <field name="uom_id" ref="uom.product_uom_hour"/>
+            <field name="uom_po_id" ref="uom.product_uom_hour"/>
+            <field name="list_price">756.89</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">equipment</field>
+            <field name="infra_resource_code">EQ-006</field>
+            <field name="price_base_oruro">505.00</field>
+            <field name="adjustment_factor">1.700</field>
+            <field name="infra_justification">Pesado diesel</field>
+        </record>
+
+        <record id="product_eq_007_cortador_de_hormig_n_12_hp" model="product.template">
+            <field name="name">Cortador de hormigón 12 HP</field>
+            <field name="type">service</field>
+            <field name="categ_id" ref="categ_infra_equipo"/>
+            <field name="uom_id" ref="uom.product_uom_hour"/>
+            <field name="uom_po_id" ref="uom.product_uom_hour"/>
+            <field name="list_price">106.15</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">equipment</field>
+            <field name="infra_resource_code">EQ-007</field>
+            <field name="price_base_oruro">86.00</field>
+            <field name="adjustment_factor">1.400</field>
+            <field name="infra_justification">Liviano, gasolina</field>
+        </record>
+
+        <record id="product_eq_008_compresor_transportable_98_hp" model="product.template">
+            <field name="name">Compresor transportable 98 HP</field>
+            <field name="type">service</field>
+            <field name="categ_id" ref="categ_infra_equipo"/>
+            <field name="uom_id" ref="uom.product_uom_hour"/>
+            <field name="uom_po_id" ref="uom.product_uom_hour"/>
+            <field name="list_price">236.98</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">equipment</field>
+            <field name="infra_resource_code">EQ-008</field>
+            <field name="price_base_oruro">168.00</field>
+            <field name="adjustment_factor">1.600</field>
+            <field name="infra_justification">Diesel mediano</field>
+        </record>
+
+        <record id="product_eq_009_compactador_liso_o_pata_de_cab" model="product.template">
+            <field name="name">Compactador liso o pata de cabra autoprop.</field>
+            <field name="type">service</field>
+            <field name="categ_id" ref="categ_infra_equipo"/>
+            <field name="uom_id" ref="uom.product_uom_hour"/>
+            <field name="uom_po_id" ref="uom.product_uom_hour"/>
+            <field name="list_price">472.12</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">equipment</field>
+            <field name="infra_resource_code">EQ-009</field>
+            <field name="price_base_oruro">315.00</field>
+            <field name="adjustment_factor">1.700</field>
+            <field name="infra_justification">Pesado diesel</field>
+        </record>
+
+        <record id="product_eq_010_compactador_manual_de_rodillo" model="product.template">
+            <field name="name">Compactador manual de rodillo liso</field>
+            <field name="type">service</field>
+            <field name="categ_id" ref="categ_infra_equipo"/>
+            <field name="uom_id" ref="uom.product_uom_hour"/>
+            <field name="uom_po_id" ref="uom.product_uom_hour"/>
+            <field name="list_price">232.66</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">equipment</field>
+            <field name="infra_resource_code">EQ-010</field>
+            <field name="price_base_oruro">182.00</field>
+            <field name="adjustment_factor">1.450</field>
+            <field name="infra_justification">Liviano</field>
+        </record>
+
+        <record id="product_eq_011_compactadora_neum_tica_ps_180" model="product.template">
+            <field name="name">Compactadora neumática PS-180 77 HP</field>
+            <field name="type">service</field>
+            <field name="categ_id" ref="categ_infra_equipo"/>
+            <field name="uom_id" ref="uom.product_uom_hour"/>
+            <field name="uom_po_id" ref="uom.product_uom_hour"/>
+            <field name="list_price">414.59</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">equipment</field>
+            <field name="infra_resource_code">EQ-011</field>
+            <field name="price_base_oruro">285.00</field>
+            <field name="adjustment_factor">1.650</field>
+            <field name="infra_justification">Diesel mediano-pesado</field>
+        </record>
+
+        <record id="product_eq_012_cortadora_y_dobladora_de_fierr" model="product.template">
+            <field name="name">Cortadora y dobladora de fierro</field>
+            <field name="type">service</field>
+            <field name="categ_id" ref="categ_infra_equipo"/>
+            <field name="uom_id" ref="uom.product_uom_hour"/>
+            <field name="uom_po_id" ref="uom.product_uom_hour"/>
+            <field name="list_price">17.85</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">equipment</field>
+            <field name="infra_resource_code">EQ-012</field>
+            <field name="price_base_oruro">15.00</field>
+            <field name="adjustment_factor">1.350</field>
+            <field name="infra_justification">Eléctrica</field>
+        </record>
+
+        <record id="product_eq_013_distribuidor_de_agregados_auto" model="product.template">
+            <field name="name">Distribuidor de agregados autopropulsado</field>
+            <field name="type">service</field>
+            <field name="categ_id" ref="categ_infra_equipo"/>
+            <field name="uom_id" ref="uom.product_uom_hour"/>
+            <field name="uom_po_id" ref="uom.product_uom_hour"/>
+            <field name="list_price">327.31</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">equipment</field>
+            <field name="infra_resource_code">EQ-013</field>
+            <field name="price_base_oruro">225.00</field>
+            <field name="adjustment_factor">1.650</field>
+            <field name="infra_justification">Diesel</field>
+        </record>
+
+        <record id="product_eq_014_distribuidor_de_asfaltos" model="product.template">
+            <field name="name">Distribuidor de asfaltos</field>
+            <field name="type">service</field>
+            <field name="categ_id" ref="categ_infra_equipo"/>
+            <field name="uom_id" ref="uom.product_uom_hour"/>
+            <field name="uom_po_id" ref="uom.product_uom_hour"/>
+            <field name="list_price">592.02</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">equipment</field>
+            <field name="infra_resource_code">EQ-014</field>
+            <field name="price_base_oruro">395.00</field>
+            <field name="adjustment_factor">1.700</field>
+            <field name="infra_justification">Diesel pesado + temperatura</field>
+        </record>
+
+        <record id="product_eq_015_equipo_de_laboratorio" model="product.template">
+            <field name="name">Equipo de laboratorio</field>
+            <field name="type">service</field>
+            <field name="categ_id" ref="categ_infra_equipo"/>
+            <field name="uom_id" ref="uom.product_uom_hour"/>
+            <field name="uom_po_id" ref="uom.product_uom_hour"/>
+            <field name="list_price">837.56</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">equipment</field>
+            <field name="infra_resource_code">EQ-015</field>
+            <field name="price_base_oruro">760.00</field>
+            <field name="adjustment_factor">1.250</field>
+            <field name="infra_justification">Eléctrico, bajo impacto diesel</field>
+        </record>
+
+        <record id="product_eq_016_equipo_de_perforaci_n_track_d" model="product.template">
+            <field name="name">Equipo de perforación (track drill)</field>
+            <field name="type">service</field>
+            <field name="categ_id" ref="categ_infra_equipo"/>
+            <field name="uom_id" ref="uom.product_uom_hour"/>
+            <field name="uom_po_id" ref="uom.product_uom_hour"/>
+            <field name="list_price">458.23</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">equipment</field>
+            <field name="infra_resource_code">EQ-016</field>
+            <field name="price_base_oruro">315.00</field>
+            <field name="adjustment_factor">1.650</field>
+            <field name="infra_justification">Diesel/neumático</field>
+        </record>
+
+        <record id="product_eq_017_escoba_mec_nica_autopropulsada" model="product.template">
+            <field name="name">Escoba mecánica autopropulsada</field>
+            <field name="type">service</field>
+            <field name="categ_id" ref="categ_infra_equipo"/>
+            <field name="uom_id" ref="uom.product_uom_hour"/>
+            <field name="uom_po_id" ref="uom.product_uom_hour"/>
+            <field name="list_price">273.31</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">equipment</field>
+            <field name="infra_resource_code">EQ-017</field>
+            <field name="price_base_oruro">200.00</field>
+            <field name="adjustment_factor">1.550</field>
+            <field name="infra_justification">Diesel mediano</field>
+        </record>
+
+        <record id="product_eq_018_grupo_generador_50_kva" model="product.template">
+            <field name="name">Grupo generador 50 KVA</field>
+            <field name="type">service</field>
+            <field name="categ_id" ref="categ_infra_equipo"/>
+            <field name="uom_id" ref="uom.product_uom_hour"/>
+            <field name="uom_po_id" ref="uom.product_uom_hour"/>
+            <field name="list_price">95.66</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">equipment</field>
+            <field name="infra_resource_code">EQ-018</field>
+            <field name="price_base_oruro">62.00</field>
+            <field name="adjustment_factor">1.750</field>
+            <field name="infra_justification">100% diesel</field>
+        </record>
+
+        <record id="product_eq_019_grupo_electr_geno_100_kva" model="product.template">
+            <field name="name">Grupo electrógeno 100 KVA</field>
+            <field name="type">service</field>
+            <field name="categ_id" ref="categ_infra_equipo"/>
+            <field name="uom_id" ref="uom.product_uom_hour"/>
+            <field name="uom_po_id" ref="uom.product_uom_hour"/>
+            <field name="list_price">285.43</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">equipment</field>
+            <field name="infra_resource_code">EQ-019</field>
+            <field name="price_base_oruro">185.00</field>
+            <field name="adjustment_factor">1.750</field>
+            <field name="infra_justification">100% diesel</field>
+        </record>
+
+        <record id="product_eq_020_gr_a_autopropulsada_20_tn" model="product.template">
+            <field name="name">Grúa autopropulsada 20 Tn</field>
+            <field name="type">service</field>
+            <field name="categ_id" ref="categ_infra_equipo"/>
+            <field name="uom_id" ref="uom.product_uom_hour"/>
+            <field name="uom_po_id" ref="uom.product_uom_hour"/>
+            <field name="list_price">989.20</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">equipment</field>
+            <field name="infra_resource_code">EQ-020</field>
+            <field name="price_base_oruro">660.00</field>
+            <field name="adjustment_factor">1.700</field>
+            <field name="infra_justification">Pesada diesel</field>
+        </record>
+
+        <record id="product_eq_021_martillo_neum_tico" model="product.template">
+            <field name="name">Martillo neumático</field>
+            <field name="type">service</field>
+            <field name="categ_id" ref="categ_infra_equipo"/>
+            <field name="uom_id" ref="uom.product_uom_hour"/>
+            <field name="uom_po_id" ref="uom.product_uom_hour"/>
+            <field name="list_price">63.92</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">equipment</field>
+            <field name="infra_resource_code">EQ-021</field>
+            <field name="price_base_oruro">50.00</field>
+            <field name="adjustment_factor">1.450</field>
+            <field name="infra_justification">Neumático/eléctrico</field>
+        </record>
+
+        <record id="product_eq_022_mezcladora_de_hormig_n_250_lt" model="product.template">
+            <field name="name">Mezcladora de hormigón 250 Lt</field>
+            <field name="type">service</field>
+            <field name="categ_id" ref="categ_infra_equipo"/>
+            <field name="uom_id" ref="uom.product_uom_hour"/>
+            <field name="uom_po_id" ref="uom.product_uom_hour"/>
+            <field name="list_price">44.74</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">equipment</field>
+            <field name="infra_resource_code">EQ-022</field>
+            <field name="price_base_oruro">35.00</field>
+            <field name="adjustment_factor">1.450</field>
+            <field name="infra_justification">Eléctrica/diesel liviano</field>
+        </record>
+
+        <record id="product_eq_023_mezcladora_de_hormig_n_300_lt" model="product.template">
+            <field name="name">Mezcladora de hormigón 300 Lt</field>
+            <field name="type">service</field>
+            <field name="categ_id" ref="categ_infra_equipo"/>
+            <field name="uom_id" ref="uom.product_uom_hour"/>
+            <field name="uom_po_id" ref="uom.product_uom_hour"/>
+            <field name="list_price">53.69</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">equipment</field>
+            <field name="infra_resource_code">EQ-023</field>
+            <field name="price_base_oruro">42.00</field>
+            <field name="adjustment_factor">1.450</field>
+            <field name="infra_justification">Eléctrica/diesel liviano</field>
+        </record>
+
+        <record id="product_eq_024_motosierra_5_hp" model="product.template">
+            <field name="name">Motosierra 5 HP</field>
+            <field name="type">service</field>
+            <field name="categ_id" ref="categ_infra_equipo"/>
+            <field name="uom_id" ref="uom.product_uom_hour"/>
+            <field name="uom_po_id" ref="uom.product_uom_hour"/>
+            <field name="list_price">74.06</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">equipment</field>
+            <field name="infra_resource_code">EQ-024</field>
+            <field name="price_base_oruro">56.00</field>
+            <field name="adjustment_factor">1.500</field>
+            <field name="infra_justification">Gasolina</field>
+        </record>
+
+        <record id="product_eq_025_motoniveladora_125_hp" model="product.template">
+            <field name="name">Motoniveladora 125 HP</field>
+            <field name="type">service</field>
+            <field name="categ_id" ref="categ_infra_equipo"/>
+            <field name="uom_id" ref="uom.product_uom_hour"/>
+            <field name="uom_po_id" ref="uom.product_uom_hour"/>
+            <field name="list_price">657.26</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">equipment</field>
+            <field name="infra_resource_code">EQ-025</field>
+            <field name="price_base_oruro">426.00</field>
+            <field name="adjustment_factor">1.750</field>
+            <field name="infra_justification">Pesada diesel, alto consumo</field>
+        </record>
+
+        <record id="product_eq_026_perforadora_neum_tica_jack_ha" model="product.template">
+            <field name="name">Perforadora neumática (Jack hammer)</field>
+            <field name="type">service</field>
+            <field name="categ_id" ref="categ_infra_equipo"/>
+            <field name="uom_id" ref="uom.product_uom_hour"/>
+            <field name="uom_po_id" ref="uom.product_uom_hour"/>
+            <field name="list_price">67.45</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">equipment</field>
+            <field name="infra_resource_code">EQ-026</field>
+            <field name="price_base_oruro">51.00</field>
+            <field name="adjustment_factor">1.500</field>
+            <field name="infra_justification">Neumática</field>
+        </record>
+
+        <record id="product_eq_027_planta_de_asfalto_60_120_tph" model="product.template">
+            <field name="name">Planta de asfalto 60-120 TPH</field>
+            <field name="type">service</field>
+            <field name="categ_id" ref="categ_infra_equipo"/>
+            <field name="uom_id" ref="uom.product_uom_hour"/>
+            <field name="uom_po_id" ref="uom.product_uom_hour"/>
+            <field name="list_price">2189.99</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">equipment</field>
+            <field name="infra_resource_code">EQ-027</field>
+            <field name="price_base_oruro">1380.00</field>
+            <field name="adjustment_factor">1.800</field>
+            <field name="infra_justification">Altísimo consumo diesel + gas</field>
+        </record>
+
+        <record id="product_eq_028_rodillo_t_ndem_vibratorio" model="product.template">
+            <field name="name">Rodillo tándem vibratorio</field>
+            <field name="type">service</field>
+            <field name="categ_id" ref="categ_infra_equipo"/>
+            <field name="uom_id" ref="uom.product_uom_hour"/>
+            <field name="uom_po_id" ref="uom.product_uom_hour"/>
+            <field name="list_price">458.23</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">equipment</field>
+            <field name="infra_resource_code">EQ-028</field>
+            <field name="price_base_oruro">315.00</field>
+            <field name="adjustment_factor">1.650</field>
+            <field name="infra_justification">Diesel mediano</field>
+        </record>
+
+        <record id="product_eq_029_tractor_c_topadora_d7_230_hp" model="product.template">
+            <field name="name">Tractor c/topadora D7 230 HP</field>
+            <field name="type">service</field>
+            <field name="categ_id" ref="categ_infra_equipo"/>
+            <field name="uom_id" ref="uom.product_uom_hour"/>
+            <field name="uom_po_id" ref="uom.product_uom_hour"/>
+            <field name="list_price">714.13</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">equipment</field>
+            <field name="infra_resource_code">EQ-029</field>
+            <field name="price_base_oruro">450.00</field>
+            <field name="adjustment_factor">1.800</field>
+            <field name="infra_justification">Pesado diesel, altísimo consumo</field>
+        </record>
+
+        <record id="product_eq_030_tractor_c_topadora_d8_c_ripper" model="product.template">
+            <field name="name">Tractor c/topadora D8 c/ripper 305 HP</field>
+            <field name="type">service</field>
+            <field name="categ_id" ref="categ_infra_equipo"/>
+            <field name="uom_id" ref="uom.product_uom_hour"/>
+            <field name="uom_po_id" ref="uom.product_uom_hour"/>
+            <field name="list_price">983.91</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">equipment</field>
+            <field name="infra_resource_code">EQ-030</field>
+            <field name="price_base_oruro">620.00</field>
+            <field name="adjustment_factor">1.800</field>
+            <field name="infra_justification">Pesado diesel, altísimo consumo</field>
+        </record>
+
+        <record id="product_eq_031_tractor_agr_cola_c_arado_de_di" model="product.template">
+            <field name="name">Tractor agrícola c/arado de disco 90 HP</field>
+            <field name="type">service</field>
+            <field name="categ_id" ref="categ_infra_equipo"/>
+            <field name="uom_id" ref="uom.product_uom_hour"/>
+            <field name="uom_po_id" ref="uom.product_uom_hour"/>
+            <field name="list_price">459.69</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">equipment</field>
+            <field name="infra_resource_code">EQ-031</field>
+            <field name="price_base_oruro">316.00</field>
+            <field name="adjustment_factor">1.650</field>
+            <field name="infra_justification">Diesel</field>
+        </record>
+
+        <record id="product_eq_032_vibrador_de_inmersi_n_para_hor" model="product.template">
+            <field name="name">Vibrador de inmersión para hormigón</field>
+            <field name="type">service</field>
+            <field name="categ_id" ref="categ_infra_equipo"/>
+            <field name="uom_id" ref="uom.product_uom_hour"/>
+            <field name="uom_po_id" ref="uom.product_uom_hour"/>
+            <field name="list_price">34.56</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">equipment</field>
+            <field name="infra_resource_code">EQ-032</field>
+            <field name="price_base_oruro">28.00</field>
+            <field name="adjustment_factor">1.400</field>
+            <field name="infra_justification">Eléctrico/gasolina liviano</field>
+        </record>
+
+        <record id="product_eq_033_volquete_12_m3" model="product.template">
+            <field name="name">Volquete 12 M3</field>
+            <field name="type">service</field>
+            <field name="categ_id" ref="categ_infra_equipo"/>
+            <field name="uom_id" ref="uom.product_uom_hour"/>
+            <field name="uom_po_id" ref="uom.product_uom_hour"/>
+            <field name="list_price">393.43</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">equipment</field>
+            <field name="infra_resource_code">EQ-033</field>
+            <field name="price_base_oruro">255.00</field>
+            <field name="adjustment_factor">1.750</field>
+            <field name="infra_justification">Pesado diesel, transporte continuo</field>
+        </record>
+
+        <record id="product_eq_034_equipo_de_tesado_de_cables_mu" model="product.template">
+            <field name="name">Equipo de tesado de cables (multitorón)</field>
+            <field name="type">service</field>
+            <field name="categ_id" ref="categ_infra_equipo"/>
+            <field name="uom_id" ref="uom.product_uom_hour"/>
+            <field name="uom_po_id" ref="uom.product_uom_hour"/>
+            <field name="list_price">3624.19</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">equipment</field>
+            <field name="infra_resource_code">EQ-034</field>
+            <field name="price_base_oruro">3045.00</field>
+            <field name="adjustment_factor">1.350</field>
+            <field name="infra_justification">Hidráulico/eléctrico, especializado</field>
+        </record>
+
+        <record id="product_eq_035_equipo_de_inyecci_n" model="product.template">
+            <field name="name">Equipo de inyección</field>
+            <field name="type">service</field>
+            <field name="categ_id" ref="categ_infra_equipo"/>
+            <field name="uom_id" ref="uom.product_uom_hour"/>
+            <field name="uom_po_id" ref="uom.product_uom_hour"/>
+            <field name="list_price">51.84</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">equipment</field>
+            <field name="infra_resource_code">EQ-035</field>
+            <field name="price_base_oruro">42.00</field>
+            <field name="adjustment_factor">1.400</field>
+            <field name="infra_justification">Eléctrico/hidráulico</field>
+        </record>
+
+        <record id="product_eq_036_equipo_de_sondeo_rotativo" model="product.template">
+            <field name="name">Equipo de sondeo rotativo</field>
+            <field name="type">service</field>
+            <field name="categ_id" ref="categ_infra_equipo"/>
+            <field name="uom_id" ref="uom.product_uom_hour"/>
+            <field name="uom_po_id" ref="uom.product_uom_hour"/>
+            <field name="list_price">1199.03</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">equipment</field>
+            <field name="infra_resource_code">EQ-036</field>
+            <field name="price_base_oruro">850.00</field>
+            <field name="adjustment_factor">1.600</field>
+            <field name="infra_justification">Diesel, perforación</field>
+        </record>
+
+        <record id="product_eq_037_piloteadora_d_1_50m" model="product.template">
+            <field name="name">Piloteadora D=1.50m</field>
+            <field name="type">service</field>
+            <field name="categ_id" ref="categ_infra_equipo"/>
+            <field name="uom_id" ref="uom.product_uom_hour"/>
+            <field name="uom_po_id" ref="uom.product_uom_hour"/>
+            <field name="list_price">4073.17</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">equipment</field>
+            <field name="infra_resource_code">EQ-037</field>
+            <field name="price_base_oruro">2800.00</field>
+            <field name="adjustment_factor">1.650</field>
+            <field name="infra_justification">Pesada diesel, especializada</field>
+        </record>
+
+        <record id="product_eq_038_retroexcavadora_90_hp" model="product.template">
+            <field name="name">Retroexcavadora 90 HP</field>
+            <field name="type">service</field>
+            <field name="categ_id" ref="categ_infra_equipo"/>
+            <field name="uom_id" ref="uom.product_uom_hour"/>
+            <field name="uom_po_id" ref="uom.product_uom_hour"/>
+            <field name="list_price">569.54</field>
+            <field name="is_infra_resource" eval="True"/>
+            <field name="infra_resource_type">equipment</field>
+            <field name="infra_resource_code">EQ-038</field>
+            <field name="price_base_oruro">380.00</field>
+            <field name="adjustment_factor">1.700</field>
+            <field name="infra_justification">Pesada diesel</field>
+        </record>
+
+    </data>
+</odoo>

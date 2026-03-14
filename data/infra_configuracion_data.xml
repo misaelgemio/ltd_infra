@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <record id="config_uyuni_2025" model="infra.configuracion">
+            <field name="name">Uyuni — Licitación 2025</field>
+            <field name="cargas_sociales_pct">0.4681</field>
+            <field name="mo_indirecta_pct">0.05</field>
+            <field name="iva_mano_obra_pct">0.1494</field>
+            <field name="herramientas_pct">0.05</field>
+            <field name="gastos_generales_pct">0.10</field>
+            <field name="gastos_financieros_pct">0.0</field>
+            <field name="utilidad_pct">0.10</field>
+            <field name="impuesto_it_pct">0.0309</field>
+            <field name="presupuesto_base_bs">1351643433.77</field>
+            <field name="incremento_objetivo_pct">0.42</field>
+            <field name="factor_calibracion">0.881638</field>
+        </record>
+
+    </data>
+</odoo>

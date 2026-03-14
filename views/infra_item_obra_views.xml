@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_infra_item_obra_form" model="ir.ui.view">
+        <field name="name">infra.item.obra.form</field>
+        <field name="model">infra.item.obra</field>
+        <field name="arch" type="xml">
+            <form string="Ítem de Obra">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="numero"/>
+                            <field name="name"/>
+                            <field name="unidad"/>
+                        </group>
+                        <group>
+                            <field name="proyecto_id"/>
+                            <field name="tramo_id"/>
+                            <field name="modulo_id"/>
+                        </group>
+                    </group>
+                    <group string="Presupuesto">
+                        <group>
+                            <field name="cantidad"/>
+                            <field name="precio_unitario"/>
+                        </group>
+                        <group>
+                            <field name="total" widget="monetary"/>
+                        </group>
+                    </group>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_infra_item_obra_tree" model="ir.ui.view">
+        <field name="name">infra.item.obra.tree</field>
+        <field name="model">infra.item.obra</field>
+        <field name="arch" type="xml">
+            <list string="Ítems de Obra">
+                <field name="numero"/>
+                <field name="name"/>
+                <field name="unidad"/>
+                <field name="tramo_id" optional="show"/>
+                <field name="modulo_id" optional="show"/>
+                <field name="cantidad" sum="Cant. Total"/>
+                <field name="precio_unitario"/>
+                <field name="total" sum="Presupuesto Total"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_infra_item_obra_search" model="ir.ui.view">
+        <field name="name">infra.item.obra.search</field>
+        <field name="model">infra.item.obra</field>
+        <field name="arch" type="xml">
+            <search string="Ítems de Obra">
+                <field name="name"/>
+                <field name="numero"/>
+                <field name="tramo_id"/>
+                <field name="modulo_id"/>
+                <group expand="0" string="Agrupar por">
+                    <filter string="Módulo" name="group_modulo"
+                            context="{'group_by': 'modulo_id'}"/>
+                    <filter string="Tramo" name="group_tramo"
+                            context="{'group_by': 'tramo_id'}"/>
+                    <filter string="Proyecto" name="group_proyecto"
+                            context="{'group_by': 'proyecto_id'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_infra_item_obra_all" model="ir.actions.act_window">
+        <field name="name">Ítems de Obra</field>
+        <field name="res_model">infra.item.obra</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <record id="action_infra_modulo_obra_all" model="ir.actions.act_window">
+        <field name="name">Módulos de Obra</field>
+        <field name="res_model">infra.modulo.obra</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+</odoo>

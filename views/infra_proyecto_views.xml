@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Kanban -->
+    <record id="view_infra_proyecto_kanban" model="ir.ui.view">
+        <field name="name">infra.proyecto.kanban</field>
+        <field name="model">infra.proyecto</field>
+        <field name="arch" type="xml">
+            <kanban default_group_by="state">
+                <field name="name"/>
+                <field name="state"/>
+                <field name="presupuesto_total"/>
+                <field name="tramo_count"/>
+                <field name="item_count"/>
+                <field name="responsable_id"/>
+                <templates>
+                    <t t-name="card">
+                        <field name="name" class="fw-bold fs-5"/>
+                        <field name="responsable_id" widget="many2one_avatar_user"/>
+                        <div class="d-flex justify-content-between mt-2">
+                            <span><field name="tramo_count"/> tramos</span>
+                            <span><field name="item_count"/> ítems</span>
+                        </div>
+                        <div class="mt-1 text-primary fw-bold">
+                            Bs <field name="presupuesto_total" widget="monetary"/>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <!-- Form -->
+    <record id="view_infra_proyecto_form" model="ir.ui.view">
+        <field name="name">infra.proyecto.form</field>
+        <field name="model">infra.proyecto</field>
+        <field name="arch" type="xml">
+            <form string="Proyecto de Obra">
+                <header>
+                    <button name="action_activar" string="Activar"
+                            type="object" class="btn-primary"
+                            invisible="state != 'borrador'"/>
+                    <button name="action_adjudicar" string="Adjudicar"
+                            type="object" class="btn-primary"
+                            invisible="state != 'activo'"/>
+                    <button name="action_ejecutar" string="Iniciar Ejecución"
+                            type="object" class="btn-primary"
+                            invisible="state != 'adjudicado'"/>
+                    <button name="action_completar" string="Completar"
+                            type="object" class="btn-success"
+                            invisible="state != 'en_ejecucion'"/>
+                    <button name="action_borrador" string="Volver a Borrador"
+                            type="object"
+                            invisible="state == 'borrador'"/>
+                    <field name="state" widget="statusbar"
+                           statusbar_visible="borrador,activo,adjudicado,en_ejecucion,completado"/>
+                </header>
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button name="action_view_tramos" type="object"
+                                class="oe_stat_button" icon="fa-road">
+                            <field name="tramo_count" widget="statinfo" string="Tramos"/>
+                        </button>
+                        <button name="action_view_items" type="object"
+                                class="oe_stat_button" icon="fa-list">
+                            <field name="item_count" widget="statinfo" string="Ítems"/>
+                        </button>
+                    </div>
+                    <div class="oe_title">
+                        <h1><field name="name" placeholder="Nombre del proyecto..."/></h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="codigo"/>
+                            <field name="configuracion_id"/>
+                            <field name="responsable_id"/>
+                        </group>
+                        <group>
+                            <field name="fecha_inicio"/>
+                            <field name="plazo_meses"/>
+                            <field name="currency_id"/>
+                            <field name="presupuesto_total" widget="monetary"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Tramos" name="tramos">
+                            <field name="tramo_ids">
+                                <list editable="bottom">
+                                    <field name="sequence" widget="handle"/>
+                                    <field name="name"/>
+                                    <field name="subtotal" widget="monetary" sum="Total"/>
+                                    <field name="incidencia_pct" widget="percentage"/>
+                                </list>
+                            </field>
+                        </page>
+                        <page string="Notas" name="notas">
+                            <field name="note" placeholder="Observaciones del proyecto..."/>
+                        </page>
+                    </notebook>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <!-- Tree -->
+    <record id="view_infra_proyecto_tree" model="ir.ui.view">
+        <field name="name">infra.proyecto.tree</field>
+        <field name="model">infra.proyecto</field>
+        <field name="arch" type="xml">
+            <list string="Proyectos de Obra"
+                  decoration-success="state == 'completado'"
+                  decoration-info="state == 'en_ejecucion'"
+                  decoration-warning="state == 'adjudicado'">
+                <field name="name"/>
+                <field name="codigo"/>
+                <field name="responsable_id" widget="many2one_avatar_user"/>
+                <field name="tramo_count"/>
+                <field name="plazo_meses"/>
+                <field name="presupuesto_total" widget="monetary" sum="Total"/>
+                <field name="state" widget="badge"
+                       decoration-success="state == 'completado'"
+                       decoration-info="state in ('activo', 'en_ejecucion')"
+                       decoration-warning="state == 'adjudicado'"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- Search -->
+    <record id="view_infra_proyecto_search" model="ir.ui.view">
+        <field name="name">infra.proyecto.search</field>
+        <field name="model">infra.proyecto</field>
+        <field name="arch" type="xml">
+            <search string="Proyectos">
+                <field name="name"/>
+                <field name="codigo"/>
+                <field name="responsable_id"/>
+                <filter name="filter_activos" string="Activos"
+                        domain="[('state', 'in', ['activo', 'adjudicado', 'en_ejecucion'])]"/>
+                <group expand="0" string="Agrupar por">
+                    <filter string="Estado" name="group_state"
+                            context="{'group_by': 'state'}"/>
+                    <filter string="Responsable" name="group_resp"
+                            context="{'group_by': 'responsable_id'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <!-- Actions -->
+    <record id="action_infra_proyecto_all" model="ir.actions.act_window">
+        <field name="name">Proyectos</field>
+        <field name="res_model">infra.proyecto</field>
+        <field name="view_mode">kanban,list,form</field>
+    </record>
+
+    <record id="action_infra_proyecto_activos" model="ir.actions.act_window">
+        <field name="name">En Ejecución</field>
+        <field name="res_model">infra.proyecto</field>
+        <field name="view_mode">kanban,list,form</field>
+        <field name="domain">[('state', '=', 'en_ejecucion')]</field>
+    </record>
+
+</odoo>

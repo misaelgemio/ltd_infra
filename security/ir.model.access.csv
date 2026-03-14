@@ -1,0 +1,16 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_infra_configuracion_user,infra.configuracion.user,model_infra_configuracion,group_infra_user,1,0,0,0
+access_infra_configuracion_manager,infra.configuracion.manager,model_infra_configuracion,group_infra_manager,1,1,1,0
+access_infra_configuracion_admin,infra.configuracion.admin,model_infra_configuracion,group_infra_admin,1,1,1,1
+access_infra_proyecto_user,infra.proyecto.user,model_infra_proyecto,group_infra_user,1,0,0,0
+access_infra_proyecto_manager,infra.proyecto.manager,model_infra_proyecto,group_infra_manager,1,1,1,0
+access_infra_proyecto_admin,infra.proyecto.admin,model_infra_proyecto,group_infra_admin,1,1,1,1
+access_infra_tramo_user,infra.tramo.user,model_infra_tramo,group_infra_user,1,0,0,0
+access_infra_tramo_manager,infra.tramo.manager,model_infra_tramo,group_infra_manager,1,1,1,0
+access_infra_tramo_admin,infra.tramo.admin,model_infra_tramo,group_infra_admin,1,1,1,1
+access_infra_modulo_obra_user,infra.modulo.obra.user,model_infra_modulo_obra,group_infra_user,1,0,0,0
+access_infra_modulo_obra_manager,infra.modulo.obra.manager,model_infra_modulo_obra,group_infra_manager,1,1,1,0
+access_infra_modulo_obra_admin,infra.modulo.obra.admin,model_infra_modulo_obra,group_infra_admin,1,1,1,1
+access_infra_item_obra_user,infra.item.obra.user,model_infra_item_obra,group_infra_user,1,0,0,0
+access_infra_item_obra_manager,infra.item.obra.manager,model_infra_item_obra,group_infra_manager,1,1,1,0
+access_infra_item_obra_admin,infra.item.obra.admin,model_infra_item_obra,group_infra_admin,1,1,1,1

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_infra_tramo_form" model="ir.ui.view">
+        <field name="name">infra.tramo.form</field>
+        <field name="model">infra.tramo</field>
+        <field name="arch" type="xml">
+            <form string="Tramo">
+                <sheet>
+                    <div class="oe_title">
+                        <h1><field name="name" placeholder="Nombre del tramo..."/></h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="proyecto_id"/>
+                            <field name="sequence"/>
+                        </group>
+                        <group>
+                            <field name="subtotal" widget="monetary"/>
+                            <field name="incidencia_pct" widget="percentage"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Módulos de Obra" name="modulos">
+                            <field name="modulo_ids">
+                                <list editable="bottom">
+                                    <field name="numero"/>
+                                    <field name="name"/>
+                                    <field name="subtotal" widget="monetary" sum="Total"/>
+                                    <field name="incidencia_pct" widget="percentage"/>
+                                </list>
+                            </field>
+                        </page>
+                        <page string="Ítems de Obra" name="items">
+                            <field name="item_ids">
+                                <list editable="bottom">
+                                    <field name="numero"/>
+                                    <field name="name"/>
+                                    <field name="unidad"/>
+                                    <field name="modulo_id"/>
+                                    <field name="cantidad"/>
+                                    <field name="precio_unitario"/>
+                                    <field name="total" sum="Total"/>
+                                </list>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_infra_tramo_tree" model="ir.ui.view">
+        <field name="name">infra.tramo.tree</field>
+        <field name="model">infra.tramo</field>
+        <field name="arch" type="xml">
+            <list string="Tramos">
+                <field name="sequence" widget="handle"/>
+                <field name="name"/>
+                <field name="proyecto_id"/>
+                <field name="subtotal" widget="monetary" sum="Total"/>
+                <field name="incidencia_pct" widget="percentage"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="action_infra_tramo_all" model="ir.actions.act_window">
+        <field name="name">Tramos</field>
+        <field name="res_model">infra.tramo</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+</odoo>

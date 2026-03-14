@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_infra_configuracion_form" model="ir.ui.view">
+        <field name="name">infra.configuracion.form</field>
+        <field name="model">infra.configuracion</field>
+        <field name="arch" type="xml">
+            <form string="Configuración de Licitación">
+                <sheet>
+                    <div class="oe_title">
+                        <h1><field name="name" placeholder="Nombre de la configuración..."/></h1>
+                    </div>
+                    <group>
+                        <group string="Porcentajes APU (B-2)">
+                            <field name="cargas_sociales_pct" widget="percentage"/>
+                            <field name="mo_indirecta_pct" widget="percentage"/>
+                            <field name="iva_mano_obra_pct" widget="percentage"/>
+                            <field name="herramientas_pct" widget="percentage"/>
+                            <field name="gastos_generales_pct" widget="percentage"/>
+                            <field name="gastos_financieros_pct" widget="percentage"/>
+                            <field name="utilidad_pct" widget="percentage"/>
+                            <field name="impuesto_it_pct" widget="percentage"/>
+                        </group>
+                        <group string="Calibración Presupuesto">
+                            <field name="currency_id"/>
+                            <field name="presupuesto_base_bs" widget="monetary"/>
+                            <field name="incremento_objetivo_pct" widget="percentage"/>
+                            <field name="factor_calibracion"/>
+                            <field name="presupuesto_objetivo" widget="monetary"/>
+                        </group>
+                    </group>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_infra_configuracion_tree" model="ir.ui.view">
+        <field name="name">infra.configuracion.tree</field>
+        <field name="model">infra.configuracion</field>
+        <field name="arch" type="xml">
+            <list string="Configuraciones">
+                <field name="name"/>
+                <field name="cargas_sociales_pct" widget="percentage"/>
+                <field name="gastos_generales_pct" widget="percentage"/>
+                <field name="utilidad_pct" widget="percentage"/>
+                <field name="impuesto_it_pct" widget="percentage"/>
+                <field name="factor_calibracion"/>
+                <field name="presupuesto_objetivo" widget="monetary"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="action_infra_configuracion" model="ir.actions.act_window">
+        <field name="name">Parámetros de Licitación</field>
+        <field name="res_model">infra.configuracion</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+</odoo>

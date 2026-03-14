@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Root menu -->
+    <menuitem id="menu_infra_root"
+              name="LTD Infra"
+              web_icon="ltd_infra,static/description/icon.png"
+              sequence="30"/>
+
+    <!-- Proyectos -->
+    <menuitem id="menu_infra_proyectos"
+              name="Proyectos"
+              parent="menu_infra_root"
+              sequence="10"/>
+    <menuitem id="menu_infra_proyecto_all"
+              name="Todos los Proyectos"
+              parent="menu_infra_proyectos"
+              action="action_infra_proyecto_all"
+              sequence="10"/>
+    <menuitem id="menu_infra_proyecto_activos"
+              name="En Ejecución"
+              parent="menu_infra_proyectos"
+              action="action_infra_proyecto_activos"
+              sequence="20"/>
+
+    <!-- Presupuestos -->
+    <menuitem id="menu_infra_presupuestos"
+              name="Presupuestos"
+              parent="menu_infra_root"
+              sequence="20"/>
+    <menuitem id="menu_infra_tramos"
+              name="Tramos"
+              parent="menu_infra_presupuestos"
+              action="action_infra_tramo_all"
+              sequence="10"/>
+    <menuitem id="menu_infra_modulos"
+              name="Módulos de Obra"
+              parent="menu_infra_presupuestos"
+              action="action_infra_modulo_obra_all"
+              sequence="20"/>
+    <menuitem id="menu_infra_items"
+              name="Ítems de Obra (B-1)"
+              parent="menu_infra_presupuestos"
+              action="action_infra_item_obra_all"
+              sequence="30"/>
+
+    <!-- Recursos (B-3) -->
+    <menuitem id="menu_infra_recursos"
+              name="Recursos (B-3)"
+              parent="menu_infra_root"
+              sequence="30"/>
+    <menuitem id="menu_infra_recursos_all"
+              name="Todos los Recursos"
+              parent="menu_infra_recursos"
+              action="action_product_infra_all"
+              sequence="10"/>
+    <menuitem id="menu_infra_materiales"
+              name="Materiales"
+              parent="menu_infra_recursos"
+              action="action_product_infra_materiales"
+              sequence="20"/>
+    <menuitem id="menu_infra_mano_obra"
+              name="Mano de Obra"
+              parent="menu_infra_recursos"
+              action="action_product_infra_mano_obra"
+              sequence="30"/>
+    <menuitem id="menu_infra_equipo"
+              name="Equipo y Maquinaria"
+              parent="menu_infra_recursos"
+              action="action_product_infra_equipo"
+              sequence="40"/>
+
+    <!-- Configuración -->
+    <menuitem id="menu_infra_config"
+              name="Configuración"
+              parent="menu_infra_root"
+              sequence="90"/>
+    <menuitem id="menu_infra_config_params"
+              name="Parámetros de Licitación"
+              parent="menu_infra_config"
+              action="action_infra_configuracion"
+              sequence="10"/>
+
+</odoo>

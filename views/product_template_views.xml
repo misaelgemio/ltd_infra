@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Tree view: Recursos B-3 -->
+    <record id="view_product_template_infra_tree" model="ir.ui.view">
+        <field name="name">product.template.infra.tree</field>
+        <field name="model">product.template</field>
+        <field name="arch" type="xml">
+            <list string="Precios Elementales B-3">
+                <field name="infra_resource_code" string="Código"/>
+                <field name="name" string="Descripción"/>
+                <field name="infra_resource_type" string="Tipo"/>
+                <field name="uom_id" string="Unidad"/>
+                <field name="price_base_oruro" string="Precio Base (Bs)"/>
+                <field name="adjustment_factor" string="Factor"/>
+                <field name="price_uyuni" string="Precio Uyuni (Bs)"/>
+                <field name="variation_pct" string="Δ%"/>
+                <field name="infra_justification" string="Justificación" optional="hide"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- Form view: extension product.template -->
+    <record id="view_product_template_infra_form" model="ir.ui.view">
+        <field name="name">product.template.infra.form</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_only_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group[@name='group_general']" position="after">
+                <group string="LTD Infra — Precios Elementales" invisible="not is_infra_resource">
+                    <group>
+                        <field name="is_infra_resource" invisible="1"/>
+                        <field name="infra_resource_type"/>
+                        <field name="infra_resource_code"/>
+                    </group>
+                    <group>
+                        <field name="price_base_oruro"/>
+                        <field name="adjustment_factor"/>
+                        <field name="price_uyuni"/>
+                        <field name="variation_pct"/>
+                    </group>
+                    <group colspan="2">
+                        <field name="infra_justification" placeholder="Justificación del factor de ajuste..."/>
+                    </group>
+                </group>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- Search view -->
+    <record id="view_product_template_infra_search" model="ir.ui.view">
+        <field name="name">product.template.infra.search</field>
+        <field name="model">product.template</field>
+        <field name="arch" type="xml">
+            <search string="Recursos Infra">
+                <field name="name"/>
+                <field name="infra_resource_code"/>
+                <filter name="filter_infra" string="Recursos Infra"
+                        domain="[('is_infra_resource', '=', True)]"/>
+                <separator/>
+                <filter name="filter_material" string="Materiales"
+                        domain="[('infra_resource_type', '=', 'material')]"/>
+                <filter name="filter_labor" string="Mano de Obra"
+                        domain="[('infra_resource_type', '=', 'labor')]"/>
+                <filter name="filter_equipment" string="Equipo"
+                        domain="[('infra_resource_type', '=', 'equipment')]"/>
+                <group expand="0" string="Agrupar por">
+                    <filter string="Tipo" name="group_type"
+                            context="{'group_by': 'infra_resource_type'}"/>
+                    <filter string="Categoría" name="group_categ"
+                            context="{'group_by': 'categ_id'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <!-- Action: Todos los recursos -->
+    <record id="action_product_infra_all" model="ir.actions.act_window">
+        <field name="name">Precios Elementales (B-3)</field>
+        <field name="res_model">product.template</field>
+        <field name="view_mode">list,form</field>
+        <field name="domain">[('is_infra_resource', '=', True)]</field>
+        <field name="context">{'default_is_infra_resource': True, 'search_default_filter_infra': 1}</field>
+        <field name="view_ids" eval="[(5, 0, 0),
+            (0, 0, {'view_mode': 'list', 'view_id': ref('view_product_template_infra_tree')})]"/>
+    </record>
+
+    <!-- Action: Materiales -->
+    <record id="action_product_infra_materiales" model="ir.actions.act_window">
+        <field name="name">Materiales</field>
+        <field name="res_model">product.template</field>
+        <field name="view_mode">list,form</field>
+        <field name="domain">[('is_infra_resource', '=', True), ('infra_resource_type', '=', 'material')]</field>
+        <field name="context">{'default_is_infra_resource': True, 'default_infra_resource_type': 'material'}</field>
+        <field name="view_ids" eval="[(5, 0, 0),
+            (0, 0, {'view_mode': 'list', 'view_id': ref('view_product_template_infra_tree')})]"/>
+    </record>
+
+    <!-- Action: Mano de Obra -->
+    <record id="action_product_infra_mano_obra" model="ir.actions.act_window">
+        <field name="name">Mano de Obra</field>
+        <field name="res_model">product.template</field>
+        <field name="view_mode">list,form</field>
+        <field name="domain">[('is_infra_resource', '=', True), ('infra_resource_type', '=', 'labor')]</field>
+        <field name="context">{'default_is_infra_resource': True, 'default_infra_resource_type': 'labor'}</field>
+        <field name="view_ids" eval="[(5, 0, 0),
+            (0, 0, {'view_mode': 'list', 'view_id': ref('view_product_template_infra_tree')})]"/>
+    </record>
+
+    <!-- Action: Equipo -->
+    <record id="action_product_infra_equipo" model="ir.actions.act_window">
+        <field name="name">Equipo y Maquinaria</field>
+        <field name="res_model">product.template</field>
+        <field name="view_mode">list,form</field>
+        <field name="domain">[('is_infra_resource', '=', True), ('infra_resource_type', '=', 'equipment')]</field>
+        <field name="context">{'default_is_infra_resource': True, 'default_infra_resource_type': 'equipment'}</field>
+        <field name="view_ids" eval="[(5, 0, 0),
+            (0, 0, {'view_mode': 'list', 'view_id': ref('view_product_template_infra_tree')})]"/>
+    </record>
+
+</odoo>
