@@ -2,11 +2,11 @@
 <odoo noupdate="1">
 
     <!-- Proyecto Uyuni (referencia para datos B-4 a B-9) -->
-    <record id="infra_proyecto_uyuni" model="infra.proyecto">
+    <record id="infra_proyecto_uyuni" model="project.project">
         <field name="name">Carretera Uyuni — Tramos 1, 2 y 3</field>
-        <field name="codigo">CUCE-UYUNI-2025</field>
+        <field name="is_infra_project" eval="True"/>
+        <field name="codigo_cuce">CUCE-UYUNI-2025</field>
         <field name="plazo_meses">36</field>
-        <field name="state">activo</field>
     </record>
 
     <!-- B-4 — Cronograma de Ejecución de Obra -->

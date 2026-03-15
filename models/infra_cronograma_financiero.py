@@ -9,7 +9,7 @@ class InfraCronogramaFinanciero(models.Model):
     _order = 'proyecto_id, mes'
 
     proyecto_id = fields.Many2one(
-        'infra.proyecto', 'Proyecto', required=True, ondelete='cascade')
+        'project.project', 'Proyecto', required=True, ondelete='cascade')
     mes = fields.Integer('Mes', required=True)
     inversion_pct = fields.Float(
         'Inversión Mensual (%)', digits=(8, 6))
@@ -28,7 +28,7 @@ class InfraDesembolso(models.Model):
     _order = 'proyecto_id, sequence'
 
     proyecto_id = fields.Many2one(
-        'infra.proyecto', 'Proyecto', required=True, ondelete='cascade')
+        'project.project', 'Proyecto', required=True, ondelete='cascade')
     sequence = fields.Integer('Secuencia', default=10)
     name = fields.Char('Concepto', required=True)
     total_bs = fields.Float('Total (Bs)', digits=(14, 2))

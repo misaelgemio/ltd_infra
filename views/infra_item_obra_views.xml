@@ -14,7 +14,7 @@
                             <field name="unidad"/>
                         </group>
                         <group>
-                            <field name="proyecto_id"/>
+                            <field name="project_id"/>
                             <field name="tramo_id"/>
                             <field name="modulo_id"/>
                         </group>
@@ -68,7 +68,7 @@
                     <filter string="Tramo" name="group_tramo"
                             context="{'group_by': 'tramo_id'}"/>
                     <filter string="Proyecto" name="group_proyecto"
-                            context="{'group_by': 'proyecto_id'}"/>
+                            context="{'group_by': 'project_id'}"/>
                 </group>
             </search>
         </field>

@@ -13,8 +13,8 @@ class InfraModuloObra(models.Model):
     tramo_id = fields.Many2one(
         'infra.tramo', 'Tramo', required=True,
         ondelete='cascade')
-    proyecto_id = fields.Many2one(
-        'infra.proyecto', related='tramo_id.proyecto_id',
+    project_id = fields.Many2one(
+        'project.project', related='tramo_id.project_id',
         string='Proyecto', store=True)
 
     item_ids = fields.One2many('infra.item.obra', 'modulo_id', 'Ítems')

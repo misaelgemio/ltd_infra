@@ -9,7 +9,7 @@ class InfraGastoGeneral(models.Model):
     _order = 'proyecto_id, seccion, numero'
 
     proyecto_id = fields.Many2one(
-        'infra.proyecto', 'Proyecto', required=True, ondelete='cascade')
+        'project.project', 'Proyecto', required=True, ondelete='cascade')
     seccion = fields.Selection([
         ('admin_central', 'A. Administración Central'),
         ('admin_campo', 'B. Administración de Campo'),
@@ -37,7 +37,7 @@ class InfraCargaSocial(models.Model):
     _order = 'proyecto_id, seccion, numero'
 
     proyecto_id = fields.Many2one(
-        'infra.proyecto', 'Proyecto', required=True, ondelete='cascade')
+        'project.project', 'Proyecto', required=True, ondelete='cascade')
     seccion = fields.Selection([
         ('aportes', 'A. Aportes Patronales'),
         ('beneficios', 'B. Beneficios Sociales'),

@@ -18,7 +18,7 @@ class InfraApu(models.Model):
 
     configuracion_id = fields.Many2one(
         'infra.configuracion', 'Configuración', tracking=True)
-    proyecto_id = fields.Many2one('infra.proyecto', 'Proyecto')
+    proyecto_id = fields.Many2one('project.project', 'Proyecto')
 
     # --- Líneas de detalle ---
     material_ids = fields.One2many(

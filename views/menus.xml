@@ -7,7 +7,7 @@
               web_icon="ltd_infra,static/description/icon.png"
               sequence="30"/>
 
-    <!-- Proyectos -->
+    <!-- Proyectos (ahora usa project.project) -->
     <menuitem id="menu_infra_proyectos"
               name="Proyectos"
               parent="menu_infra_root"
@@ -15,13 +15,8 @@
     <menuitem id="menu_infra_proyecto_all"
               name="Todos los Proyectos"
               parent="menu_infra_proyectos"
-              action="action_infra_proyecto_all"
+              action="action_infra_projects"
               sequence="10"/>
-    <menuitem id="menu_infra_proyecto_activos"
-              name="En Ejecución"
-              parent="menu_infra_proyectos"
-              action="action_infra_proyecto_activos"
-              sequence="20"/>
 
     <!-- Presupuestos -->
     <menuitem id="menu_infra_presupuestos"

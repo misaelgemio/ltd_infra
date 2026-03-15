@@ -6,15 +6,15 @@ class InfraTramo(models.Model):
     _name = 'infra.tramo'
     _description = 'Tramo de Proyecto'
     _inherit = ['mail.thread', 'mail.activity.mixin']
-    _order = 'proyecto_id, sequence, name'
+    _order = 'project_id, sequence, name'
 
     name = fields.Char('Nombre del Tramo', required=True, tracking=True)
     sequence = fields.Integer('Secuencia', default=10)
-    proyecto_id = fields.Many2one(
-        'infra.proyecto', 'Proyecto', required=True,
+    project_id = fields.Many2one(
+        'project.project', 'Proyecto', required=True,
         ondelete='cascade', tracking=True)
     configuracion_id = fields.Many2one(
-        'infra.configuracion', related='proyecto_id.configuracion_id',
+        'infra.configuracion', related='project_id.configuracion_id',
         string='Configuración', store=True)
 
     modulo_ids = fields.One2many('infra.modulo.obra', 'tramo_id', 'Módulos')
@@ -32,9 +32,9 @@ class InfraTramo(models.Model):
         for rec in self:
             rec.subtotal = sum(rec.item_ids.mapped('total'))
 
-    @api.depends('subtotal', 'proyecto_id.presupuesto_total')
+    @api.depends('subtotal', 'project_id.presupuesto_total')
     def _compute_incidencia(self):
         for rec in self:
-            total = rec.proyecto_id.presupuesto_total
+            total = rec.project_id.presupuesto_total
             rec.incidencia_pct = (
                 (rec.subtotal / total * 100.0) if total else 0.0)

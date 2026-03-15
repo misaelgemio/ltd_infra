@@ -20,8 +20,8 @@ class InfraItemObra(models.Model):
         'infra.modulo.obra', 'Módulo',
         domain="[('tramo_id', '=', tramo_id)]",
         tracking=True)
-    proyecto_id = fields.Many2one(
-        'infra.proyecto', related='tramo_id.proyecto_id',
+    project_id = fields.Many2one(
+        'project.project', related='tramo_id.project_id',
         string='Proyecto', store=True)
 
     apu_id = fields.Many2one(

@@ -12,7 +12,7 @@
                     </div>
                     <group>
                         <group>
-                            <field name="proyecto_id"/>
+                            <field name="project_id"/>
                             <field name="sequence"/>
                         </group>
                         <group>
@@ -58,7 +58,7 @@
             <list string="Tramos">
                 <field name="sequence" widget="handle"/>
                 <field name="name"/>
-                <field name="proyecto_id"/>
+                <field name="project_id"/>
                 <field name="subtotal" widget="monetary" sum="Total"/>
                 <field name="incidencia_pct" widget="percentage"/>
             </list>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- ============================================================ -->
+    <!-- HERENCIA project.project — Agregar campos de infraestructura -->
+    <!-- ============================================================ -->
+
+    <record id="view_project_form_infra" model="ir.ui.view">
+        <field name="name">project.project.form.infra</field>
+        <field name="model">project.project</field>
+        <field name="inherit_id" ref="project.edit_project"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@name='button_box']" position="inside">
+                <button name="action_view_tramos" type="object"
+                        class="oe_stat_button" icon="fa-road"
+                        invisible="not is_infra_project">
+                    <field name="tramo_count" widget="statinfo" string="Tramos"/>
+                </button>
+                <button name="action_view_items" type="object"
+                        class="oe_stat_button" icon="fa-list"
+                        invisible="not is_infra_project">
+                    <field name="item_count" widget="statinfo" string="Ítems"/>
+                </button>
+                <button name="action_view_infra_apu" type="object"
+                        class="oe_stat_button" icon="fa-calculator"
+                        invisible="not is_infra_project">
+                    <field name="apu_count" widget="statinfo" string="APU"/>
+                </button>
+            </xpath>
+            <xpath expr="//group" position="after">
+                <group string="Infraestructura" invisible="not is_infra_project">
+                    <group>
+                        <field name="is_infra_project"/>
+                        <field name="codigo_cuce"/>
+                        <field name="configuracion_id"/>
+                    </group>
+                    <group>
+                        <field name="plazo_meses"/>
+                        <field name="presupuesto_total"/>
+                    </group>
+                </group>
+            </xpath>
+            <xpath expr="//notebook" position="inside">
+                <page string="Tramos" name="tramos_tab"
+                      invisible="not is_infra_project">
+                    <field name="tramo_ids">
+                        <list editable="bottom">
+                            <field name="sequence" widget="handle"/>
+                            <field name="name"/>
+                            <field name="subtotal" sum="Total"/>
+                            <field name="incidencia_pct"/>
+                        </list>
+                    </field>
+                </page>
+                <page string="B-4 Cronograma" name="b4_cronograma"
+                      invisible="not is_infra_project">
+                    <field name="cronograma_ejecucion_ids">
+                        <list editable="bottom">
+                            <field name="numero"/>
+                            <field name="modulo_nombre" optional="show"/>
+                            <field name="name"/>
+                            <field name="duracion_meses"/>
+                            <field name="mes_inicio"/>
+                            <field name="mes_fin"/>
+                        </list>
+                    </field>
+                </page>
+                <page string="B-5 Equipo" name="b5_equipo"
+                      invisible="not is_infra_project">
+                    <field name="movilizacion_equipo_ids">
+                        <list editable="bottom">
+                            <field name="numero"/>
+                            <field name="name"/>
+                            <field name="cantidad"/>
+                            <field name="mes_llegada"/>
+                            <field name="meses_en_obra"/>
+                            <field name="mes_desmovilizacion"/>
+                        </list>
+                    </field>
+                </page>
+                <page string="B-6 Gastos Grales." name="b6_gastos"
+                      invisible="not is_infra_project">
+                    <field name="gasto_general_ids">
+                        <list editable="bottom">
+                            <field name="seccion"/>
+                            <field name="numero"/>
+                            <field name="name"/>
+                            <field name="unidad"/>
+                            <field name="cantidad"/>
+                            <field name="precio_unitario"/>
+                            <field name="costo_total" sum="Total"/>
+                        </list>
+                    </field>
+                </page>
+                <page string="B-7 Cargas Soc." name="b7_cargas"
+                      invisible="not is_infra_project">
+                    <field name="carga_social_ids">
+                        <list editable="bottom">
+                            <field name="seccion"/>
+                            <field name="numero"/>
+                            <field name="name"/>
+                            <field name="porcentaje" widget="percentage"/>
+                            <field name="incidencia" widget="percentage"/>
+                            <field name="base_legal"/>
+                        </list>
+                    </field>
+                </page>
+                <page string="B-8 Financiero" name="b8_financiero"
+                      invisible="not is_infra_project">
+                    <field name="cronograma_financiero_ids">
+                        <list editable="bottom">
+                            <field name="mes"/>
+                            <field name="inversion_pct" widget="percentage"/>
+                            <field name="inversion_bs"/>
+                            <field name="acumulado_pct" widget="percentage"/>
+                            <field name="acumulado_bs"/>
+                        </list>
+                    </field>
+                </page>
+                <page string="B-9 Desembolsos" name="b9_desembolsos"
+                      invisible="not is_infra_project">
+                    <field name="desembolso_ids">
+                        <list editable="bottom">
+                            <field name="sequence" widget="handle"/>
+                            <field name="name"/>
+                            <field name="total_bs"/>
+                            <field name="m1" optional="show"/>
+                            <field name="m2" optional="show"/>
+                            <field name="m3" optional="show"/>
+                            <field name="m4" optional="show"/>
+                            <field name="m5" optional="show"/>
+                            <field name="m6" optional="show"/>
+                        </list>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- ============================================================ -->
+    <!-- HERENCIA project.task — Agregar campos B-1 ítems de obra -->
+    <!-- ============================================================ -->
+
+    <record id="view_task_form_infra" model="ir.ui.view">
+        <field name="name">project.task.form.infra</field>
+        <field name="model">project.task</field>
+        <field name="inherit_id" ref="project.view_task_form2"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group" position="after">
+                <group string="Datos de Obra (B-1)" invisible="not is_infra_task">
+                    <group>
+                        <field name="numero_item"/>
+                        <field name="unidad"/>
+                        <field name="modulo_obra"/>
+                        <field name="tramo_id"/>
+                    </group>
+                    <group>
+                        <field name="cantidad"/>
+                        <field name="apu_id"/>
+                        <field name="precio_unitario"/>
+                        <field name="total" class="fw-bold text-primary"/>
+                    </group>
+                </group>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- Tree view para tareas de infra -->
+    <record id="view_task_tree_infra" model="ir.ui.view">
+        <field name="name">project.task.tree.infra</field>
+        <field name="model">project.task</field>
+        <field name="inherit_id" ref="project.view_task_tree2"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='name']" position="after">
+                <field name="numero_item" optional="show"
+                       invisible="not is_infra_task"/>
+                <field name="unidad" optional="show"
+                       invisible="not is_infra_task"/>
+                <field name="cantidad" optional="show"
+                       invisible="not is_infra_task"/>
+                <field name="precio_unitario" optional="show"
+                       invisible="not is_infra_task"/>
+                <field name="total" optional="show" sum="Total Presupuesto"
+                       invisible="not is_infra_task"/>
+                <field name="modulo_obra" optional="hide"
+                       invisible="not is_infra_task"/>
+                <field name="is_infra_task" column_invisible="1"/>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- Action: Proyectos de Infraestructura -->
+    <record id="action_infra_projects" model="ir.actions.act_window">
+        <field name="name">Proyectos de Infraestructura</field>
+        <field name="res_model">project.project</field>
+        <field name="view_mode">kanban,list,form</field>
+        <field name="domain">[('is_infra_project', '=', True)]</field>
+        <field name="context">{'default_is_infra_project': True}</field>
+    </record>
+
+</odoo>

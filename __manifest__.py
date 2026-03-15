@@ -1,12 +1,12 @@
 {
     'name': 'LTD Infra — Gestión de Presupuestos de Construcción',
-    'version': '18.0.1.0.0',
+    'version': '18.0.3.0.0',
     'category': 'Construction',
     'summary': 'Presupuestos de licitación para obras de infraestructura vial',
     'author': 'Latigid',
     'website': 'https://github.com/misaelgemio/ltd_infra',
     'license': 'LGPL-3',
-    'depends': ['base', 'mail', 'product', 'purchase', 'stock', 'web'],
+    'depends': ['base', 'mail', 'product', 'purchase', 'stock', 'web', 'project'],
     'data': [
         'security/infra_security.xml',
         'security/ir.model.access.csv',
@@ -16,7 +16,7 @@
         'data/infra_apu_data.xml',
         'views/product_template_views.xml',
         'views/infra_configuracion_views.xml',
-        'views/infra_proyecto_views.xml',
+        'views/infra_project_views.xml',
         'views/infra_tramo_views.xml',
         'views/infra_item_obra_views.xml',
         'views/infra_apu_views.xml',

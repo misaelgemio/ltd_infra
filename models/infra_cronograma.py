@@ -9,10 +9,10 @@ class InfraCronogramaEjecucion(models.Model):
     _order = 'proyecto_id, numero'
 
     proyecto_id = fields.Many2one(
-        'infra.proyecto', 'Proyecto', required=True, ondelete='cascade')
-    item_obra_id = fields.Many2one(
-        'infra.item.obra', 'Ítem de Obra',
-        help='Vinculación con ítem B-1.')
+        'project.project', 'Proyecto', required=True, ondelete='cascade')
+    task_id = fields.Many2one(
+        'project.task', 'Tarea / Ítem',
+        help='Vinculación con tarea de proyecto (B-1).')
     numero = fields.Integer('Ítem N°', required=True)
     name = fields.Char('Descripción', required=True)
     modulo_nombre = fields.Char(
@@ -73,7 +73,7 @@ class InfraMovilizacionEquipo(models.Model):
     _order = 'proyecto_id, numero'
 
     proyecto_id = fields.Many2one(
-        'infra.proyecto', 'Proyecto', required=True, ondelete='cascade')
+        'project.project', 'Proyecto', required=True, ondelete='cascade')
     numero = fields.Integer('N°', required=True)
     name = fields.Char('Equipo / Maquinaria', required=True)
     product_id = fields.Many2one(
