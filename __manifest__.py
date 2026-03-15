@@ -1,6 +1,6 @@
 {
     'name': 'LTD Infra — Gestión de Presupuestos de Construcción',
-    'version': '18.0.3.0.0',
+    'version': '18.0.3.1.0',
     'category': 'Construction',
     'summary': 'Presupuestos de licitación para obras de infraestructura vial',
     'author': 'Latigid',
@@ -22,6 +22,7 @@
         'views/infra_apu_views.xml',
         'views/infra_cronograma_views.xml',
         'data/infra_b4_b9_data.xml',
+        'data/infra_beni_data.xml',
         'views/menus.xml',
     ],
     'installable': True,
